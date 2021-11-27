@@ -124,13 +124,27 @@ html {
   margin-bottom: 20px;
   border-left: 10px solid orange;
 }
-pre code {
+pre {
+  width: 100%;
   background-color: #eee;
   border: 1px solid #999;
-  display: block;
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 }
-
+code {
+  display: inline-block;
+}
+.result{
+  width: 100%;
+  background-color: #eee;
+  border: 1px solid #999;
+  padding: 10px;
+  text-align: center;
+}
+.remove{
+  all: revert;
+}
 @media (max-width: 768px){
   .topics{
     flex-direction: column;

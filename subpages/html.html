@@ -45,19 +45,19 @@
                         <p class="card-text">Plik HTML składa się z dwóch głównych elementów, czyli z głowy (head) oraz ciała (body). Wspomniane elementy będą zawsze umieszczone w elemencie html, który określa początek i koniec dokumentu HTML. Poniżej mamy przedstawioną strukturę HTML:</p>
                         <pre >
                             <code>
-                               &lt;!DOCTYPE html&gt;
-                               &lt;html lang="pl-PL"&gt;
-                                    &lt;head&gt;
-                                        &lt;meta charset="utf-8"&gt;
-                                        &lt;meta name="description" content=""&gt;
-                                        &lt;meta name="keywords" content=""&gt;
-                                        &lt;title&gt;Tytuł strony&lt;/title&gt;
-                                        &lt;link rel="stylesheet" href="style.css"&gt;
-                                    &lt;/head&gt;
-                                    &lt;body&gt;
-                                        &lt;p&gt;To jest paragraf&lt;/p&gt;
-                                    &lt;/body&gt;
-                                &lt;/html&gt;
+&lt;!DOCTYPE html&gt;
+    &lt;html lang="pl-PL"&gt;
+        &lt;head&gt;
+            &lt;meta charset="utf-8"&gt;
+            &lt;meta name="description" content=""&gt;
+            &lt;meta name="keywords" content=""&gt;
+            &lt;title&gt;Tytuł strony&lt;/title&gt;
+            &lt;link rel="stylesheet" href="style.css"&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;p&gt;To jest paragraf&lt;/p&gt;
+        &lt;/body&gt;
+&lt;/html&gt;
                             </code>
                         </pre>
                     </div>
@@ -67,7 +67,7 @@
                         <p class="card-text">A teraz wyjaśnijmy sobie niektóre rzeczy.</p>
                         <pre >
                             <code>
-                                &lt;!DOCTYPE html&gt;
+&lt;!DOCTYPE html&gt;
                             </code>
                         </pre>
                         <p class="card-text">Informujemy tym nasz program, że bedzięmy używać HTML w stadardzie 5. Jest to na obecnie najnowsza wersja HTML.</p>
@@ -78,7 +78,7 @@
                         <p class="card-text">Element html zawiera całą treść strony, wskazuje, gdzie zaczyna i kończy się kod HTML. Lang deklaruje język. Pierwsze dwie małe litery pl są deklaracją używanego języka. Natomiast kolejne dwie litery PL są deklaracją kraju, w którym tego języka się używa. Znacznik ten zawiera w sobie również head i body.</p>
                         <pre >
                             <code>
-                                &lt;html lang="pl-PL"&gt;
+&lt;html lang="pl-PL"&gt;
                             </code>
                         </pre>
                     </div>
@@ -89,20 +89,20 @@
                         <p class="card-text">Do tego bowiem przeznaczony jest znacznik body. To tutaj zapisujemy wszystkie elementy, jakie chcemy, aby się znalazły na naszej stronie.</p>
                         <pre >
                             <code>
-                                &lt;head&gt;
-                                    &lt;meta charset="utf-8"&gt;
-                                    &lt;meta name="description" content=""&gt;
-                                    &lt;meta name="keywords" content=""&gt;
-                                    &lt;title&gt;Tytuł strony&lt;/title&gt;
-                                    &lt;link rel="stylesheet" href="style.css"&gt;
-                                &lt;/head&gt;
+&lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;meta name="description" content=""&gt;
+        &lt;meta name="keywords" content=""&gt;
+        &lt;title&gt;Tytuł strony&lt;/title&gt;
+        &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
                             </code>
                         </pre>
                         <pre >
                             <code>
-                                &lt;body&gt;
-                                    &lt;p&gt;To jest paragraf&lt;/p&gt;
-                                &lt;/body&gt;
+&lt;body&gt;
+    &lt;p&gt;To jest paragraf&lt;/p&gt;
+&lt;/body&gt;
                             </code>
                         </pre>
                         <p class="card-text">Jak zauważyliśmy przy meta-oważnych meta-tagach nie musimy używać tagów zamykających &lt;/&gt; W większości przypadków jednak będziemy musieli ich używać, gdyż ich brak może spowodować błędne działanie i wyświetlanie elementów strony.</p>
@@ -123,7 +123,7 @@
                             <p class="card-text">Do tego służą komentarze. Każdy język programowania posiada taką funkcję. W HTML komentarze zapisujemy w ten sposób:</p>
                             <pre >
                                 <code>
-                                    &lt;!--  --&gt;
+&lt;!--  --&gt;
                                 </code>
                             </pre>
                         </div>
@@ -131,11 +131,11 @@
                     <div class="card">
                         <div class="card-body">
                             <p class="card-text">Wszystko co znajdzie się pomiędzy &lt;!-- a --&gt; będzie niewidoczne w oknie przeglądarki, ale będzie widoczne w kodzie źródłowym. Komentarze są bardzo przydatne przy pisaniu skomplikowanych stron, ale jak i tych mniej skomplikowanych. Głównym ich zadaniem jest pomoc człowiekowi rozszyfrować o czym piszemy i czego dana część kodu służy, szczególnie, gdy pracujemy w wieloosobowych zespołach nad jednym kodem, lub będziemy edytować kod źródłowy napisany przez kogoś innego. Nie należy ich jednak nadużywać, ponieważ wtedy możemy uzyskać efekt przeciwny do ich przeznaczenia - kod źródłowy może stać się jeszcze mniej czytelny.</p>
-                            <pre >
+                            <pre>
                                 <code>
-                                    &lt;body&gt;
-                                        &lt;p&gt;Czym są komentarze w HTML?&lt;/p&gt;&lt;!-- tutaj wyświetlam tekst w paragrafie --&gt;
-                                    &lt;/body&gt;
+&lt;body&gt;
+    &lt;p&gt;Czym są komentarze w HTML?&lt;/p&gt;&lt;!-- tutaj wyświetlam tekst w paragrafie --&gt;
+&lt;/body&gt;
                                 </code>
                             </pre>
                         </div>
@@ -143,11 +143,9 @@
                     <div class="card">
                         <div class="card-body">
                             <p class="card-text">Efekt na stronie będzie wyglądał następująco:</p>
-                            <pre >
-                                <code>
-                                    Czym są komentarze w HTML?
-                                </code>
-                            </pre>
+                            <div class="result">
+                                <p>Czym są komentarze?</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -158,12 +156,12 @@
                             <p class="card-text">Nagłówki tworzymy używając elementów od &lt;h1&gt; do &lt;h6&gt; Litera h jest skrótem od ang. słowa heading, czyli nagłówek. Cyfry od 1 do 6 oznaczają hierarchię nagłówków, zaczynając od 1 jako najważniejszego w hierarchii. Łatwiejsze w wytłumaczeniu będzie to, że nagłówek z cyfrą 1 możemy nazwać tytułem, a resztę nagłówków z niższymi cyframi - podtytułami.</p>
                             <pre >
                                 <code>
-                                    &lt;h1&gt;Nagłówek 1 stopnia&lt;/h1&gt;
-                                    &lt;h2&gt;Nagłówek 2 stopnia&lt;/h2&gt;
-                                    &lt;h3&gt;Nagłówek 3 stopnia&lt;/h3&gt;
-                                    &lt;h4&gt;Nagłówek 4 stopnia&lt;/h4&gt;
-                                    &lt;h5&gt;Nagłówek 5 stopnia&lt;/h5&gt;
-                                    &lt;h6&gt;Nagłówek 6 stopnia&lt;/h6&gt;
+&lt;h1&gt;Nagłówek 1 stopnia&lt;/h1&gt;
+&lt;h2&gt;Nagłówek 2 stopnia&lt;/h2&gt;
+&lt;h3&gt;Nagłówek 3 stopnia&lt;/h3&gt;
+&lt;h4&gt;Nagłówek 4 stopnia&lt;/h4&gt;
+&lt;h5&gt;Nagłówek 5 stopnia&lt;/h5&gt;
+&lt;h6&gt;Nagłówek 6 stopnia&lt;/h6&gt;
                                 </code>
                             </pre>   
                         </div>
@@ -190,7 +188,7 @@
                             <p class="card-text">Akapity tworzymy za pomocą znacznikia &lt;p&gt; (ang.paragraph – akapit, paragraf). Paragrafy można porównać do akapitów w edytorach tekstowych (np. Word), przenosi on nas do nowej linii. Zapisujemy go w ten sposób:</p>
                             <pre >
                                 <code>
-                                    &lt;p&gt;Tutaj jest akapit&lt;/p&gt;
+&lt;p&gt;Tutaj jest akapit&lt;/p&gt;
                                 </code>
                             </pre>
                             <p class="card-text">Pomiędzy znacznikami &lt;p&gt; Wpisujemy tekst, który chcielibyśmy umieścić na stronie jako akapit.</p>
@@ -201,8 +199,8 @@
                             <p class="card-text">W bardzo podobny sposób działa &lt;br&gt; (ang.line break ), czyli inaczej złamanie linii. &lt;br&gt; Nie posiada znacznika zamykającego, jest to tzw. znacznik samozamykający.</p>
                             <pre >
                                 <code>
-                                    Znacznik załamujący tekst działa w tym momencie.&lt;br&gt;<br>
-                                    Jak widać linia została załamana.
+Znacznik załamujący tekst działa w tym momencie.&lt;br&gt;<br>
+Jak widać linia została załamana.
                                 </code>
                             </pre>
                         </div>
@@ -213,7 +211,7 @@
                             <p class="card-text">Do odgradzania treści służy nam &lt;hr&gt; (ang.horizontal rules), czyli pozioma linia. Tak jak w przypadku &lt;br&gt; jest to znacznik samozamykający. Linie zamykające zostały wielokrotnie użyte w tych materiałach:</p>
                             <pre >
                                 <code>
-                                    &lt;hr&gt;
+&lt;hr&gt;
                                 </code>
                             </pre>
                         </div>
@@ -221,11 +219,7 @@
                     <div class="card">
                         <div class="card-body">
                             <p class="card-text">A to efekt na stronie:</p>
-                            <pre >
-                                <code>
-                                    <hr>
-                                </code>
-                            </pre>
+                            <div class="result"><hr></div>
                         </div>
                     </div>
                 </div>
@@ -256,16 +250,16 @@
                             <p class="card-text">W większości przypadków tekst dokumentu HTML jest formatowany przez przeglądarkę wyłącznie na podstawie znaczników. Wszelkie dodatkowe znaki takie jak spacje, tabulacje czy też znaki nowej linii są ignorowane. Wyjątek od tej reguły stanowi tekst preformatowany znacznikami &lt;pre&gt;. W tym przypadku każda spacja czy też znak nowej linii zostaną wyświetlone. Przykład działania:</p>
                             <pre >
                                 <code>
-                                    &lt;p&gt;
-                                        Ala 
-                                            ma 
-                                                kota
-                                    &lt;/p&gt;
-                                    &lt;pre&gt;
-                                        Ala 
-                                            ma 
-                                                kota
-                                    &lt;/pre&gt;
+&lt;p&gt;
+    Ala 
+        ma 
+            kota
+&lt;/p&gt;
+&lt;pre&gt;
+    Ala 
+        ma 
+            kota
+&lt;/pre&gt;
                                 </code>
                             </pre>
                         </div>
@@ -273,14 +267,17 @@
                     <div class="card">
                         <div class="card-body">
                             <p class="card-text">Wszystko na pozór wydaje się takie samo, tylko zapisane między innymi znacznikami, ale efekt na stronie będzie zupełnie inny:</p>
-                            <pre >
-                                <code>
-                                        Ala ma kota
-                                            Ala
-                                                ma
-                                                    kota
-                                </code>
-                            </pre>
+                            <div class="result">
+                                <p>Ala
+                                        ma
+                                            kota
+                                </p>
+                                <pre class="remove">
+Ala
+    ma
+        kota
+                                </pre>
+                            </div>
                         </div>
                     </div>
                     <div class="card">
@@ -290,8 +287,8 @@
                             <p class="card-text">Efekt:</p>
                             <pre >
                                 <code>
-                                    &lt;i&gt;pochyły tekst&lt;/i&gt;
-                                    <i>pochyły tekst</i>
+&lt;i&gt;pochyły tekst&lt;/i&gt;
+<i>pochyły tekst</i>
                                 </code>
                             </pre>
                             <p class="card-text">Jak więc wyświetlić te znaki na ekranie?<br>
@@ -310,10 +307,10 @@
                             <p class="card-text">Listy uporządkowane to takie, których elementy posiadają pewną numerację, stąd też zwyczajowa nazwa lista numerowana . Numeracje w tych listach możemy uzyskać poprzez cyfry, bądź litery. Listy numerowane tworzymy za pomocą elementu &lt;ol&gt;: (ang. ordered list ), czyli lista numerowana.</p>
                             <pre >
                                 <code>
-                                    &lt;ol&gt;
-                                        &lt;li&gt;Pierwszy element listy numerowanej&lt;/li&gt;
-                                        &lt;li&gt;Drugi element listy numerowanej&lt;/li&gt;
-                                    &lt;/ol&gt;
+&lt;ol&gt;
+    &lt;li&gt;Pierwszy element listy numerowanej&lt;/li&gt;
+    &lt;li&gt;Drugi element listy numerowanej&lt;/li&gt;
+&lt;/ol&gt;
                                 </code>
                             </pre>
                         </div>
@@ -321,14 +318,12 @@
                     <div class="card">
                         <div class="card-body">
                             <p class="card-text">Efekt powyższego kodu:</p>
-                            <pre >
-                                <code>
-                                    <ol>
-                                        <li>Pierwszy element listy numerowanej</li>
-                                        <li>Drugi element listy numerowanej</li>
-                                    </ol>
-                                </code>
-                            </pre>
+                            <div class="result">
+                                <ol>
+                                    <li>Pierwszy element listy numerowanej</li>
+                                    <li>Drugi element listy numerowanej</li>
+                                </ol>
+                            </div>
                         </div>
                     </div>
                     <div class="card">
@@ -350,13 +345,13 @@
                             </p>
                             <pre >
                                 <code>
-                                    &lt;ol&gt;
-                                        &lt;li type="1"&gt;"1" - domyślna(numerowa) lista&lt;/li&gt;
-                                        &lt;li type="i"&gt;"i" - małe liczby rzymskie&lt;/li&gt;
-                                        &lt;li type="I"&gt;"I" - duże liczby rzymskie&lt;/li&gt;
-                                        &lt;li type="a"&gt;"a" - małe litery&lt;/li&gt;
-                                        &lt;li type="A"&gt;"A" - duże litery&lt;/li&gt;
-                                    &lt;/ol&gt;
+&lt;ol&gt;
+    &lt;li type="1"&gt;"1" - domyślna(numerowa) lista&lt;/li&gt;
+    &lt;li type="i"&gt;"i" - małe liczby rzymskie&lt;/li&gt;
+    &lt;li type="I"&gt;"I" - duże liczby rzymskie&lt;/li&gt;
+    &lt;li type="a"&gt;"a" - małe litery&lt;/li&gt;
+    &lt;li type="A"&gt;"A" - duże litery&lt;/li&gt;
+&lt;/ol&gt;
                                 </code>
                             </pre>
                             <p class="card-text">Do naszego elementu wystarczy dodać atrybut type, po nim znak równości i w cudzysłowiach wpisać rodzaj numeracji:
@@ -375,11 +370,11 @@
                             </p>
                             <pre >
                                 <code>
-                                    &lt;ul&gt;
-                                        &lt;li&gt;Pierwszy element listy wypunktowanej&lt;/li&gt;
-                                        &lt;li&gt;Drugi element listy wypunktowanej&lt;/li&gt;
-                                        &lt;li&gt;Trzeci element listu wypunktowanej&lt;/li&gt;
-                                    &lt;/ul&gt;
+&lt;ul&gt;
+    &lt;li&gt;Pierwszy element listy wypunktowanej&lt;/li&gt;
+    &lt;li&gt;Drugi element listy wypunktowanej&lt;/li&gt;
+    &lt;li&gt;Trzeci element listu wypunktowanej&lt;/li&gt;
+&lt;/ul&gt;
                                 </code>
                             </pre>
                         </div>
@@ -396,10 +391,10 @@
                             </p>
                             <pre >
                                 <code>
-                                    &lt;dl&gt;
-                                        &lt;dt&gt;Pojęcie&lt;/dt&gt;
-                                        &lt;dd&gt;Opis pojęcia, definicja&lt;/dd&gt;
-                                    &lt;/dl&gt;
+&lt;dl&gt;
+    &lt;dt&gt;Pojęcie&lt;/dt&gt;
+    &lt;dd&gt;Opis pojęcia, definicja&lt;/dd&gt;
+&lt;/dl&gt;
                                 </code>
                             </pre>
                         </div>
@@ -429,51 +424,53 @@
                             <p class="card-text">Tak to wygląda w kodzie:</p>
                             <pre >
                                 <code>
-                                    &lt;dl&gt;
-                                        &lt;dt&gt;Html&lt;/dt&gt;
-                                        &lt;dd&gt;Język opisu stron internetowych&lt;/dd&gt;
-                                        &lt;dt&gt;CSS&lt;/dt&gt;
-                                        &lt;dd&gt;Język służący do opisu formy prezentacji stron WWW&lt;/dd&gt;
-                                    &lt;/dl&gt;
+&lt;dl&gt;
+    &lt;dt&gt;Html&lt;/dt&gt;
+    &lt;dd&gt;Język opisu stron internetowych&lt;/dd&gt;
+    &lt;dt&gt;CSS&lt;/dt&gt;
+    &lt;dd&gt;Język służący do opisu formy prezentacji stron WWW&lt;/dd&gt;
+&lt;/dl&gt;
                                 </code>
                             </pre>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="card-title">Zagnieżdzżanie listy</h4>
+                            <h4 class="card-title">Zagnieżdżanie listy</h4>
                             <p class="card-text">Jeśli chcemy aby dany punkt listy rozwinąć i uzupełnić o kolejne podpunkty w tym celu musimy zawrzeć jedną listę w drugiej, czynność ta nazywana jest <strong>zagnieżdżaniem</strong>.</p>
                             <p class="card-text">Ale jak to zawrzeć jedną w drugiej, w którym miejscu byśmy ją zawierali? Kolejną listę dodajemy do elementu listy, który ma być rozwinięty i wtedy dany element listy staje się głównym punktem, a lista z zagnieżdżonymi elementami staje się jego podpunktami. Musimy dodać kolejny element &lt;ol&gt; lub &lt;ul&gt; a w nim element listy &lt;li&gt;.</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-body">
+                            <div class="result">
+                                <ul>
+                                    <li>Pierwszy punkt</li>
+                                    <li>Drugi punkt
+                                        <ul>
+                                            <li>Pierwszy element listy zagnieżdżonej</li>
+                                            <li>Drugi element listy zagnieżdżonej</li>
+                                        </ul>
+                                    </li>
+                                    <li>Trzeci punkt</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
                             <pre >
                                 <code>
-                                    <ul>
-                                        <li>Pierwszy punkt</li>
-                                        <li>Drugi punkt
-                                            <ul>
-                                                <li>Pierwszy element listy zagnieżdżonej</li>
-                                                <li>Drugi element listy zagnieżdżonej</li>
-                                            </ul>
-                                        </li>
-                                        <li>Trzeci punkt</li>
-                                    </ul>
-                                </code>
-                            </pre>
-                            <pre >
-                                <code>
-                                    &lt;ul&gt;
-                                        &lt;li&gt;Pierwszy punkt&lt;/li&gt;
-                                            &lt;li&gt;Drugi punkt
-                                                &lt;ul&gt;
-                                                    &lt;li&gt;Pierwszy element listy zagnieżdżonej&lt;/li&gt;
-                                                    &lt;li&gt;Drugi element listy zagnieżdżonej&lt;/li&gt;
-                                                &lt;/ul&gt;
-                                            &lt;/li&gt;
-                                        &lt;li&gt;Trzeci punkt&lt;/li&gt;
-                                    &lt;/ul&gt;
+&lt;ul&gt;
+    &lt;li&gt;Pierwszy punkt&lt;/li&gt;
+    &lt;li&gt;Drugi punkt
+        &lt;ul&gt;
+            &lt;li&gt;Pierwszy element listy zagnieżdżonej&lt;/li&gt;
+            &lt;li&gt;Drugi element listy zagnieżdżonej&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Trzeci punkt&lt;/li&gt;
+&lt;/ul&gt;
                                 </code>
                             </pre>
                         </div>
@@ -481,32 +478,34 @@
                     <div class="card">
                         <div class="card-body">
                             <p class="card-text">Do tego możemy mieszać ze sobą rodzaje list:</p>
+                            <div class="result">
+                                <ol>
+                                    <li>Pierwszy punkt</li>
+                                    <li>Drugi punkt
+                                        <ul>
+                                            <li>Pierwszy element listy zagnieżdżonej</li>
+                                            <li>Drugi element listy zagnieżdżonej</li>
+                                        </ul>
+                                    </li>
+                                    <li>Trzeci punkt</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
                             <pre >
                                 <code>
-                                    <ol>
-                                        <li>Pierwszy punkt</li>
-                                        <li>Drugi punkt
-                                            <ul>
-                                                <li>Pierwszy element listy zagnieżdżonej</li>
-                                                <li>Drugi element listy zagnieżdżonej</li>
-                                            </ul>
-                                        </li>
-                                        <li>Trzeci punkt</li>
-                                    </ol>
-                                </code>
-                            </pre>
-                            <pre >
-                                <code>
-                                    &lt;ol&gt;
-                                        &lt;li&gt;Pierwszy punkt&lt;/li&gt;
-                                            &lt;li&gt;Drugi punkt
-                                                &lt;ul&gt;
-                                                    &lt;li&gt;Pierwszy element listy zagnieżdżonej&lt;/li&gt;
-                                                    &lt;li&gt;Drugi element listy zagnieżdżonej&lt;/li&gt;
-                                                &lt;/ul&gt;
-                                            &lt;/li&gt;
-                                        &lt;li&gt;Trzeci punkt&lt;/li&gt;
-                                    &lt;/ol&gt;
+&lt;ol&gt;
+    &lt;li&gt;Pierwszy punkt&lt;/li&gt;
+    &lt;li&gt;Drugi punkt
+        &lt;ul&gt;
+            &lt;li&gt;Pierwszy element listy zagnieżdżonej&lt;/li&gt;
+            &lt;li&gt;Drugi element listy zagnieżdżonej&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Trzeci punkt&lt;/li&gt;
+&lt;/ol&gt;
                                 </code>
                             </pre>
                         </div>
@@ -527,16 +526,16 @@
                             <p class="card-text">Do identyfikacji poszczególnych elementów używamy tzw. <strong>identyfikatorów</strong> w skrócie id. Id to atrybuty elementów html, które pozwalają je odróżniać. Zapisujemy je skrótem id i przypisujemy do nich wartości tak jak do innych atrybutów, używając do tego znaku = oraz " ".</p>
                             <pre >
                                 <code>
-                                    &lt;div id="header"&gt;&lt;/div&gt;
-                                    &lt;div id="footer"&gt;&lt;/div&gt;
+&lt;div id="header"&gt;&lt;/div&gt;
+&lt;div id="footer"&gt;&lt;/div&gt;
                                 </code>
                             </pre>
                             <pre >
                                 <code>
-                                    &lt;div id="header"&gt;
-                                        &lt;li&gt;&lt;a href="lekcja-1"&gt;Lekcja 1&lt;/a&gt;&lt;/li&gt;
-                                        &lt;li&gt;&lt;a href="lekcja-2"&gt;Lekcja 2&lt;/a&gt;&lt;/li&gt;
-                                    &lt;/div&gt;
+&lt;div id="header"&gt;
+    &lt;li&gt;&lt;a href="lekcja-1"&gt;Lekcja 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="lekcja-2"&gt;Lekcja 2&lt;/a&gt;&lt;/li&gt;
+&lt;/div&gt;
                                 </code>
                             </pre>
                         </div>
@@ -546,14 +545,10 @@
                             <p class="card-text">Odwołania te tworzymy posługując się elementem &lt;a&gt; i jego atrybutem href. Atrybut href przyjmuje wtedy wartość id poprzedzoną znakiem # (ang. hash tag – krzyżyk).</p>
                             <pre >
                                 <code>
-                                    &lt;a href="#header"&gt;Header&lt;/a&gt;
+&lt;a href="#header"&gt;Header&lt;/a&gt;
                                 </code>
                             </pre>
-                            <pre >
-                                <code>
-                                    <a href="#">Header</a>
-                                </code>
-                            </pre>
+                            <div class="result"><a href="#">Header</a></div>
                         </div>
                     </div>
                     <div class="card">
@@ -562,7 +557,7 @@
                             <p class="card-text">Klasy są zbliżone do identyfikatorów, również możemy dzięki nim rozróżniać poszczególne elementy html. Tak samo jak id są one atrybutem wszystkich elementów html. Używamy ich stosując słowo class, a odwołując się za pomocą kropki. Możemy równiez przypisać klasę i identyfikator jednocześnie:</p>
                             <pre>
                                 <code>
-                                    &lt;div class="header" id="header"&gt;Header&lt;/div&gt;
+&lt;div class="header" id="header"&gt;Header&lt;/div&gt;
                                 </code>
                             </pre>
                         </div>

@@ -109,7 +109,7 @@ html {
   max-width: 1250px;
   margin-top: 50px;
 }
-#topic-list{
+#side-nav{
   flex-basis: 20%;
   align-self: flex-start;
 }
@@ -144,6 +144,20 @@ code {
 }
 .remove{
   all: revert;
+}
+.back-to-top{
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  border: 5px solid orange;
+}
+.back-to-top:hover{
+  background-color: orange;
+  color: #fff;
+}
+.list-group-item.active{
+  background-color: orange;
+  border-color: orange;
 }
 @media (max-width: 768px){
   .topics{

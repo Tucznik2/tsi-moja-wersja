@@ -1,5 +1,6 @@
 const HEADER = document.getElementById('header');
 const SIDE_NAV = document.getElementById('side-nav');
+const NAV_LINKS = document.getElementsByClassName('list-group-item list-group-item-action');
 
 let sideNavTopPos;
 
@@ -13,3 +14,9 @@ window.addEventListener('scroll', () => {
         SIDE_NAV.style.top = 50 + 'px';
     }
 })
+
+for (let i = 0; i < NAV_LINKS .length; i++) {
+    NAV_LINKS[i].addEventListener('click', ()=>{
+        window.scrollTo(0,0);
+    });
+}

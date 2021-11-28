@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
@@ -20,7 +20,7 @@
         </header>
         <main class="main html-subpage">
             <aside id="side-nav" class="list-group sticky-top">
-                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#html1" id="tab-1" role="tab" aria-controls="tab1" aria-selected="true" href="#header">Czym jest HTML?</a>
+                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#html1" id="tab-1" role="tab" aria-controls="tab1" aria-selected="true">Czym jest HTML?</a>
                 <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#html2" id="tab-2" role="tab" aria-controls="tab2" aria-selected="false">Komentarze w HTML</a>
                 <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#html3" id="tab-3" role="tab" aria-controls="tab3" aria-selected="false">Nagłówek i paragraf</a>
                 <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#html4" id="tab-4" role="tab" aria-controls="tab4" aria-selected="false">Formatowanie tekstu</a>
@@ -110,7 +110,7 @@
                 </div>
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-subtitle">Dlaczego meta-tagi są tak ważne?</h5>
+                        <h4 class="card-title">Dlaczego meta-tagi są tak ważne?</h4>
                         <p class="card-text">Znaczniki meta umieszczone w sekcji nagłówka dokumentu HTML służą do wskazywania zakodowanych informacji i określania metadanych. Nie pojawiają się na rzeczywistej stronie internetowej, zamiast tego aplikacje takie jak: przeglądarki lub roboty sieciowe, mogą odczytywać dane zakodowane w tych metatagach.</p>
                         <p class="card-text">Funkcją elementu meta jest przekazanie dodatkowych informacji odnośnie witryny, co ułatwia analizę plików HTML i ułatwia utrzymanie zawartości pliku. Metatagi HTML prawie zawsze mają tę samą strukturę: element jest najpierw definiowany, a następnie przypisywana jest mu treść.</p>
                     </div>
@@ -184,7 +184,7 @@
                     </div>
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-subtitle">Paragraf</h5>
+                            <h4 class="card-title">Paragraf</h4>
                             <p class="card-text">Akapity tworzymy za pomocą znacznikia &lt;p&gt; (ang.paragraph – akapit, paragraf). Paragrafy można porównać do akapitów w edytorach tekstowych (np. Word), przenosi on nas do nowej linii. Zapisujemy go w ten sposób:</p>
                             <pre >
                                 <code>
@@ -207,7 +207,7 @@ Jak widać linia została załamana.
                     </div>
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-subtitle">Linia Horyzontalna</h5>
+                            <h4 class="card-subtitle">Linia Horyzontalna</h4>
                             <p class="card-text">Do odgradzania treści służy nam &lt;hr&gt; (ang.horizontal rules), czyli pozioma linia. Tak jak w przypadku &lt;br&gt; jest to znacznik samozamykający. Linie zamykające zostały wielokrotnie użyte w tych materiałach:</p>
                             <pre >
                                 <code>
@@ -246,7 +246,7 @@ Jak widać linia została załamana.
                     </div>
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-subtitle">Tekst preformatowany</h5>
+                            <h4 class="card-title">Tekst preformatowany</h4>
                             <p class="card-text">W większości przypadków tekst dokumentu HTML jest formatowany przez przeglądarkę wyłącznie na podstawie znaczników. Wszelkie dodatkowe znaki takie jak spacje, tabulacje czy też znaki nowej linii są ignorowane. Wyjątek od tej reguły stanowi tekst preformatowany znacznikami &lt;pre&gt;. W tym przypadku każda spacja czy też znak nowej linii zostaną wyświetlone. Przykład działania:</p>
                             <pre >
                                 <code>
@@ -282,7 +282,7 @@ Ala
                     </div>
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-subtitle">Znaki specjalne</h5>
+                            <h4 class="card-title">Znaki specjalne</h4>
                             <p class="card-text">Pliki HTML to zbiór kodów ASCII, który nie powinien zawierać pewnych znaków formatujących, takich choćby jak &lt;i&gt;. Aby wyświetlić na stronie ten efekt, nie możemy po prostu wpisać w kodzie źródłowym &lt;i&gt;, ponieważ program odbierze to inaczej, i zamiast wyświetlić &lt;i&gt;, spowoduje, że nasz tekst będzie <i>pochyły</i>.</p>
                             <p class="card-text">Efekt:</p>
                             <pre >
@@ -303,7 +303,7 @@ Ala
                 <div class="tab-pane fade" id="html5" role="tabpanel" aria-labelledby="lists-tab">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Lista uporządkowana</h5>
+                            <h4 class="card-title">Lista uporządkowana</h4>
                             <p class="card-text">Listy uporządkowane to takie, których elementy posiadają pewną numerację, stąd też zwyczajowa nazwa lista numerowana . Numeracje w tych listach możemy uzyskać poprzez cyfry, bądź litery. Listy numerowane tworzymy za pomocą elementu &lt;ol&gt;: (ang. ordered list ), czyli lista numerowana.</p>
                             <pre >
                                 <code>
@@ -360,7 +360,7 @@ Ala
                     </div>
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-subtitle">Lista nieuporządkowana</h5>
+                            <h4 class="card-title">Lista nieuporządkowana</h4>
                             <p class="card-text">Drugim rodzajem jest lista <strong>nieuporządkowana</strong>, zwana też listą wypunktowaną. Elementy tej listy nie są numerowane, a domyślnie rolę przyjmują kropki.
                                 <ul>
                                     <li>Pierwszy element listu wypunktowanej</li>
@@ -381,7 +381,7 @@ Ala
                     </div>
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-subtitle">Lista definicji</h5>
+                            <h4 class="card-title">Lista definicji</h4>
                             <p class="card-text">Lista <strong>definicji</strong>, albo <strong>definicyjna</strong>. Zapisujemy ją znacznikiem &lt;dl&gt; (ang. <i>definition list</i>). Lista ta różni się trochę od poprzednich list. Do danego pojęcia przypisujemy określoną definicję (stąd nazwa):</p>
                             <p class="card-text">
                                 <dl>
@@ -511,7 +511,86 @@ Ala
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="html6" role="tabpanel" aria-labelledby="links-tab">.dfgfd..</div>
+                <div class="tab-pane fade" id="html6" role="tabpanel" aria-labelledby="links-tab">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Linki</h4>
+                            <p class="card-text">W języku html do zapisywania linków używamy elementu &lt;a&gt; (ang. anchor – kotwica, zakotwiczenie). Pomiędzy znacznikami wpisujemy tekst odsyłacza, tzn. tekst który zostanie wyświetlony na ekranie. Jeśli byśmy chcieli, aby tekst linka wskazywał na kurs html zapis ten wyglądałby następująco.</p>
+                            <pre>
+                                <code>
+&lt;a&gt;Tekst odsyłacza&lt;/a&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">Efekt widoczny na stronie:</p>
+                            <div class="result">
+                                <a>Tekst odsyłacza</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Adres linka</h5>
+                            <p class="card-text">Dlaczego po najechaniu nic się nie dzieje i nie przenosi nas na stronę? Brakuje tzw. atrybutu. Atrybut to dodatkowa informacja o samym elemencie html zawarta w znaczniku otwierającym. Elementy html mogą posiadać atrybuty (ang. attribute) i przypisane do nich własności (ang. property).
+                                Jednym z atrybutów elementu &lt;a&gt; jest atrybut href (ang. hypertext reference – odniesienie w hipertekście). Informuje on przeglądarkę, o stronie na którą link nas przekierowuje. Dopiero po dodaniu tego atrybutu i uzupełnieniu jego własności taki link będzie kompletnyi zadziała:</p>
+                            <pre>
+                                <code>
+&lt;a href="http://www.elektronik.rzeszow.pl"&gt;Kliknij tu, aby przejść na stronę szkoły&lt;/a&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">Efekt widoczny na stronie:</p>
+                            <div class="result">
+                                <a href="http://www.elektronik.rzeszow.pl">Kliknij tu, aby przejść na stronę szkoły</a>
+                            </div>
+                            <p class="card-text">Atrybutu danego elementu zawsze zapisujemy w znaczniku otwierającym. Element od atrybutu oddzielamy spacją. Przypisanie własności do atrybutu odbywa się poprzez znak = równa się. Własność zapisywana jest zawsze w cudzysłowie podwójnym " " bądź pojedynczym ' '.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Atrybut target</h5>
+                            <p class="card-text">Kolejnym atrybutem, który możemy dołączyć do naszego elementu &lt;a&gt;, jest atrybut target (ang. cel, miejsce docelowe). Atrybut ten pozwala określić w jakim miejscu ma być otwarty nowy link(czy ma się otworzyć w nowej karcie, czy w tej, w której się znajdujemy).</p>
+                            <p class="card-text">Jeśli chcemy otworzyć link w nowej karcie musimy zmienić własnośc naszego targetu na <strong>_blank</strong>:</p>
+                            <pre>
+                                <code>
+&lt;a href="http://www.elektronik.rzeszow.pl" target="_blank"&gt;Kliknij tu, aby przejść na stronę szkoły&lt;/a&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="result">
+                                <a href="http://www.elektronik.rzeszow.pl" target="_blank">Kliknij tu, aby przejść na stronę szkoły</a>
+                            </div>
+                            <p class="card-text">Jak widzimy po kliknięciu linku został od otworzony w nowej karcie, nie zamykając karty, na której znajdujemy sie obecnie.</p>
+                            <p class="card-text">Wartość <strong>_self</strong> jest wartością domyślną dlatego, jeśli chcemy z niej skorzystać nie musimy deklarować jej w linku, po prostu pomijamy wtedy atrybut target.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Linki do sekcji</h5>
+                            <p class="card-text">Link, który nie prowadzi na inną stronę, tylko przenosi was do innej sekcji tej samej strony to linki wewnętrzne, które pomagają w nawigacji po stronie. Konstrukcja takiego linku jest dość prosta. Wymaga jedynie podania nazwy id danego elementu poprzedzonej krzyżykiem, czy też hash tagiem #:</p>
+                            <pre>
+                                <code>
+&lt;a href="#header"&gt;Kliknij tu, aby przejść na górę strony&lt;/a&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="result"><a href="#header">Kliknij, aby przejść na początek strony</a></div>
+                            <p class="card-text">Jak widzimy po kliknięciu zostaliśmy przeniesieni na początek, czyli do miejsca, w którym zdefiniowaliśmy nasz element o id równych first.</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="tab-pane fade" id="html7" role="tabpanel" aria-labelledby="img-tab">.dfgfd..</div>
                 <div class="tab-pane fade" id="html8" role="tabpanel" aria-labelledby="table-tab">.dfgfd..</div>
                 <div class="tab-pane fade" id="html9" role="tabpanel" aria-labelledby="id-class-tab">

@@ -160,6 +160,11 @@ code {
   background-color: #e34c26;
   border-color: #e34c26;
 }
+
+/* PHP subpage */
+.php-subpage thead{
+  background-color: #e34c26;
+}
 @media (max-width: 768px){
   .topics{
     flex-direction: column;

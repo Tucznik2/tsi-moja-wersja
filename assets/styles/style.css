@@ -7,11 +7,7 @@ html {
   margin: 0;
   height: 100%;
   width: 100%;
-  background-image: url("../img/background.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background-color: #eee;
 }
 .wrapper {
   width: 100%;
@@ -122,6 +118,8 @@ html {
 }
 .card{
   margin-bottom: 20px;
+}
+.card-html{
   border-left: 10px solid #e34c26;
 }
 pre {
@@ -130,6 +128,7 @@ pre {
   border: 1px solid #999;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 10px;
   overflow: auto;
 }
@@ -141,6 +140,12 @@ code {
   background-color: #eee;
   border: 1px solid #999;
   padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.result > *{
   text-align: center;
 }
 .remove{
@@ -155,6 +160,9 @@ code {
 .back-to-top:hover{
   background-color: #e34c26;
   color: #fff;
+}
+.list-group-item{
+  cursor: pointer;
 }
 .list-group-item.active{
   background-color: #e34c26;
@@ -189,4 +197,23 @@ code {
   .text{
     font-size: 4vw;
   }
+  .list-group{
+    flex-basis: 20%;
+    max-width: 27%;
+    font-size: 90%;
+  }
+  .content{
+    flex-basis: 70%;
+    max-width: 83%;
+  }
+  .main{
+    font-size: 90%;
+  }
+  code{
+    width: 100%;
+  }
+  .html-subpage, .css-subpage, .php-subpage, .js-subpage{
+    margin-top: 30px;
+  }
 }
+

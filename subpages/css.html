@@ -10,22 +10,58 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header class="header" id="header">
             <div class="title-container">
                 <p class="title badge bg-secondary">Tworzenie stron<br>
                     internetowych</p>
                 <p class="title badge bg-secondary">mgr <strong>Bogusław Zagólski</strong></p>
             </div>
-            <div class="img"></div>
             <img class="title-image" src="../assets/img/header-img.png">
         </header>
-        <main class="main">
-            
+        <main class="main css-subpage">
+            <aside id="side-nav" class="list-group sticky-top">
+                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#css1" id="tab-1" role="tab" aria-controls="tab1" aria-selected="true">Czym jest CSS?</a>
+                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#css2" id="tab-2" role="tab" aria-controls="tab2" aria-selected="false">Podpinanie CSS do HTML</a>
+                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#css3" id="tab-3" role="tab" aria-controls="tab3" aria-selected="false">Hierarchia ważności metod</a>
+                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#css4" id="tab-4" role="tab" aria-controls="tab4" aria-selected="false">Selektory</a>
+                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#css5" id="tab-5" role="tab" aria-controls="tab5" aria-selected="false">Komentarze</a>
+                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#css6" id="tab-6" role="tab" aria-controls="tab6" aria-selected="false">Własności</a>
+                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#css7" id="tab-7" role="tab" aria-controls="tab7" aria-selected="false">Padding a margin</a>
+                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#css8" id="tab-8" role="tab" aria-controls="tab8" aria-selected="false">Jednostki</a>
+            </aside>
+            <div class="tab-content content">
+                <div class="tab-pane fade" id="css1" role="tabpanel" aria-labelledby="css-intro-tab">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Czym jest CSS?</h4>
+                            <p class="card-text">Rozwinięciem skrótu <b>CSS</b> (ang.<i>Cascading Style Sheets</i>) są kaskadowe arkusze stylów. Słowo arkusz można traktować jako plik, w którym zapisujemy reguły formatowania, które  przypisujemy do konkretnych elementów HTML poprzez znane nam selektory.</p>
+                            <p class="card-text">Reguły CSS to inaczej zbiory zasad służące do formatowania treści. Zbudowane są one z <b>własnośc</b> i (ang. <i>property</i>) oraz jej <b>wartości</b>(ang. <i>value</i>).</p>
+                            <img src="../assets/img/zasada-css.png" alt="konstrukcja-stylu" class="card-img">
+                            <p class="card-text">Nazwa wartości musi być zawsze poprzedzona dwukropkiem : , a cała reguła zakończona średnikiem ; .</p>
+                            <p class="card-text"><b>własność: wartość;</b></p>
+                            <p class="card-text">Jeśli nazwa własności jest kilkuczłonowa, zazwyczaj kolejne wyrazy oddzielane są myślnikiem -, tak jak background-color.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="css2" role="tabpanel" aria-labelledby="css-attachment-tab">2</div>
+                <div class="tab-pane fade" id="css3" role="tabpanel" aria-labelledby="css-hierarchy-tab">3</div>
+                <div class="tab-pane fade" id="css4" role="tabpanel" aria-labelledby="css-selectors-tab">4</div>
+                <div class="tab-pane fade" id="css5" role="tabpanel" aria-labelledby="css-comments-tab">5</div>
+                <div class="tab-pane fade" id="css6" role="tabpanel" aria-labelledby="css-features-tab">6</div>
+                <div class="tab-pane fade" id="css7" role="tabpanel" aria-labelledby="css-padding-margin-tab">7</div>
+                <div class="tab-pane fade" id="css8" role="tabpanel" aria-labelledby="css-entities-tab">8</div>
+                <a href="#header" class="card back-to-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Powrót na górę strony</h4>
+                    </div>
+                </a>
+            </div>
         </main>
         <footer class="footer bg-secondary">
             &COPY; 2021 | Developed by: <b>Weronika Sagan</b> & <b>Aleksandra Nicpoń</b> & <b>Izabela Piorun</b> & <b>Filip Kula</b>
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="../assets/scripts/main.js"></script>
 </body>
 </html>

@@ -34,17 +34,18 @@
                 <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#html12" id="tab-12" role="tab" aria-controls="tab12" aria-selected="false">Formularze</a>
             </aside>
             <div class="tab-content content">
-                <div class="tab-pane fade show active" id="html1" role="tabpanel" aria-labelledby="introduction-tab"><div class="card">
-                    <div class="card-body">
-                        <h4 id=" card-title">Czym jest HTML?</h4>
-                        <p class="card-text"> HTML (Hypertext Markup Language) jest to kod używany do tworzenia struktury strony i jej zawartości. Nie jest on jednak językiem programowania, jest to bowiem język znacznikowy (ang.<i>markup language</i>). Oznacza to, że składa się on z serii znaczników (tagów). Możemy go napisać za pomocą dowolnego edytora tekstowego. Powstało jednak wiele środowisk programistycznych przeznaczonych do różnego rodzaju języków (np. Visual studio Code), które ułatwiaja programistom pisanie kodu np. podpowiadając lub kolorując składnię. </p>
+                <div class="tab-pane fade show active" id="html1" role="tabpanel" aria-labelledby="introduction-tab">
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <h4 id=" card-title">Czym jest HTML?</h4>
+                            <p class="card-text"> HTML (Hypertext Markup Language) jest to kod używany do tworzenia struktury strony i jej zawartości. Nie jest on jednak językiem programowania, jest to bowiem język znacznikowy (ang.<i>markup language</i>). Oznacza to, że składa się on z serii znaczników (tagów). Możemy go napisać za pomocą dowolnego edytora tekstowego. Powstało jednak wiele środowisk programistycznych przeznaczonych do różnego rodzaju języków (np. Visual studio Code), które ułatwiaja programistom pisanie kodu np. podpowiadając lub kolorując składnię. </p>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <p class="card-text">Plik HTML składa się z dwóch głównych elementów, czyli z głowy (head) oraz ciała (body). Wspomniane elementy będą zawsze umieszczone w elemencie html, który określa początek i koniec dokumentu HTML. Poniżej mamy przedstawioną strukturę HTML:</p>
-                        <pre >
-                            <code>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <p class="card-text">Plik HTML składa się z dwóch głównych elementów, czyli z głowy (head) oraz ciała (body). Wspomniane elementy będą zawsze umieszczone w elemencie html, który określa początek i koniec dokumentu HTML. Poniżej mamy przedstawioną strukturę HTML:</p>
+                            <pre >
+                                <code>
 &lt;!DOCTYPE html&gt;
     &lt;html lang="pl-PL"&gt;
         &lt;head&gt;
@@ -57,12 +58,12 @@
         &lt;body&gt;
             &lt;p&gt;To jest paragraf&lt;/p&gt;
         &lt;/body&gt;
-&lt;/html&gt;
-                            </code>
-                        </pre>
+    &lt;/html&gt;
+                                </code>
+                            </pre>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
+                <div class="card card-html">
                     <div class="card-body">
                         <p class="card-text">A teraz wyjaśnijmy sobie niektóre rzeczy.</p>
                         <pre >
@@ -73,7 +74,7 @@
                         <p class="card-text">Informujemy tym nasz program, że bedzięmy używać HTML w stadardzie 5. Jest to na obecnie najnowsza wersja HTML.</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card card-html">
                     <div class="card-body">
                         <p class="card-text">Element html zawiera całą treść strony, wskazuje, gdzie zaczyna i kończy się kod HTML. Lang deklaruje język. Pierwsze dwie małe litery pl są deklaracją używanego języka. Natomiast kolejne dwie litery PL są deklaracją kraju, w którym tego języka się używa. Znacznik ten zawiera w sobie również head i body.</p>
                         <pre >
@@ -83,7 +84,7 @@
                         </pre>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card card-html">
                     <div class="card-body">
                         <p class="card-text">W sekcji nagłówkowej head znajdują się takie informacje jak tytuł strony, informacje o autorze strony, kodowaniu i instrukcje dla przeglądarki oraz wyszukiwarek. Nie wolno tutaj zapisywać tekstu, który ma się pojawić na stronie.</p>
                         <p class="card-text">Do tego bowiem przeznaczony jest znacznik body. To tutaj zapisujemy wszystkie elementy, jakie chcemy, aby się znalazły na naszej stronie.</p>
@@ -108,7 +109,7 @@
                         <p class="card-text">Jak zauważyliśmy przy meta-oważnych meta-tagach nie musimy używać tagów zamykających &lt;/&gt; W większości przypadków jednak będziemy musieli ich używać, gdyż ich brak może spowodować błędne działanie i wyświetlanie elementów strony.</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card card-html">
                     <div class="card-body">
                         <h4 class="card-title">Dlaczego meta-tagi są tak ważne?</h4>
                         <p class="card-text">Znaczniki meta umieszczone w sekcji nagłówka dokumentu HTML służą do wskazywania zakodowanych informacji i określania metadanych. Nie pojawiają się na rzeczywistej stronie internetowej, zamiast tego aplikacje takie jak: przeglądarki lub roboty sieciowe, mogą odczytywać dane zakodowane w tych metatagach.</p>
@@ -116,7 +117,7 @@
                     </div>
                 </div></div>
                 <div class="tab-pane fade" id="html2" role="tabpanel" aria-labelledby="comments-tab">
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <h4 class="card-title">Komentarze w HTML</h4>
                             <p class="card-text">Już poznaliśmy podstawową strukturę kodu HTML, w jaki sposób używac meta-tagów oraz co należy umieszczać w sekcji body. No właśnie, ale co jeżeli w naszym dokumencie chcemy napisać coś, co nie będzie wyświetlane na stronie, ale będzie informowało nas o czymś?</p>
@@ -128,7 +129,7 @@
                             </pre>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <p class="card-text">Wszystko co znajdzie się pomiędzy &lt;!-- a --&gt; będzie niewidoczne w oknie przeglądarki, ale będzie widoczne w kodzie źródłowym. Komentarze są bardzo przydatne przy pisaniu skomplikowanych stron, ale jak i tych mniej skomplikowanych. Głównym ich zadaniem jest pomoc człowiekowi rozszyfrować o czym piszemy i czego dana część kodu służy, szczególnie, gdy pracujemy w wieloosobowych zespołach nad jednym kodem, lub będziemy edytować kod źródłowy napisany przez kogoś innego. Nie należy ich jednak nadużywać, ponieważ wtedy możemy uzyskać efekt przeciwny do ich przeznaczenia - kod źródłowy może stać się jeszcze mniej czytelny.</p>
                             <pre>
@@ -140,7 +141,7 @@
                             </pre>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <p class="card-text">Efekt na stronie będzie wyglądał następująco:</p>
                             <div class="result">
@@ -150,7 +151,7 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="html3" role="tabpanel" aria-labelledby="header-paragraph-tab">
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <h4 class="card-title">Nagłówki</h4>
                             <p class="card-text">Nagłówki tworzymy używając elementów od &lt;h1&gt; do &lt;h6&gt; Litera h jest skrótem od ang. słowa heading, czyli nagłówek. Cyfry od 1 do 6 oznaczają hierarchię nagłówków, zaczynając od 1 jako najważniejszego w hierarchii. Łatwiejsze w wytłumaczeniu będzie to, że nagłówek z cyfrą 1 możemy nazwać tytułem, a resztę nagłówków z niższymi cyframi - podtytułami.</p>
@@ -166,7 +167,7 @@
                             </pre>   
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <p class="card-text">A to efekt widoczny na stronie:</p>
                             <pre >
@@ -182,7 +183,7 @@
                             <p class="card-text">Jak zauważyliśmy, im wyższa cyfra tym tekst jest mniejszego rozmiaru.</p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <h4 class="card-title">Paragraf</h4>
                             <p class="card-text">Akapity tworzymy za pomocą znacznikia &lt;p&gt; (ang.paragraph – akapit, paragraf). Paragrafy można porównać do akapitów w edytorach tekstowych (np. Word), przenosi on nas do nowej linii. Zapisujemy go w ten sposób:</p>
@@ -194,7 +195,7 @@
                             <p class="card-text">Pomiędzy znacznikami &lt;p&gt; Wpisujemy tekst, który chcielibyśmy umieścić na stronie jako akapit.</p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <p class="card-text">W bardzo podobny sposób działa &lt;br&gt; (ang.line break ), czyli inaczej złamanie linii. &lt;br&gt; Nie posiada znacznika zamykającego, jest to tzw. znacznik samozamykający.</p>
                             <pre >
@@ -205,7 +206,7 @@ Jak widać linia została załamana.
                             </pre>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <h4 class="card-subtitle">Linia Horyzontalna</h4>
                             <p class="card-text">Do odgradzania treści służy nam &lt;hr&gt; (ang.horizontal rules), czyli pozioma linia. Tak jak w przypadku &lt;br&gt; jest to znacznik samozamykający. Linie zamykające zostały wielokrotnie użyte w tych materiałach:</p>
@@ -216,7 +217,7 @@ Jak widać linia została załamana.
                             </pre>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <p class="card-text">A to efekt na stronie:</p>
                             <div class="result"><hr></div>
@@ -224,7 +225,7 @@ Jak widać linia została załamana.
                     </div>
                 </div>
                 <div class="tab-pane fade" id="html4" role="tabpanel" aria-labelledby="text-formatting-tab">
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <h4 class="card-title">Formatowanie tekstu</h4>
                             <p class="card-text">Głównymi elementami służącymi do formatowania tekstu są:</p>
@@ -244,7 +245,7 @@ Jak widać linia została załamana.
                             </ul>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <h4 class="card-title">Tekst preformatowany</h4>
                             <p class="card-text">W większości przypadków tekst dokumentu HTML jest formatowany przez przeglądarkę wyłącznie na podstawie znaczników. Wszelkie dodatkowe znaki takie jak spacje, tabulacje czy też znaki nowej linii są ignorowane. Wyjątek od tej reguły stanowi tekst preformatowany znacznikami &lt;pre&gt;. W tym przypadku każda spacja czy też znak nowej linii zostaną wyświetlone. Przykład działania:</p>
@@ -264,7 +265,7 @@ Jak widać linia została załamana.
                             </pre>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <p class="card-text">Wszystko na pozór wydaje się takie samo, tylko zapisane między innymi znacznikami, ale efekt na stronie będzie zupełnie inny:</p>
                             <div class="result">
@@ -280,7 +281,7 @@ Ala
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <h4 class="card-title">Znaki specjalne</h4>
                             <p class="card-text">Pliki HTML to zbiór kodów ASCII, który nie powinien zawierać pewnych znaków formatujących, takich choćby jak &lt;i&gt;. Aby wyświetlić na stronie ten efekt, nie możemy po prostu wpisać w kodzie źródłowym &lt;i&gt;, ponieważ program odbierze to inaczej, i zamiast wyświetlić &lt;i&gt;, spowoduje, że nasz tekst będzie <i>pochyły</i>.</p>
@@ -301,7 +302,7 @@ Ala
                     </div>
                 </div>
                 <div class="tab-pane fade" id="html5" role="tabpanel" aria-labelledby="lists-tab">
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <h4 class="card-title">Lista uporządkowana</h4>
                             <p class="card-text">Listy uporządkowane to takie, których elementy posiadają pewną numerację, stąd też zwyczajowa nazwa lista numerowana . Numeracje w tych listach możemy uzyskać poprzez cyfry, bądź litery. Listy numerowane tworzymy za pomocą elementu &lt;ol&gt;: (ang. ordered list ), czyli lista numerowana.</p>
@@ -315,7 +316,7 @@ Ala
                             </pre>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <p class="card-text">Efekt powyższego kodu:</p>
                             <div class="result">
@@ -326,13 +327,13 @@ Ala
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <h5 class="card-subtitle">Element listy</h5>
                             <p class="card-text">Elementy listy to kolejne jej podpunkty. Tworzymy je przy pomocy elementu &lt;li&gt; (ang.list item) – element listy. Pomiędzy znacznikami &lt;li&gt; oraz &lt;/li&gt; dodajemy kolejne elementy listy.</p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <p class="card-text">W listach numerowanych możemy podać rodzaj numeracji:
                                 <ol>
@@ -358,7 +359,7 @@ Ala
                                 <strong>type="rodzaj numeracji"</strong>. Type możemy dodac do elementu &lt;ol&gt;, wtedy wartość przyjmuje cała lista, jak i do pojedynczych elementów &lt;li&gt;, wtedy rodzaj przyjmuje tylko dany punkt. Jest to ukazane w przykładzie powyżej.</p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <h4 class="card-title">Lista nieuporządkowana</h4>
                             <p class="card-text">Drugim rodzajem jest lista <strong>nieuporządkowana</strong>, zwana też listą wypunktowaną. Elementy tej listy nie są numerowane, a domyślnie rolę przyjmują kropki.
@@ -379,7 +380,7 @@ Ala
                             </pre>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <h4 class="card-title">Lista definicji</h4>
                             <p class="card-text">Lista <strong>definicji</strong>, albo <strong>definicyjna</strong>. Zapisujemy ją znacznikiem &lt;dl&gt; (ang. <i>definition list</i>). Lista ta różni się trochę od poprzednich list. Do danego pojęcia przypisujemy określoną definicję (stąd nazwa):</p>
@@ -399,7 +400,7 @@ Ala
                             </pre>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <h5 class="card-subtitle">Elementy listy definicyjnej</h5>
                             <p class="card-text">
@@ -419,7 +420,7 @@ Ala
                             </p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <p class="card-text">Tak to wygląda w kodzie:</p>
                             <pre >
@@ -434,14 +435,14 @@ Ala
                             </pre>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <h4 class="card-title">Zagnieżdżanie listy</h4>
                             <p class="card-text">Jeśli chcemy aby dany punkt listy rozwinąć i uzupełnić o kolejne podpunkty w tym celu musimy zawrzeć jedną listę w drugiej, czynność ta nazywana jest <strong>zagnieżdżaniem</strong>.</p>
                             <p class="card-text">Ale jak to zawrzeć jedną w drugiej, w którym miejscu byśmy ją zawierali? Kolejną listę dodajemy do elementu listy, który ma być rozwinięty i wtedy dany element listy staje się głównym punktem, a lista z zagnieżdżonymi elementami staje się jego podpunktami. Musimy dodać kolejny element &lt;ol&gt; lub &lt;ul&gt; a w nim element listy &lt;li&gt;.</p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <div class="result">
                                 <ul>
@@ -457,7 +458,7 @@ Ala
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <pre >
                                 <code>
@@ -475,7 +476,7 @@ Ala
                             </pre>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <p class="card-text">Do tego możemy mieszać ze sobą rodzaje list:</p>
                             <div class="result">
@@ -492,7 +493,7 @@ Ala
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <pre >
                                 <code>
@@ -512,7 +513,7 @@ Ala
                     </div>
                 </div>
                 <div class="tab-pane fade" id="html6" role="tabpanel" aria-labelledby="links-tab">
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <h4 class="card-title">Linki</h4>
                             <p class="card-text">W języku html do zapisywania linków używamy elementu &lt;a&gt; (ang. anchor – kotwica, zakotwiczenie). Pomiędzy znacznikami wpisujemy tekst odsyłacza, tzn. tekst który zostanie wyświetlony na ekranie. Jeśli byśmy chcieli, aby tekst linka wskazywał na kurs html zapis ten wyglądałby następująco.</p>
@@ -523,7 +524,7 @@ Ala
                             </pre>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <p class="card-text">Efekt widoczny na stronie:</p>
                             <div class="result">
@@ -531,11 +532,11 @@ Ala
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <h5 class="card-subtitle">Adres linka</h5>
                             <p class="card-text">Dlaczego po najechaniu nic się nie dzieje i nie przenosi nas na stronę? Brakuje tzw. atrybutu. Atrybut to dodatkowa informacja o samym elemencie html zawarta w znaczniku otwierającym. Elementy html mogą posiadać atrybuty (ang. attribute) i przypisane do nich własności (ang. property).
-                                Jednym z atrybutów elementu &lt;a&gt; jest atrybut href (ang. hypertext reference – odniesienie w hipertekście). Informuje on przeglądarkę, o stronie na którą link nas przekierowuje. Dopiero po dodaniu tego atrybutu i uzupełnieniu jego własności taki link będzie kompletnyi zadziała:</p>
+                                Jednym z atrybutów elementu &lt;a&gt; jest atrybut href (ang. hypertext reference – odniesienie w hipertekście). Informuje on przeglądarkę, o stronie na którą link nas przekierowuje. Dopiero po dodaniu tego atrybutu i uzupełnieniu jego własności taki link będzie kompletny i zadziała:</p>
                             <pre>
                                 <code>
 &lt;a href="http://www.elektronik.rzeszow.pl"&gt;Kliknij tu, aby przejść na stronę szkoły&lt;/a&gt;
@@ -543,7 +544,7 @@ Ala
                             </pre>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <p class="card-text">Efekt widoczny na stronie:</p>
                             <div class="result">
@@ -552,7 +553,7 @@ Ala
                             <p class="card-text">Atrybutu danego elementu zawsze zapisujemy w znaczniku otwierającym. Element od atrybutu oddzielamy spacją. Przypisanie własności do atrybutu odbywa się poprzez znak = równa się. Własność zapisywana jest zawsze w cudzysłowie podwójnym " " bądź pojedynczym ' '.</p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <h5 class="card-subtitle">Atrybut target</h5>
                             <p class="card-text">Kolejnym atrybutem, który możemy dołączyć do naszego elementu &lt;a&gt;, jest atrybut target (ang. cel, miejsce docelowe). Atrybut ten pozwala określić w jakim miejscu ma być otwarty nowy link(czy ma się otworzyć w nowej karcie, czy w tej, w której się znajdujemy).</p>
@@ -564,7 +565,7 @@ Ala
                             </pre>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <div class="result">
                                 <a href="http://www.elektronik.rzeszow.pl" target="_blank">Kliknij tu, aby przejść na stronę szkoły</a>
@@ -573,7 +574,7 @@ Ala
                             <p class="card-text">Wartość <strong>_self</strong> jest wartością domyślną dlatego, jeśli chcemy z niej skorzystać nie musimy deklarować jej w linku, po prostu pomijamy wtedy atrybut target.</p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <h5 class="card-subtitle">Linki do sekcji</h5>
                             <p class="card-text">Link, który nie prowadzi na inną stronę, tylko przenosi was do innej sekcji tej samej strony to linki wewnętrzne, które pomagają w nawigacji po stronie. Konstrukcja takiego linku jest dość prosta. Wymaga jedynie podania nazwy id danego elementu poprzedzonej krzyżykiem, czy też hash tagiem #:</p>
@@ -584,22 +585,287 @@ Ala
                             </pre>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <div class="result"><a href="#header">Kliknij, aby przejść na początek strony</a></div>
                             <p class="card-text">Jak widzimy po kliknięciu zostaliśmy przeniesieni na początek, czyli do miejsca, w którym zdefiniowaliśmy nasz element o id równych first.</p>
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="html7" role="tabpanel" aria-labelledby="img-tab">.dfgfd..</div>
-                <div class="tab-pane fade" id="html8" role="tabpanel" aria-labelledby="table-tab">.dfgfd..</div>
+                <div class="tab-pane fade" id="html7" role="tabpanel" aria-labelledby="img-tab">
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <h4 class="card-title">Obrazy</h4>
+                            <p class="card-text">Aby dodać zdjęcie na naszą stronę użyjemy elementu <b>&lt;img&gt;</b> (ang. <i>image</i> – obraz). Element ten nie potrzebuje znacznika zamykającego, jest on samozamykającym się znacznikiem. Musimy jeszcze dodać źródło, w którym znajduje się nasza grafika. W tym celu posłużymy się atrybutem <b>src</b>  (ang. source – źródło). Jeżeli nasza grafika jest zapisana w tym samym folderze co nasz plik html, nie musimy pisać całej jego ścieżki, wystarczy nam nazwa i rozszerzenie pliku:</p>
+                            <pre>
+                                <code>
+&lt;img src="godlo.png"&gt;
+                                </code>
+                            </pre>
+                            <img src="../assets/img/godlo.png" alt="godlo-polski" class="card-img-bottom">
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <p class="card-text">A co, jeśli podamy złą ścieżkę, nazwę pliku lub rozszerzenie? Zróbmy to na przykładzie innego rozszerzenia:</p>
+                            <pre>
+                                <code>
+&lt;img src="godlo.jpng"&gt;
+                                </code>
+                            </pre>
+                            <img src="../assets/img/godlo.jpg" alt="godlo-polski" class="card-img">
+                            <p class="card-text">Po prostu nasze zdjęcie się nie wyświetli. Ale jak widzimy obok ikony wyświetlił się tekst. Ten tekst to tekst alternatywny.</p>
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Tekst alternatywny</h5>
+                            <p class="card-text">Jest to tekst opisujący co znajduję się na zdjęciu. Na stronie pojawia się on w momencie, gdy źródło zdjęcia jest niedostępne. Wystarczy dodać element alt:</p>
+                            <pre>
+                                <code>
+&lt;img src="godlo.png" alt="To jest godło"&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <h5 class="card-title">Wymiary obrazu</h5>
+                            <p class="card-text">Jednymi z bardziej istotnych atrybutów elementu &lt;img&gt; są parametry jego rozmiaru, czyli szerokość (ang. <i>width</i>) oraz wysokość (ang. <i>height</i>). Szerokość oraz wysokość elementu &lt;img&gt; wyrażana jest w pikselach (px). Możemy podać tylko jedną wartość (wysokość bądż szerokość), wtedy w zależności co wybierzemy, druga wartość dostosuje się proporcjonalnie do zdjęcia:</p>
+                            <pre>
+                                <code>
+&lt;img src="godlo.png" height="200px" alt="To jest godło"&gt;
+                                </code>
+                            </pre>
+                            <img src="../assets/img/godlo.png" height="200px" alt="To jest godło">
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <p class="card-text">Możemy jednak też zmieniać dowolnie wysokość i szerokość naszego zdjęcia:</p>
+                            <pre>
+                                <code>
+&lt;img src="godlo.png" height="200px" width="50px" alt="To jest godło"&gt;
+                                </code>
+                            </pre>
+                            <img src="../assets/img/godlo.png" height="200px" width="50px" alt="To jest godło">
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Tytuł obrazu</h5>
+                            <p class="card-text">Kolejnym atrybutem, który warto dodać do elementu &lt;img&gt; jest atrybut tytułu zdjęcia – title. Wyświetlany jest on w momencie, gdy najedziemy myszką na zdjęcie:</p>
+                            <pre>
+                                <code>
+&lt;img src="godlo.png" height="200px" alt="To jest godło" title="Godło Polski"&gt;
+                                </code>
+                            </pre>
+                            <img src="../assets/img/godlo.png" height="200px" alt="To jest godło" title="Godło Polski">
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Podpis zdjęcia</h5>
+                            <p class="card-text">Podpisu zdjęcia możemy dokonać poprzez  zastosowanie dwóch elementów html &lt;figure&gt; (ang. rycina, rysunek) oraz &lt;figcaption&gt; (ang. figure caption – podpis zdjęcia). Przy pomocy elementu figure zaznaczamy elementy, które są samodzielną częścią dokumentu, głównie zdjęcia, rysunki, wykresy. A następnie wewnątrz elementu figure zamieszczamy element &lt;figcaption&gt;, który jest właściwym opisem zdjęcia.</p>
+                            <pre>
+                                <code>
+&lt;figure&gt;
+    &lt;img src="godlo.png"  alt="godło" title="Godło Polski"&gt;
+    &lt;figcaption&gt;To jest godło Polski&lt;/figcaption&gt;
+&lt;/figure&gt;
+                                </code>
+                            </pre>
+                            <figure class="card-img-bottom">
+                                <img src="../assets/img/godlo.png" alt="godło" title="Godło Polski" class="card-img-bottom">
+                                <figcaption>To jest godło Polski</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="html8" role="tabpanel" aria-labelledby="table-tab">
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <h4 class="card-title">Tabela</h4>
+                            <p class="card-text">Jednym ze sposobów prezentowania i grupowania danych jest tabela. Tabele tworzymy przy użyciu elementu &lt;table&gt;.</p>
+                            <pre>
+                                <code>
+&lt;table&gt;&lt;/table&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <p class="card-text">Żeby tabela powstała, musimy do niej dodać jeszcze wiersze oraz umieścić tam komórki. Wiersze do tabeli dodajemy poprzez element &lt;tr&gt; (ang. <i>table row</i>  – wiersz tabeli):</p>
+                            <pre>
+                                <code>
+&lt;table&gt;
+    &lt;tr&gt;&lt;/tr&gt;
+&lt;/table&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <p class="card-text">Należy jeszcze dodać do niej komórki. Komórki tabeli dodajemy poprzez element &lt;td&gt; (ang. <i>table data, table cell</i> – dane tabeli, komórka tabeli).</p>
+                            <pre>
+                                <code>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td&gt;1 wiersz 1 kolumna&lt;/td&gt;
+        &lt;td&gt;1 wiersz 2 kolumna&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;2 wiersz 1 kolumna&lt;/td&gt;
+        &lt;td&gt;2 wiersz 2 kolumna&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;                                 
+                                </code>
+                            </pre>
+                            <div class="result">
+                                <table>
+                                    <tr>
+                                        <td>1 wiersz 1 kolumna</td>
+                                        <td>1 wiersz 2 kolumna</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2 wiersz 1 kolumna</td>
+                                        <td>2 wiersz 2 kolumna</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Nagłówek tabeli</h5>
+                            <p class="card-text">Nagłówek uzyskujemy poprzez zastosowanie elementu &lt;th&gt; (ang. <i>table heading</i>). Element ten stosujemy tak jak zwykłą komórkę tabeli, czyli &lt;td&gt;. Nagłówki również umieszczamy w wierszach tabeli, czyli elementach &lt;tr&gt;:</p>
+                            <pre>
+                                <code>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;&lt;/th&gt;
+        &lt;th&gt;Nagłowek kolumny&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;2 wiersz 1 kolumna&lt;/td&gt;
+        &lt;td&gt;2 wiersz 2 kolumna&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt; 
+                                </code>
+                            </pre>
+                            <div class="result">
+                                <table>
+                                    <tr>
+                                         <th></th>
+                                         <th>Nagłówek kolumny</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Nagłówek Wiersza</th>
+                                        <td>wiersz</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <h5 class="card-title">Łączenie kolumn</h5>
+                            <p class="card-text">W przypadku, gdy jedna komórka odnosi się do więcej niż jednego nagłówka, możemy dokonać połączenia kilku komórek w jedną, żeby kilkukrotnie nie powtarzać jej wartości. W celu zwiększenia rozpiętości poziomej komórki używamy atrybutu <b>colspan</b> (ang.<i>column span</i>  – rozpiętość kolumnowa komórki).</p>
+                            <p class="card-text"> Atrybut ten przyjmuje wartości liczbowe, tzn. przekazujemy tam jaką rozpiętość kolumnową (czyli w poziomie) ma posiadać dana komórka tabeli:</p>
+                            <pre>
+                                <code>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;&lt;/th&gt;
+        &lt;th&gt;Poniedziałek&lt;/th&gt;
+        &lt;th&gt;Wtorek&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;th&gt;18:00&lt;/th&gt;
+        &lt;td&gt;Kręgle&lt;/td&gt;
+        &lt;td&gt;Polo&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;th&gt;20:00&lt;/th&gt;
+        &lt;td colspan="2"&gt;Basen i Sauna&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt; 
+                                </code>
+                            </pre>
+                            <div class="result">
+                                <table>
+                                    <tr>
+                                        <th></th>
+                                        <th>Poniedziałek</th>
+                                        <th>Wtorek</th>
+                                    </tr>
+                                    <tr>
+                                        <th>18:00</th>
+                                        <td>Kręgle</td>
+                                        <td>Polo</td>
+                                    </tr>
+                                    <tr>
+                                         <th>20:00</th>
+                                        <td colspan="2">Basen i Sauna</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Łącznie wierszy</h5>
+                            <p class="card-title">Rozpiętość komórek możemy podawać nie tylko w poziomie, ale również w pionie, łącząc kolejne wiersze. W tym celu posłużymy się atrybutem rowspan (ang. <i>row span</i>  – rozpiętość wierszowa komórki). Atrybut ten działa analogicznie do poprzedniego, tylko tym razem zwiększając rozpiętość komórki w pionie:</p>
+                            <pre>
+                                <code>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;&lt;/th&gt;
+        &lt;th&gt;Rodzaj&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Sharknado&lt;/th&gt;
+        &lt;td rowspan="3"&gt;Horror&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Shartopussy&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Piranha 3DD&lt;/th&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;                                    
+                                </code>
+                            </pre>
+                            <div class="result">
+                                <table>
+                                    <tr>
+                                        <th></th>
+                                        <th>Rodzaj</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Sharknado</th>
+                                        <td rowspan="3">Horror</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Shartopussy</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Piranha 3DD</th>
+                                    </tr>
+                                </table>
+                             </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="tab-pane fade" id="html9" role="tabpanel" aria-labelledby="id-class-tab">
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <h4 class="card-title">Klasy i identifikatory</h4>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <h5 class="card-subtitle">identifikator</h5>
                             <p class="card-text">Do identyfikacji poszczególnych elementów używamy tzw. <strong>identyfikatorów</strong> w skrócie id. Id to atrybuty elementów html, które pozwalają je odróżniać. Zapisujemy je skrótem id i przypisujemy do nich wartości tak jak do innych atrybutów, używając do tego znaku = oraz " ".</p>
@@ -619,7 +885,7 @@ Ala
                             </pre>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <p class="card-text">Odwołania te tworzymy posługując się elementem &lt;a&gt; i jego atrybutem href. Atrybut href przyjmuje wtedy wartość id poprzedzoną znakiem # (ang. hash tag – krzyżyk).</p>
                             <pre >
@@ -630,7 +896,7 @@ Ala
                             <div class="result"><a href="#">Header</a></div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-html">
                         <div class="card-body">
                             <h5 class="card-subtitle">Klasy</h5>
                             <p class="card-text">Klasy są zbliżone do identyfikatorów, również możemy dzięki nim rozróżniać poszczególne elementy html. Tak samo jak id są one atrybutem wszystkich elementów html. Używamy ich stosując słowo class, a odwołując się za pomocą kropki. Możemy równiez przypisać klasę i identyfikator jednocześnie:</p>
@@ -642,12 +908,477 @@ Ala
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="html10" role="tabpanel" aria-labelledby="sections-tab">.dfgfd..</div>
-                <div class="tab-pane fade" id="html11" role="tabpanel" aria-labelledby="inputs-tab">.dfgfd..</div>
-                <div class="tab-pane fade" id="html12" role="tabpanel" aria-labelledby="form-tab">.dfgfd..</div>
+                <div class="tab-pane fade" id="html10" role="tabpanel" aria-labelledby="sections-tab">
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <h4 class="card-title">Div i sekcje w HTML5</h4>
+                            <p class="card-text">Sekcje w HTML do tej pory tworzone były głównie za pomocą elementu &lt;div&gt;. W HTML5 wprowadzono nowe elementy blokowe, które mają zastąpić element &lt;div&gt; tam, gdzie będzie to miało sens.</p>
+                            <p class="card-text"> Nowe elementy, które pojawiły się w HTMl5 to:</p>
+                            <ul>
+                                <li>article</li>
+                                <li>aside</li>
+                                <li>footer</li>
+                                <li>header</li>
+                                <li>main</li>
+                                <li>nav</li>
+                                <li>section</li>
+                            </ul> 
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Sekcje strony</h5>
+                            <p class="card-text">Do budowy sekcji możemy użyć elementu blokowego &lt;div&gt; (ang. <i>division</i>  – oddział, wydział, sekcja). Element ten nazywany jest również box’em (pudełkiem), albo kontenerem (ang. <i>container, contain</i> – zawierać w sobie), z tego względu, że zawiera on w sobie inne elementy.</p>
+                            <pre>
+                                <code>
+&lt;div&gt;&lt;/div&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <p class="card-text">Element &lt;div&gt; jest elementem blokowym, tzn. zajmie całą szerokość strony. Domyślnie nie zostanie dodana żadna ramka, czy inny kolor tła, żeby wizualnie odróżnić poszczególne sekcje. Będziemy musieli tego dokonać sami, gdy nauczymy się języka CSS.</p>
+                            <p class="card-text">W celu odróżnienia poszczególnych sekcji od siebie, możemy posłużyć się znanym nam już atrybutem id. Atrybut ten nadaje unikalność elementom html. Poszczególnym sekcjom możemy nadać dowolne nazwy, jednak powszechnie stosowanymi są angielskie, m.in. header, main oraz footer:</p>
+                            <pre>
+                                <code>
+&lt;div id="header"&gt;&lt;/div&gt;
+&lt;div id="main"&gt;&lt;/div&gt;
+&lt;div id="footer"&gt;&lt;/div&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <p class="card-text">Developerzy pisząc strony internetowe za każdym razem musieli się zastanawiać nad nazewnictwem poszczególnych sekcji. Po jakimś czasie wytworzył się swoisty standard ich nazewnictwa, żeby łatwiej było odczytać i zrozumieć kod innego developera.</p>
+                            <p class="card-text">Nazwy header, main i footer są wzięte właśnie z dobrych praktyk nazewnictwa. Tworząc nowy standard, czyli HTML5, elementy &lt;div&gt;> wraz z atrybutem id zostały zastąpione specjalnymi elementami html do tworzenia poszczególnych sekcji. Nazwy tych elementów zostały wzięte właśnie od nazw id poszczególnych elementów &lt;div&gt;. I w ten sposób &lt;div&gt; o id równym header zmienia się po prostu w element &lt;header&gt;, tak samo z pozostałymi:</p>
+                            <pre>
+                                <code>
+&lt;header&gt;&lt;/header&gt;                                    
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <p class="card-text">A teraz wytłumaczmy sobie poszczególne sekcje wymienione w pierwszej części poradnika:</p>
+                            <ul>
+                                <li>&lt;main&gt; (ang. <i>główny</i>)- sekcja przeznaczona do umieszczania głównej treści strony</li>
+                                <li>&lt;header&gt; - w sekcji tej zazwyczaj umieszczamy logo oraz menu główne</li>
+                                <li>&lt;nav&gt; (ang. <i>navigation</i> – nawigacja) - element przeznaczony do wskazania głównej nawigacji na stronie internetowej</li>
+                                <li>&lt;aside&gt; (ang. poza, na uboczu) - umieszczamy elementy, które nie mają bezpośredniego związku z główną treścią. Element ten często wykorzystywany jest do zaznaczania tzw. sidebar (ang. panel boczny)</li>
+                                <li>&lt;footer&gt; (ang. stopka) - jest zazwyczaj końcową sekcją innej sekcji, bądź strony internetowej. Możemy tam umieścić informację o autorze i dacie powstania strony, notkę o zastrzeżeniu praw autorskich, informacje kontaktowe, czasem również linki do innych stron.</li>
+                                <li>&lt;article&gt;(ang. artykuł) - pozwala oznaczyć sekcję dokumentu będącą oddzielną, niezależną jego częścią</li>
+                                <li>&lt;section&gt;(ang. sekcja) - pozwala tworzyć sekcje ogólnego przeznaczenia</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <p class="card-text">Najbardziej podstawowymi sekcjami strony są: &lt;header&gt;, &lt;aside&gt;, &lt;main&gt; i &lt;footer&gt;:</p>
+                            <pre>
+                                <code>
+&lt;header&gt;&lt;/header&gt;
+&lt;main&gt;&lt;/main&gt;
+&lt;aside&gt;&lt;/aside&gt;
+&lt;footer&gt;&lt;/footer&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <p class="card-text">Prosty rysunek dla lepszego zapamiętania:</p>
+                            <img src="../assets/img/section.png" alt="sekcje" class="card-img-bottom">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="html11" role="tabpanel" aria-labelledby="inputs-tab">
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <h4 class="card-title">Wprowadzanie danych przez użytkownika</h4>
+                            <p class="card-text">Miejsca, w których użytkownik może wprowadzać dane na stronę internetową nazywane są formularzami, natomiast pojedyncze pola to tzw. inputy.</p>
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Input type</h5>
+                            <p class="card-text">Słowo input w języku polskim nie ma odpowiednika, można to tłumaczyć jako wkład, wejście, bądź miejsce wejścia, ale skoro chodzi tu o wprowadzanie danych nazwą, która najlepiej może tu pasować są dane wejściowe.</p>
+                            <pre>
+                                <code>
+&lt;input&gt;
+                                </code>
+                            </pre>
+                            <div class="result">
+                                <input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <p class="card-text">Element &lt;input&gt; jest samozamykającym się elementem. Jednak prawidłowy jego zapis wymaga jeszcze deklaracji typu. Typu deklaracji dokonujemy poprzez atrybut type (ang. typ):</p>
+                            <pre>
+                                <code>
+&lt;input type="text"&gt;
+                                </code>
+                            </pre>
+                            <div class="result">
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Rodzaje elementów Input</h5>
+                            <p class="card-text">Przykład najbardziej popularnych input'ów:</p>
+                            <ul>
+                                <li>text - wprowadzanie tekstu</li>
+                                <li>password - wprowadzanie hasła, wpisane dane są ukryte pod postacią kropek</li>
+                                <li>button - przycisk</li>
+                                <li>color - kolor</li>
+                                <li>date - wprowadzanie daty</li>
+                                <li>FileUproad - wgranie pliku</li>
+                                <li>email - wprowadzanie email'a</li>
+                            </ul>
+                            <pre>
+                                <code>
+&lt;input type="text"&gt;
+&lt;input type="password"&gt;
+&lt;input type="button"&gt;
+&lt;input type="color"&gt;
+&lt;input type="date"&gt;
+&lt;input type="FileUproad"&gt;
+&lt;input type="email"&gt;
+                                </code>
+                            </pre>
+                            <div class="result">
+                                <input type="text" value="Wpisz login">
+                                <input type="password" value="Wpisz hasło">
+                                <input type="button" value="Prześlij">
+                                <input type="color">
+                                <input type="date">
+                                <input type="file">
+                                <input type="email" value="Twój email@wp.pl">
+                                <input type="number" value="123">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <p class="card-text">Tekst, który wpisujemy do elementu &lt;input&gt;, określamy jako <b> wartość (ang. value)</b> tego elementu. Wartość ta  przesyłana jest dalej formularzem. Możemy np. podać swój adres email wpisując go w pole input, i wtedy powiemy, że wartością pola input jest ten nasz adres email. Wartość może również sami nadać elementowi input stosując atrybut value:</p>
+                            <pre>
+                                <code>
+&lt;input type="email" value="email@wp.pl"&gt;
+                                </code>
+                            </pre>
+                            <div class="result">
+                                <input type="email" value="email@wp.pl">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <p class="card-text">Atrybut <strong>disabled</strong> (ang. wyłączony, zablokowany) zablokuje użytkownikowi możliwość edytowania pola. Atrybut disabled jest dość ciekawym atrybutem bo nie wymaga deklarowania wartości, wpisujemy po prostu jego nazwę. Możemy również spotkać zapis disabled="disabled", ale nie jest on wymagany w HTML5:</p>
+                            <pre>
+                                <code>
+&lt;input type="number" value="123" disabled&gt;
+                                </code>
+                            </pre>
+                            <div class="result">
+                                <input type="number" value="123" disabled>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Label</h5>
+                            <p class="card-text">Do opisu elementów <b>&lt;input&gt;</b> używamy specjalnie przeznaczonego do tego elementu <b> &lt;label&gt;</b> (ang. etykieta). Element ten wypełniamy opisem danego pola. Musimy ją przypisać do danego pola. Możemy to zrobić na dwa sposoby. Przypisując atrybut for:</p>
+                            <pre>
+                                <code>
+&lt;label for="nr"&gt;Podaj numer&lt;/label&gt;
+&lt;input type="number" id="nr"&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Radio</h5>
+                            <p class="card-text">Kolejnym dość szczególnym elementem input jest radio, określany również radio buttonem (przyciskiem), bądź wykluczającym polem wyboru:</p>
+                            <pre>
+                                <code>
+&lt;input type="radio"&gt;
+&lt;input type="radio"&gt;
+&lt;input type="radio"&gt;
+                                </code>
+                            </pre>
+                            <div class="result">
+                                <input type="radio">
+					            <input type="radio">
+					            <input type="radio">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <p class="card-text">Wszystko super, ale co jeśli chcemy uniemożliwic użytkownikowi naszej strony na wielokrotne zaznaczenie? Aby tak zrobić musimy przypisać każdemu radio ten sam atrybut name:</p>
+                            <pre>
+                                <code>
+&lt;input type="radio" name="radio"&gt;
+&lt;input type="radio" name="radio"&gt;
+&lt;input type="radio" name="radio"&gt;
+                                </code>
+                            </pre>
+                            <div class="result">
+                                <input type="radio" name="radio">
+					            <input type="radio" name="radio">
+					            <input type="radio" name="radio">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <p class="card-text">Możemy domyślnie zaznaczyć dany element radio button używając atrybutu checked. Oczywiście możemy go zastosować tylko względem jednego pola radio button:</p>
+                            <pre>
+                                <code>
+Jakie zwierze lubisz najbardziej?&lt;br&gt;
+&lt;input type="radio" name="radio"&gt;Kota&lt;br&gt;
+&lt;input type="radio" name="radio" checked&gt;Żółwia&lt;br&gt;
+&lt;input type="radio" name="radio"&gt;Antylope
+                                </code>
+                            </pre>
+                            <div class="result">
+                                Jakie zwierze lubisz najbardziej?<br>
+                                <input type="radio" name="radio">Kota<br>
+                                <input type="radio" name="radio" checked>Żółwia<br>
+                                <input type="radio" name="radio">Antylope
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Checkbox</h5>
+                            <p class="card-text">Szczególnym rodzajem input’ów są inputy <strong>checkbox</strong>. Używane są one zazwyczaj do potwierdzania, np. jeśli mamy zgodzić się z regulaminem to najprawdopodobniej użyjemy właśnie tego input’u. Nie różnią się wiele od radio:</p>
+                            <pre>
+                                <code>
+Jakie zwierze lubisz najbardziej?&lt;br&gt;
+&lt;input type="radio" name="checkbox"&gt;Kota&lt;br&gt;
+&lt;input type="radio" name="checkbox" checked&gt;Żółwia&lt;br&gt;
+&lt;input type="radio" name="checkbox" disabled&gt;Antylope
+                                </code>
+                            </pre>
+                            <div class="result">
+                                Jakie zwierze lubisz najbardziej?<br>
+                                <input type="radio" name="checkbox">Kota<br>
+                                <input type="radio" name="checkbox" checked>Żółwia<br>
+                                <input type="radio" name="checkbox">Antylope
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Textarea</h5>
+                            <p class="card-text"><strong>&lt;textarea&gt;</strong> (ang. obszar tekstowy). Textarea jest to wieloliniowe pole, w którym możemy wpisywać nie tylko krótkie formy pisemne, ale jak ktoś sobie zażyczy całe referaty, czy felietony. Element textarea potrzebuje znacznika zamykającego, a pomiędzy znacznikami możemy (ale nie musimy) wprowadzić domyślny tekst, który może być edytowany przez użytkownika. Dla elementu &lt;textarea&gt; charakterystyczne jest to, że możemy dowolnie zmieniać jego wielkość chwytając za prawy dolny róg lewym klawiszem myszki. Możemy równiez ustawić jego domyślną <b> wysokość (rows)</b> oraz <b>szerokość (cols)</b> . Możemy uniemożliwiść poszerzanie pola użytkownikowi oraz wpisywania danych;</p>
+                            <pre>
+                                <code>
+&lt;textarea cols="30" rows="10" disabled&gt;&lt;/textarea&gt;
+                                </code>
+                            </pre>
+                            <div class="result"><textarea cols="30" rows="10" disabled></textarea></div>
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Lista rozwijana</h5>
+                            <p class="card-text">Jako opcję do wyboru na rozwijanej liście posłuży nam element html o nazwie &lt;select&gt; (ang. wybór). Element &lt;select&gt; musimy uzupełnić o elementy &lt;toption&gt; (ang. opcja wyboru), które zawierają możliwe wybory, opcje:</p>
+                            <pre>
+                                <code>
+&lt;select&gt;
+    &lt;option&gt;Opcja 1&lt;/option&gt;
+    &lt;option&gt;Opcja 2&lt;/option&gt;
+    &lt;option&gt;Opcja 3&lt;/option&gt;
+&lt;/select&gt;
+                                </code>
+                            </pre>
+                            <div class="result">
+                                <select>
+                                    <option>Opcja 1</option>
+                                    <option>Opcja 2</option>
+                                    <option>Opcja 3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <pre>
+                                <code>
+&lt;select&gt;
+    &lt;option value="Panna cotta"&gt;Panna cotta&lt;/option&gt;
+    &lt;option value="Tiramisu"&gt;Tiramisu&lt;/option&gt;
+    &lt;option value="Creme brulle"&gt;Creme brulle&lt;/option&gt;
+&lt;/select&gt;                                   
+                                </code>
+                            </pre>
+                            <div class="result">
+                                <select>
+                                    <option value="Panna cotta">Panna cotta 75g</option>
+                                    <option value="Tiramisu">Tiramisu 150g</option>
+                                    <option value="Creme brulle">Creme brulle 100g</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Lista Rozwijana – Grupowanie Opcji</h5>
+                            <p class="card-text">Mamy możliowść grupowania opcji poprzez zastosowanie elementu &lt;optgroup&gt; (ang. <i>option group</i> – grupa opcji). Nazwę grupy dodajemy tym razem poprzez atrybut label:</p>
+                            <pre>
+                                <code>
+&lt;select&gt;
+    &lt;optgroup label="Grupa 1"&gt;
+        &lt;option&gt;Opcja 1.1&lt;/option&gt;
+        &lt;option&gt;Opcja 1.2&lt;/option&gt;
+    &lt;/optgroup&gt;
+    &lt;optgroup label="Grupa 2"&gt;
+        &lt;option&gt;Opcja 2.1&lt;/option&gt;
+        &lt;option&gt;Opcja 2.2&lt;/option&gt;
+    &lt;/optgroup&gt;
+&lt;/select&gt;  
+                                </code>
+                            </pre>
+                            <div class="result">
+                                <select>
+                                    <optgroup label="Grupa 1">
+                                        <option>Opcja 1.1</option>
+                                        <option>Opcja 1.2</option>
+                                    </optgroup>
+                                    <optgroup label="Grupa 2">
+                                        <option>Opcja 2.1</option>
+                                        <option>Opcja 2.2</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Datalista</h5>
+                            <p class="card-text">Element &lt;datalist&gt; (ang. lista danych) uzupełnia element &lt;input&gt; o listę predefiniowanych elementów, które mogą ułatwić uzupełnienie pola input poprzez dodanie możliwości. Element &lt;datalist&gt; jest funkcjonalnym połączeniem elementu &lt;input&gt; oraz &lt;select&gt;:</p>
+                            <pre>
+                                <code>
+&lt;input list="game"&gt;
+&lt;datalist id="game"&gt;
+    &lt;option value="Szachy"&gt;&lt;/option&gt;
+    &lt;option value="Warcaby"&gt;&lt;/option&gt;
+    &lt;option value="Bierki"&gt;&lt;/option&gt;
+&lt;/datalist&gt;
+                                </code>
+                            </pre>
+                            <div class="result">
+                                <input list="game">
+                                <datalist id="game">
+                                    <option value="Szachy"></option>
+                                    <option value="Warcaby">
+                                    <option value="Bierki">
+                                </datalist> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Field i Legend</h5>
+                            <p class="card-text">Element &lt;fieldset&gt; (ang. <i>field set</i>  – zbiór pól)  nie tylko semantycznie pogrupuje te pola, ale również doda ramkę dookoła. Grupę tą można opisać za pomocą legendy, dosłownie za pomocą elementu  &lt;legend&gt;.</p>
+                            <pre>
+                                <code>
+&lt;fieldset&gt;
+    &lt;legend&gt;Dane personalne&lt;/legend&gt;
+    &ltlabel&gt;Imię &lt;input type="text"&gt;&lt;/label&gt;
+    &lt;label&gt;Nazwisko &lt;input type="text"&gt;&lt;/label&gt;
+&lt;/fieldset&gt;                                 
+                                </code>
+                            </pre>
+                            <div class="result">
+                                <fieldset class="remove">
+                                    <legend>Dane personalne</legend>
+                                    <label>Imię <input type="text"></label>
+                                    <label>Nazwisko <input type="text"></label>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="html12" role="tabpanel" aria-labelledby="form-tab">
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <h4 class="card-title">Formularze</h4>
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <p class="card-text">Formularz HTML tworzymy poprzez zastosowanie elementu &lt;form&gt;:</p>
+                            <pre>
+                                <code>
+&lt;form&gt;
+    &lt;label&gt;Podaj login: &lt;/label&gt;&lt;input type="text"&gt;
+    &lt;label&gt;Podaj hasło: &lt;/label&gt;&lt;input type="password"&gt;
+&lt;/form&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <div class="result">
+                                <form>
+                                    <label>Podaj login: </label><input type="text">
+                                    <label>Podaj hasło: </label><input type="password">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <p class="card-text">Aby mieć możliwość przesłania go, musimy dodać przycisk:</p>
+                            <pre>
+                                <code>
+&lt;form&gt;
+    &lt;label&gt;Podaj login: &lt;/label&gt;&lt;input type="text"&gt;
+    &lt;label&gt;Podaj hasło: &lt;/label&gt;&lt;input type="password"&gt;
+    &lt;input type="submit" value="Prześlij"&gt;
+&lt;/form&gt;
+                                </code>
+                            </pre>
+                            <div class="result">
+                                <form>
+                                    <label>Podaj login: </label><input type="text">
+                                    <label>Podaj hasło: </label><input type="password">
+                                    <input type="submit" value="Prześlij">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-html">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Przesyłanie danych - formularz</h5>
+                            <p class="card-text">Jednak po kliknięciu pola submit nic się nie dzieje. W celu wysłania danych naszym formularzem html, musielibyśmy stworzyć plik z instrukcjami np. w języku PHP i zapisać go w folderze z naszą stroną internetową. Do elementu &lt;form&gt; dodalibyśmy następnie atrybut action, który wskazywałby ścieżkę dostępu do naszego pliku form.php. Po naciśnięciu klawisza submit akcja z pliku form.php zostałaby wykonana:</p>
+                            <pre>
+                                <code>
+&lt;form action="form.php"&gt;
+    &lt;label&gt;Podaj login: &lt;/label&gt;&lt;input type="text"&gt;
+    &lt;label&gt;Podaj email: &lt;/label&gt;&lt;input type="email"&gt;
+    &lt;label&gt;Podaj hasło: &lt;/label&gt;&lt;input type="password"&gt;
+    &lt;input type="submit" value="Prześlij"&gt;
+&lt;/form&gt;                                    
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
                 <a href="#header" class="card back-to-top">
                     <div class="card-body">
-                        <h4 class="card-title">Powrót na góre strony</h4>
+                        <h4 class="card-title">Powrót na górę strony</h4>
                     </div>
                 </a>
             </div>

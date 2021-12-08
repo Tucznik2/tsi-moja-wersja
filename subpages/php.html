@@ -18,8 +18,92 @@
             </div>
             <img class="title-image" src="../assets/img/header-img.png">
         </header>
-        <main class="main">
-           
+        <main class="main php-subpage">
+            <aside id="side-nav" class="list-group sticky-top">
+                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php1" id="tab-1" role="tab" aria-controls="tab1" aria-selected="true">Instalowanie pakietu XAMPP</a>
+                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php2" id="tab-2" role="tab" aria-controls="tab2" aria-selected="false">Podstawy PHP</a>
+                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php3" id="tab-3" role="tab" aria-controls="tab3" aria-selected="false">Składnia języka</a>
+                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php4" id="tab-4" role="tab" aria-controls="tab4" aria-selected="false">Operatory</a>
+                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php5" id="tab-5" role="tab" aria-controls="tab5" aria-selected="false">Zmienne - zadania</a>
+                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php6" id="tab-6" role="tab" aria-controls="tab6" aria-selected="false">Instrukcje warunkowe</a>
+                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php7" id="tab-7" role="tab" aria-controls="tab7" aria-selected="false">Instrukcje warunkowe - zadania</a>
+                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php8" id="tab-8" role="tab" aria-controls="tab8" aria-selected="false">Pętle</a>
+                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php9" id="tab-9" role="tab" aria-controls="tab9" aria-selected="false">Pętle - zadania</a>
+                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php10" id="tab-10" role="tab" aria-controls="tab10" aria-selected="false">Tablice</a>
+                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php11" id="tab-11" role="tab" aria-controls="tab11" aria-selected="false">Tablice - zadania</a>
+                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php12" id="tab-12" role="tab" aria-controls="tab12" aria-selected="false">Funkcje</a>
+                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php13" id="tab-13" role="tab" aria-controls="tab12" aria-selected="false">Funkcje - zadania</a>
+                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php14" id="tab-14" role="tab" aria-controls="tab12" aria-selected="false">Formularze</a>
+                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php15" id="tab-15" role="tab" aria-controls="tab16" aria-selected="false">Formularze - zadania</a>
+                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php16" id="tab-16" role="tab" aria-controls="tab16" aria-selected="false">Połączenie z bazą</a>
+                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php17" id="tab-17" role="tab" aria-controls="tab17" aria-selected="false">Operacje na danych</a>
+            </aside>
+            <div class="tab-content content">
+                <div class="tab-pane fade show active" id="php1" role="tabpanel" aria-labelledby="installation-tab">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Instalacja potrzebnego oprogramowania</h4>
+                            <p class="card-text">Dla języka PHP, który jest back-endowy (interpretowany po stronie serwera), potrzebujemy dostępu do działającego serwera. Będzie to serwer lokalny - tzw. localhost z użyciem oprogramowania o nazwie XAMPP. Dostępny jest na Windows, Linux oraz komputery Mac. Korzystanie z pakietu jest darmowe.</p>
+                            <a href="#" _blank>Pobierz pakiet XAMPP</a>
+                            <p class="card-text">Po zainstalowaniu i uruchomieniu programu widzimy jego panel kontrolny. Jedyne co należy zrobić, aby uruchomić serwer www z PHP to kliknąć przycisk "Start" przy Apache.</p>
+                            <img src="../assets/img/xampp-panel.png" alt="xampp-panel" class="card-img-bottom">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Najczęstrze błędy</h5>
+                            <p class="card-text">Jeśli u Ciebie uruchomienie nie powiedzie się (zobaczysz błędy koloru czerwonego) może to oznaczać, że masz zajęte domyślne porty, na których działa serwer www (port 80 i 443). Takie porty może blokować wiele usług, w tym przykładowo Skype. W takim przypadku należy znaleźć aplikację zajmującą port i ją wyłączyć lub zmienić porty na których działać ma serwer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade show active" id="php2" role="tabpanel" aria-labelledby="basics-tab">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Podstawy PHP</h4>
+                            <p class="card-text">Aby uruchomić skrypt PHP należy umieścić go w folderze htdocs, który znajduje się w folderze xampp. Pamiętaj o tym aby przed uruchomieniem skryptu zmienić nazwę pliku index.php lub usunąć go całkowicie. Aby plik był rozpoznany przez serwer WWW jako skrypt PHP musi on mieć odpowiednie rozszerzenie, aktualnie najczęściej stosowanym rozszerzeniem jest <strong>.php</strong>.</p>
+                            <p class="card-text">Do określenia w pliku co jest kodem HTML a co PHP służą specjalne znaczniki. Aby przejść do trybu PHP można użyć jednego z tych znaczników:</p>
+                            <pre>
+                                <code>
+&lt;?php echo "przykładowy tekst"; ?&gt;
+                                </code>
+                            </pre>
+                            <p class="card-text">Drugi sposób to tak zwany "short tag". Można z niego korzystać tylko jeśli włączymy opcje "short-tag-open" w pliku konfiguracyjnym <strong>php.ini</strong>.</p>
+                            <pre>
+                                <code>
+&lt;? echo "przykładowy tekst"; ?&gt;
+                                </code>
+                            </pre>
+                            <p class="card-text">Domyślnie jest on włączony.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">Przykładowy skrypt który będzie wyswietli na stronie tekst "Hello World!":</p>
+                            <pre>
+                                <code>
+&lt;?php echo "Hello World!"; ?&gt; 
+                                </code>
+                            </pre>
+                            <p class="card-text">Tekst na stronie możemy umieszczać w pojedyńczym cudzysłowiu ' ' lub w podwójnym " ".</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade show active" id="php3" role="tabpanel" aria-labelledby="syntax-tab"></div>
+                <div class="tab-pane fade show active" id="php4" role="tabpanel" aria-labelledby="operators-tab"></div>
+                <div class="tab-pane fade show active" id="php5" role="tabpanel" aria-labelledby="variables-tab"></div>
+                <div class="tab-pane fade show active" id="php6" role="tabpanel" aria-labelledby="conditions-tab"></div>
+                <div class="tab-pane fade show active" id="php7" role="tabpanel" aria-labelledby="conditions-excercises-tab"></div>
+                <div class="tab-pane fade show active" id="php8" role="tabpanel" aria-labelledby="loop-tab"></div>
+                <div class="tab-pane fade show active" id="php9" role="tabpanel" aria-labelledby="loop-exercises-tab"></div>
+                <div class="tab-pane fade show active" id="php10" role="tabpanel" aria-labelledby="array-tab"></div>
+                <div class="tab-pane fade show active" id="php11" role="tabpanel" aria-labelledby="array-exercises-tab"></div>
+                <div class="tab-pane fade show active" id="php12" role="tabpanel" aria-labelledby="functions-tab"></div>
+                <div class="tab-pane fade show active" id="php13" role="tabpanel" aria-labelledby="functions-exercises-tab"></div>
+                <div class="tab-pane fade show active" id="php14" role="tabpanel" aria-labelledby="forms-tab"></div>
+                <div class="tab-pane fade show active" id="php15" role="tabpanel" aria-labelledby="forms-exercises-tab"></div>
+                <div class="tab-pane fade show active" id="php16" role="tabpanel" aria-labelledby="db-conn-tab"></div>
+                <div class="tab-pane fade show active" id="php17" role="tabpanel" aria-labelledby="db-operations-tab"></div>
+            </div>
         </main>
         <footer class="footer bg-secondary">
             &COPY; 2021 | Developed by: <b>Weronika Sagan</b> & <b>Aleksandra Nicpoń</b> & <b>Izabela Piorun</b> & <b>Filip Kula</b>

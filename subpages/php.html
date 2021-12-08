@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header class="header" id="header">
             <div class="title-container">
                 <p class="title badge bg-secondary">Tworzenie stron<br>
                     internetowych</p>
@@ -56,7 +56,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade show active" id="php2" role="tabpanel" aria-labelledby="basics-tab">
+                <div class="tab-pane fade show" id="php2" role="tabpanel" aria-labelledby="basics-tab">
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">Podstawy PHP</h4>
@@ -88,8 +88,257 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade show active" id="php3" role="tabpanel" aria-labelledby="syntax-tab"></div>
-                <div class="tab-pane fade show active" id="php4" role="tabpanel" aria-labelledby="operators-tab"></div>
+                <div class="tab-pane fade show" id="php3" role="tabpanel" aria-labelledby="syntax-tab">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Komentarze w PHP</h4>
+                            <p class="card-title">Czasem zachodzi potrzeba oznaczenia czegoś w kodzie, dla kogoś innego czy nawet dla siebie samego (zwłaszcza jeśli pracuje się nad dużym projektem można się pogubić). Wtedy można skorzystać z jednej z kilku metod oznaczania, dzięki którym parser PHP będzie wiedział, że dany tekst nie jest częścią skryptu i można go zignorować. Komentarze przydają się także do tymczasowego „wyłączania” niektórych linii kodu. PHP obsługuje 3 metody oznaczania komentarzy:</p>
+                            <pre>
+                                <code>
+&lt;?php
+    echo "przykladowy tekst"; //komentarz jednolinijkowy
+
+    echo "przykladowy tekst"; #komentarz jednolinijkowy 
+?&gt; 
+                                </code>
+                            </pre>
+                            <pre>
+                                <code>
+&lt;?php
+    echo "przykladowy tekst"; /*komentarz wielolinijkowy
+                                tu dalej trwa
+                                a tu się kończy*/
+?&gt;   
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Zmienne</h5>
+                            <p class="card-text">Zmienna w PHP nieważne, czy jest to wartość logiczna, liczba całkowita, wymierna czy tekst, jest deklarowana tak samo - poprzez znak $. W tym języku nie musimy podawać typu zmiennej, co jest wymagane w innych językach. Nazwy zmiennych muszą zaczynać się od litery (dużej lub małej) lub dolnego podkreślenia ('_') a dalej mogą się składać z dowolnej ilości liter i cyfr. Przy nazwach zmiennych ważna jest wielkość znaków ($zm i $Zm to dwie różne zmienne).</p>
+                            <p class="card-text">Przykłady deklarowania zmiennych:</p>
+                            <pre>
+                                <code>
+&lt;?php  
+    $zm = 1; // Zmiennej zm przypisywana jest wartość równa 1
+
+    $Zm = "zmienna"; // Zmiennej Zm przypisany jest ciąg znaków "zmienna"
+
+    $ZM = $zm; // Zmiennej ZM przypisywana jest wartość zmiennej zm
+
+    echo "To jest $Zm"; // Powinien wyświetlić się napis "To jest zmienna"
+
+    echo '$ZM'; // Powinien wyświetlić się napis "$ZM"
+
+    echo $Zm; // Powinien wyświetlić się napis zmienna
+?&gt;    
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade show" id="php4" role="tabpanel" aria-labelledby="operators-tab">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Operatory arytmetyczne</h4>
+                            <p class="card-text">Są to podstawowe działania matematyczne, takie jak dodawanie, odejmowanie itp.</p>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Operator</th>
+                                        <th>Zastosowanie</th>
+                                        <th>Działanie</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>+</td>
+                                        <td>$a + $b</td>
+                                        <td>suma</td>
+                                    </tr>
+                                    <tr>
+                                        <td>-</td>
+                                        <td>$a - $b</td>
+                                        <td>różnica</td>
+                                    </tr>
+                                    <tr>
+                                        <td>*</td>
+                                        <td>$a * $b</td>
+                                        <td>iloczyn</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/</td>
+                                        <td>$a / $b</td>
+                                        <td>iloraz</td>
+                                    </tr>
+                                    <tr>
+                                        <td>%</td>
+                                        <td>$a % $b</td>
+                                        <td>modula - reszta z dzielenia</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">Na przykład:</p>
+                            <pre>
+                                <code>
+&lt;?php
+    $a = 4;
+    $b = 3;
+
+    echo $a + $b; //wyświetli się 7
+
+    echo $a - $b; //wyświetli się 1
+
+    echo $a * $b; //wyświetli się 12
+
+    echo $a / $b; //wyświetli się 1.(3)
+
+    echo $a % $b; //wyświetli się 1                        
+?&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-text">Operatory przypisania</h5>
+                            <p class="card-text">Operator przypisania służy do nadania wartości. Najprostszym przykładem wykorzystania tego operatora jest przypisanie zmiennej konkretnej wartości:</p>
+                            <pre>
+                                <code>
+&lt;?php
+    $a = 4;                       
+?&gt;                                    
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-text">
+                            <p class="card-text">Możemy dokonać przypisania wartości kilku zmiennych. Dokonamy tego przeznaczając dla każdej zmiennej kolejną linię, bądź oddzielając kolejne przypisania przecinkiem.</p>
+                            <pre>
+                                <code>
+&lt;?php
+    $a = 4;
+    $b = 3;
+
+    $a = 4, $b = 3;                    
+?&gt;                                     
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">Możemy również wykorzystać ten operator wielokrotnie, przypisując jednocześnie wielu zmiennym tę samą wartość:</p>
+                            <pre>
+                                <code>
+&lt;?php
+    $a = b = 3;                   
+?&gt;   
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Zapis skrócony</th>
+                                        <th>Pełen zapis</th>
+                                        <th>Opis</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>$a+=1</td>
+                                        <td>$a = $a + 1</td>
+                                        <td>Zwiększenie wartości $a o 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$a-=1</td>
+                                        <td>$a = $a - 1</td>
+                                        <td>Zmniejszenie wartości $a o 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$a*=1</td>
+                                        <td>$a = $a * 1</td>
+                                        <td>Pomnożenie wartości $a przez 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$a/=1</td>
+                                        <td>$a = $a / 1</td>
+                                        <td>Podzielenie wartości $a przez 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$a%=1</td>
+                                        <td>$a = $a % 1</td>
+                                        <td>Reszta z dzielenia $a przez 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$a.="tekst"</td>
+                                        <td>$a = $a."tekst"</td>
+                                        <td>Dopisanie "tekst" na końcu zmiennej $a
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Operatory porównania</h5>
+                            <p class="card-text">Te operatory porównują wartości i zwraca <strong>true (prawda - 1)</strong> jeśli porównanie jest prawdziwe lub <strong>false (fałsz - 0)</strong> jeśli takie nie jest.</p>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Operator</th>
+                                        <th>Zastosowanie</th>
+                                        <th>Wynik</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>==</td>
+                                        <td>$a == $b</td>
+                                        <td>Zwiększenie wartości $a o 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$a-=1</td>
+                                        <td>$a = $a - 1</td>
+                                        <td>Zmniejszenie wartości $a o 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$a*=1</td>
+                                        <td>$a = $a * 1</td>
+                                        <td>Pomnożenie wartości $a przez 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$a/=1</td>
+                                        <td>$a = $a / 1</td>
+                                        <td>Podzielenie wartości $a przez 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$a%=1</td>
+                                        <td>$a = $a % 1</td>
+                                        <td>Reszta z dzielenia $a przez 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$a.="tekst"</td>
+                                        <td>$a = $a."tekst"</td>
+                                        <td>Dopisanie "tekst" na końcu zmiennej $a
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
                 <div class="tab-pane fade show active" id="php5" role="tabpanel" aria-labelledby="variables-tab"></div>
                 <div class="tab-pane fade show active" id="php6" role="tabpanel" aria-labelledby="conditions-tab"></div>
                 <div class="tab-pane fade show active" id="php7" role="tabpanel" aria-labelledby="conditions-excercises-tab"></div>
@@ -110,5 +359,6 @@
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="../assets/scripts/main.js"></script>
 </body>
 </html>

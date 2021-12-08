@@ -103,7 +103,7 @@ html {
   color: #fff;
 }
 /* HTML subpage */
-.html-subpage{
+.html-subpage, .php-subpage, .css-subpage, .js-subpage{
   flex-direction: row;
   justify-content: space-between;
   max-width: 1250px;

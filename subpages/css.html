@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="header" id="header">
+        <header class="header user-select-none" id="header">
             <div class="title-container">
                 <p class="title badge bg-secondary">Tworzenie stron<br>
                     internetowych</p>
@@ -18,7 +18,31 @@
             </div>
             <img class="title-image" src="../assets/img/header-img.png">
         </header>
-        <main class="main css-subpage">
+        <nav class="navbar navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+              <a href="../index.html" class="navbar-brand">CSS - Kaskadowe Arkusze Stylów</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+        </nav>
+        <main class="main css-subpage p-1">
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">CSS</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <aside id="side-nav-canvas offcanvas-body" class="list-group sticky-top">
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#css1" id="tab-1" role="tab" aria-controls="tab1" aria-selected="true">Czym jest CSS?</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#css2" id="tab-2" role="tab" aria-controls="tab2" aria-selected="false">Podpinanie CSS do HTML</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#css3" id="tab-3" role="tab" aria-controls="tab3" aria-selected="false">Hierarchia ważności metod</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#css4" id="tab-4" role="tab" aria-controls="tab4" aria-selected="false">Selektory</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#css5" id="tab-5" role="tab" aria-controls="tab5" aria-selected="false">Komentarze</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#css6" id="tab-6" role="tab" aria-controls="tab6" aria-selected="false">Własności</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#css7" id="tab-7" role="tab" aria-controls="tab7" aria-selected="false">Padding a margin</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#css8" id="tab-8" role="tab" aria-controls="tab8" aria-selected="false">Jednostki</a>
+                </aside>
+              </div>
             <aside id="side-nav" class="list-group sticky-top">
                 <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#css1" id="tab-1" role="tab" aria-controls="tab1" aria-selected="true">Czym jest CSS?</a>
                 <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#css2" id="tab-2" role="tab" aria-controls="tab2" aria-selected="false">Podpinanie CSS do HTML</a>
@@ -30,7 +54,7 @@
                 <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#css8" id="tab-8" role="tab" aria-controls="tab8" aria-selected="false">Jednostki</a>
             </aside>
             <div class="tab-content content">
-                <div class="tab-pane fade" id="css1" role="tabpanel" aria-labelledby="css-intro-tab">
+                <div class="tab-pane fade show active" id="css1" role="tabpanel" aria-labelledby="css-intro-tab">
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">Czym jest CSS?</h4>
@@ -52,7 +76,7 @@
                 <div class="tab-pane fade" id="css8" role="tabpanel" aria-labelledby="css-entities-tab">8</div>
                 <a href="#header" class="card back-to-top">
                     <div class="card-body">
-                        <h4 class="card-title">Powrót na górę strony</h4>
+                        <h5 class="card-title">Powrót na górę strony</h4>
                     </div>
                 </a>
             </div>

@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="header" id="header">
+        <header class="header user-select-none" id="header">
             <div class="title-container">
                 <p class="title badge bg-secondary">Tworzenie stron<br>
                     internetowych</p>
@@ -18,7 +18,40 @@
             </div>
             <img class="title-image" src="../assets/img/header-img.png">
         </header>
+        <nav class="navbar navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+              <a href="../index.html" class="navbar-brand">PHP</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </nav>
         <main class="main php-subpage">
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">PHP</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <aside id="side-nav-canvas offcanvas-body" class="list-group sticky-top">
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php1" id="tab-1" role="tab" aria-controls="tab1" aria-selected="true">Instalowanie pakietu XAMPP</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php2" id="tab-2" role="tab" aria-controls="tab2" aria-selected="false">Podstawy PHP</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php3" id="tab-3" role="tab" aria-controls="tab3" aria-selected="false">Składnia języka</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php4" id="tab-4" role="tab" aria-controls="tab4" aria-selected="false">Operatory</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php5" id="tab-5" role="tab" aria-controls="tab5" aria-selected="false">Zmienne - zadania</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php6" id="tab-6" role="tab" aria-controls="tab6" aria-selected="false">Instrukcje warunkowe</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php7" id="tab-7" role="tab" aria-controls="tab7" aria-selected="false">Instrukcje warunkowe - zadania</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php8" id="tab-8" role="tab" aria-controls="tab8" aria-selected="false">Pętle</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php9" id="tab-9" role="tab" aria-controls="tab9" aria-selected="false">Pętle - zadania</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php10" id="tab-10" role="tab" aria-controls="tab10" aria-selected="false">Tablice</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php11" id="tab-11" role="tab" aria-controls="tab11" aria-selected="false">Tablice - zadania</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php12" id="tab-12" role="tab" aria-controls="tab12" aria-selected="false">Funkcje</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php13" id="tab-13" role="tab" aria-controls="tab12" aria-selected="false">Funkcje - zadania</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php14" id="tab-14" role="tab" aria-controls="tab12" aria-selected="false">Formularze</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php15" id="tab-15" role="tab" aria-controls="tab16" aria-selected="false">Formularze - zadania</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php16" id="tab-16" role="tab" aria-controls="tab16" aria-selected="false">Połączenie z bazą</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php17" id="tab-17" role="tab" aria-controls="tab17" aria-selected="false">Operacje na danych</a>
+                </aside>
+            </div>
             <aside id="side-nav" class="list-group sticky-top">
                 <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php1" id="tab-1" role="tab" aria-controls="tab1" aria-selected="true">Instalowanie pakietu XAMPP</a>
                 <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php2" id="tab-2" role="tab" aria-controls="tab2" aria-selected="false">Podstawy PHP</a>
@@ -40,7 +73,7 @@
             </aside>
             <div class="tab-content content">
                 <div class="tab-pane fade show active" id="php1" role="tabpanel" aria-labelledby="installation-tab">
-                    <div class="card">
+                    <div class="card card-php">
                         <div class="card-body">
                             <h4 class="card-title">Instalacja potrzebnego oprogramowania</h4>
                             <p class="card-text">Dla języka PHP, który jest back-endowy (interpretowany po stronie serwera), potrzebujemy dostępu do działającego serwera. Będzie to serwer lokalny - tzw. localhost z użyciem oprogramowania o nazwie XAMPP. Dostępny jest na Windows, Linux oraz komputery Mac. Korzystanie z pakietu jest darmowe.</p>
@@ -49,7 +82,7 @@
                             <img src="../assets/img/xampp-panel.png" alt="xampp-panel" class="card-img-bottom">
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-php">
                         <div class="card-body">
                             <h5 class="card-subtitle">Najczęstrze błędy</h5>
                             <p class="card-text">Jeśli u Ciebie uruchomienie nie powiedzie się (zobaczysz błędy koloru czerwonego) może to oznaczać, że masz zajęte domyślne porty, na których działa serwer www (port 80 i 443). Takie porty może blokować wiele usług, w tym przykładowo Skype. W takim przypadku należy znaleźć aplikację zajmującą port i ją wyłączyć lub zmienić porty na których działać ma serwer.</p>
@@ -57,7 +90,7 @@
                     </div>
                 </div>
                 <div class="tab-pane fade show" id="php2" role="tabpanel" aria-labelledby="basics-tab">
-                    <div class="card">
+                    <div class="card card-php">
                         <div class="card-body">
                             <h4 class="card-title">Podstawy PHP</h4>
                             <p class="card-text">Aby uruchomić skrypt PHP należy umieścić go w folderze htdocs, który znajduje się w folderze xampp. Pamiętaj o tym aby przed uruchomieniem skryptu zmienić nazwę pliku index.php lub usunąć go całkowicie. Aby plik był rozpoznany przez serwer WWW jako skrypt PHP musi on mieć odpowiednie rozszerzenie, aktualnie najczęściej stosowanym rozszerzeniem jest <strong>.php</strong>.</p>
@@ -76,7 +109,7 @@
                             <p class="card-text">Domyślnie jest on włączony.</p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-php">
                         <div class="card-body">
                             <p class="card-text">Przykładowy skrypt który będzie wyswietli na stronie tekst "Hello World!":</p>
                             <pre>
@@ -89,7 +122,7 @@
                     </div>
                 </div>
                 <div class="tab-pane fade show" id="php3" role="tabpanel" aria-labelledby="syntax-tab">
-                    <div class="card">
+                    <div class="card card-php">
                         <div class="card-body">
                             <h4 class="card-title">Komentarze w PHP</h4>
                             <p class="card-title">Czasem zachodzi potrzeba oznaczenia czegoś w kodzie, dla kogoś innego czy nawet dla siebie samego (zwłaszcza jeśli pracuje się nad dużym projektem można się pogubić). Wtedy można skorzystać z jednej z kilku metod oznaczania, dzięki którym parser PHP będzie wiedział, że dany tekst nie jest częścią skryptu i można go zignorować. Komentarze przydają się także do tymczasowego „wyłączania” niektórych linii kodu. PHP obsługuje 3 metody oznaczania komentarzy:</p>
@@ -113,7 +146,7 @@
                             </pre>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-php">
                         <div class="card-body">
                             <h5 class="card-title">Zmienne</h5>
                             <p class="card-text">Zmienna w PHP nieważne, czy jest to wartość logiczna, liczba całkowita, wymierna czy tekst, jest deklarowana tak samo - poprzez znak $. W tym języku nie musimy podawać typu zmiennej, co jest wymagane w innych językach. Nazwy zmiennych muszą zaczynać się od litery (dużej lub małej) lub dolnego podkreślenia ('_') a dalej mogą się składać z dowolnej ilości liter i cyfr. Przy nazwach zmiennych ważna jest wielkość znaków ($zm i $Zm to dwie różne zmienne).</p>
@@ -139,7 +172,7 @@
                     </div>
                 </div>
                 <div class="tab-pane fade show" id="php4" role="tabpanel" aria-labelledby="operators-tab">
-                    <div class="card">
+                    <div class="card card-php">
                         <div class="card-body">
                             <h4 class="card-title">Operatory arytmetyczne</h4>
                             <p class="card-text">Są to podstawowe działania matematyczne, takie jak dodawanie, odejmowanie itp.</p>
@@ -181,7 +214,7 @@
                             </table>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-php">
                         <div class="card-body">
                             <p class="card-text">Na przykład:</p>
                             <pre>
@@ -204,7 +237,7 @@
                             </pre>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-php">
                         <div class="card-body">
                             <h5 class="card-text">Operatory przypisania</h5>
                             <p class="card-text">Operator przypisania służy do nadania wartości. Najprostszym przykładem wykorzystania tego operatora jest przypisanie zmiennej konkretnej wartości:</p>
@@ -217,22 +250,24 @@
                             </pre>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-text">
-                            <p class="card-text">Możemy dokonać przypisania wartości kilku zmiennych. Dokonamy tego przeznaczając dla każdej zmiennej kolejną linię, bądź oddzielając kolejne przypisania przecinkiem.</p>
-                            <pre>
-                                <code>
-&lt;?php
-    $a = 4;
-    $b = 3;
-
-    $a = 4, $b = 3;                    
-?&gt;                                     
-                                </code>
-                            </pre>
+                    <div class="card card-php">
+                        <div class="card-body">
+                            <div class="card-text">
+                                <p class="card-text">Możemy dokonać przypisania wartości kilku zmiennych. Dokonamy tego przeznaczając dla każdej zmiennej kolejną linię, bądź oddzielając kolejne przypisania przecinkiem.</p>
+                                <pre>
+                                    <code>
+    &lt;?php
+        $a = 4;
+        $b = 3;
+    
+        $a = 4, $b = 3;                    
+    ?&gt;                                     
+                                    </code>
+                                </pre>
+                            </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-php">
                         <div class="card-body">
                             <p class="card-text">Możemy również wykorzystać ten operator wielokrotnie, przypisując jednocześnie wielu zmiennym tę samą wartość:</p>
                             <pre>
@@ -244,7 +279,7 @@
                             </pre>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-php">
                         <div class="card-body">
                             <table class="table table-bordered">
                                 <thead>
@@ -290,7 +325,7 @@
                             </table>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card card-php">
                         <div class="card-body">
                             <h5 class="card-title">Operatory porównania</h5>
                             <p class="card-text">Te operatory porównują wartości i zwraca <strong>true (prawda - 1)</strong> jeśli porównanie jest prawdziwe lub <strong>false (fałsz - 0)</strong> jeśli takie nie jest.</p>
@@ -352,6 +387,11 @@
                 <div class="tab-pane fade show active" id="php15" role="tabpanel" aria-labelledby="forms-exercises-tab"></div>
                 <div class="tab-pane fade show active" id="php16" role="tabpanel" aria-labelledby="db-conn-tab"></div>
                 <div class="tab-pane fade show active" id="php17" role="tabpanel" aria-labelledby="db-operations-tab"></div>
+                <a href="#header" class="card back-to-top">
+                    <div class="card-body">
+                      <h4 class="card-title">Powrót na górę strony</h4>
+                    </div>
+                  </a>
             </div>
         </main>
         <footer class="footer bg-secondary">

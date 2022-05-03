@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="header" id="header">
+        <header class="header user-select-none" id="header">
             <div class="title-container">
                 <p class="title badge bg-secondary">Tworzenie stron<br>
                     internetowych</p>
@@ -18,7 +18,35 @@
             </div>
             <img class="title-image" src="../assets/img/header-img.png">
         </header>
-        <main class="main html-subpage">
+        <nav class="navbar navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+              <a href="../index.html" class="navbar-brand">HTML</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+        </nav>
+        <main class="main html-subpage p-1">
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">HTML</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <aside id="side-nav-canvas offcanvas-body" class="list-group sticky-top">
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#html1" id="tab-1" role="tab" aria-controls="tab1" aria-selected="true">Czym jest HTML?</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#html2" id="tab-2" role="tab" aria-controls="tab2" aria-selected="false">Komentarze w HTML</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#html3" id="tab-3" role="tab" aria-controls="tab3" aria-selected="false">Nagłówek i paragraf</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#html4" id="tab-4" role="tab" aria-controls="tab4" aria-selected="false">Formatowanie tekstu</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#html5" id="tab-5" role="tab" aria-controls="tab5" aria-selected="false">Listy</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#html6" id="tab-6" role="tab" aria-controls="tab6" aria-selected="false">Linki</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#html7" id="tab-7" role="tab" aria-controls="tab7" aria-selected="false">Obrazy</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#html8" id="tab-8" role="tab" aria-controls="tab8" aria-selected="false">Tabela</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#html9" id="tab-9" role="tab" aria-controls="tab9" aria-selected="false">Klasy i identifikatory</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#html10" id="tab-10" role="tab" aria-controls="tab10" aria-selected="false">Znaczniki sekcji w HTML5</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#html11" id="tab-11" role="tab" aria-controls="tab11" aria-selected="false">Wprowadzanie danych</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#html12" id="tab-12" role="tab" aria-controls="tab12" aria-selected="false">Formularze</a>
+                </aside>
+            </div>
             <aside id="side-nav" class="list-group sticky-top">
                 <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#html1" id="tab-1" role="tab" aria-controls="tab1" aria-selected="true">Czym jest HTML?</a>
                 <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#html2" id="tab-2" role="tab" aria-controls="tab2" aria-selected="false">Komentarze w HTML</a>
@@ -115,7 +143,8 @@
                         <p class="card-text">Znaczniki meta umieszczone w sekcji nagłówka dokumentu HTML służą do wskazywania zakodowanych informacji i określania metadanych. Nie pojawiają się na rzeczywistej stronie internetowej, zamiast tego aplikacje takie jak: przeglądarki lub roboty sieciowe, mogą odczytywać dane zakodowane w tych metatagach.</p>
                         <p class="card-text">Funkcją elementu meta jest przekazanie dodatkowych informacji odnośnie witryny, co ułatwia analizę plików HTML i ułatwia utrzymanie zawartości pliku. Metatagi HTML prawie zawsze mają tę samą strukturę: element jest najpierw definiowany, a następnie przypisywana jest mu treść.</p>
                     </div>
-                </div></div>
+                </div>
+                </div>
                 <div class="tab-pane fade" id="html2" role="tabpanel" aria-labelledby="comments-tab">
                     <div class="card card-html">
                         <div class="card-body">

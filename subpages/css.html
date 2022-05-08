@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tworzenie stron internetowych</title>
+    <link rel="icon" href="../assets/img/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/styles/style.css">
 </head>
@@ -38,7 +39,7 @@
                     <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#css3" id="tab-3" role="tab" aria-controls="tab3" aria-selected="false">Hierarchia ważności metod</a>
                     <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#css4" id="tab-4" role="tab" aria-controls="tab4" aria-selected="false">Selektory</a>
                     <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#css5" id="tab-5" role="tab" aria-controls="tab5" aria-selected="false">Komentarze</a>
-                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#css6" id="tab-6" role="tab" aria-controls="tab6" aria-selected="false">Własności</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#css6" id="tab-6" role="tab" aria-controls="tab6" aria-selected="false">Właściwości</a>
                     <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#css7" id="tab-7" role="tab" aria-controls="tab7" aria-selected="false">Padding a margin</a>
                     <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#css8" id="tab-8" role="tab" aria-controls="tab8" aria-selected="false">Jednostki</a>
                 </aside>
@@ -49,7 +50,7 @@
                 <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#css3" id="tab-3" role="tab" aria-controls="tab3" aria-selected="false">Hierarchia ważności metod</a>
                 <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#css4" id="tab-4" role="tab" aria-controls="tab4" aria-selected="false">Selektory</a>
                 <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#css5" id="tab-5" role="tab" aria-controls="tab5" aria-selected="false">Komentarze</a>
-                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#css6" id="tab-6" role="tab" aria-controls="tab6" aria-selected="false">Własności</a>
+                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#css6" id="tab-6" role="tab" aria-controls="tab6" aria-selected="false">Właściwości</a>
                 <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#css7" id="tab-7" role="tab" aria-controls="tab7" aria-selected="false">Padding a margin</a>
                 <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#css8" id="tab-8" role="tab" aria-controls="tab8" aria-selected="false">Jednostki</a>
             </aside>
@@ -67,13 +68,390 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="css2" role="tabpanel" aria-labelledby="css-attachment-tab">2</div>
-                <div class="tab-pane fade" id="css3" role="tabpanel" aria-labelledby="css-hierarchy-tab">3</div>
-                <div class="tab-pane fade" id="css4" role="tabpanel" aria-labelledby="css-selectors-tab">4</div>
-                <div class="tab-pane fade" id="css5" role="tabpanel" aria-labelledby="css-comments-tab">5</div>
-                <div class="tab-pane fade" id="css6" role="tabpanel" aria-labelledby="css-features-tab">6</div>
-                <div class="tab-pane fade" id="css7" role="tabpanel" aria-labelledby="css-padding-margin-tab">7</div>
-                <div class="tab-pane fade" id="css8" role="tabpanel" aria-labelledby="css-entities-tab">8</div>
+                <div class="tab-pane fade" id="css2" role="tabpanel" aria-labelledby="css-attachment-tab">
+                    <div class="card card-css">
+                        <div class="card-body">
+                            <h4 class="card-title">Sposoby korzystania z arkuszy stylów</h4>
+                            <p class="card-text">Style dla możemy dołączyć do niej na kilka sposobów:</p>
+                            <ul>
+                                <li>Styl w lini</li>
+                                <p class="card-text">Styl inline (ang. w linii), oznacza zapisanie właściwości CSS jako wartości atrybutu style do pojedynczego wybranego elementu HTML.</p>
+                                <pre>
+                                    <code>
+&lt;div id="footer" style="background-color(146, 43, 43);"&gt;
+    Style wewnątrz antrybutu znacznika
+&lt;/div&gt;
+                                    </code>
+                                </pre>
+                                <li>Znacznik style w dokumencie HTML</li>
+                                <p class="card-text">Kod CSS dla pojedynczej strony możemy umieścić w tagu &lt;style&gt;, który umieszczamy w sekcji &lt;head&gt; naszej strony.</p>
+                                <pre>
+                                    <code>
+&lt;head&gt;    
+    &lt;style&gt;
+        #footer{
+            background-color: rgb(146, 43, 43);
+        }
+    &lt;/style&gt;
+&lt;/head&gt;                                       
+                                    </code>
+                                </pre>
+                                <li>Dołączany arkusz zewnętrzny</li>
+                                <p class="card-text">Zewnętrzny arkusz CSS dołączamy do dokumentu HTML znacznikiem znajdującym się w sekcji &lt;head&gt; podstrony (wartość atrybutu href musi wskazywać rzeczywisty, istniejący plik):</p>
+                                <pre>
+                                    <code>
+&lt;link rel="stylesheet" href="arkusz.css"&gt;
+                                    </code>
+                                </pre>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="css3" role="tabpanel" aria-labelledby="css-hierarchy-tab">
+                    <div class="card card-css">
+                        <div class="card-body">
+                            <h4 class="card-title">Hierarchia metod</h4>
+                            <p class="card-text">Hierarchia ważności poszczególnych sposobów to: 3 > 2 > 1. Style inline przesłaniają te spomiędzy tagów &lt;style&gt;, zaś one przesłaniają właściwości zdefiniowane w zewnętrznym arkuszu (o ile podpięcie pliku tagiem znalazło się przed tagami &lt;style&gt;). Jest to logiczne - style inline występują węwnątrz tagów, stąd siłą rzeczy zawsze znajdą się poniżej sekcji &lt;head&gt; (tagi "siedzą" przecież w &lt;body&gt;). I dlatego style inline są najważniejsze w hierarchii - występują najpóźniej, a więc obowiązują.</p>
+                        </div> 
+                    </div>
+                    <div class="card card-css">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Złamanie hierarchii</h5>
+                            <p class="card-text">Możemy wymusić obowiązywanie jakiegoś stylu. Dokonujemy tego stosując po spacji (a przed średnikiem) klauzulę <span class="bg-warning">!important</span> (ang. ważny).</p>
+                            <pre>
+                                <code>
+.text{
+    background-color: red !important; /* wymuszenie czerwonego tła w dołączonym pliku*/
+}
+                                </code>
+                            </pre>
+                            <pre>
+                                <code>
+&lt;style&gt;
+    .text{
+        background-color: blue;
+    }
+&lt;/style&gt;
+                                </code>
+                            </pre>
+                            <div class="result">
+                                <span style="background-color: red">Wymuszony czerwony kolor</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="css4" role="tabpanel" aria-labelledby="css-selectors-tab">
+                    <div class="card card-css">
+                        <div class="card-body">
+                            <h4 class="card-title">Selektory CSS</h4>
+                            <p class="card-text">Reguły CSS nie zadziałają dopóki nie przypiszemy ich do określonych elementów html, które aktualnie chcemy sformatować. Za powiązanie reguł CSS z elementami języka Html odpowiedzialne są tzw. selektory (ang. selector od select – wybierać). Jest wiele sposobów tworzenia selektorów w języku CSS. Posłużą do tego m.in same elementy html oraz atrybuty id i class.</p>
+                            <p class="card-text">Zapis selektora będzie kompletny, gdy dodamy do niego nawiasy klamrowe {}. W nawiasach klamrowych będziemy dodawać reguły CSS.</p>
+                            <pre>
+                                <code>
+p{
+    background-color: ##e34c26;
+    color: white;
+}
+#header{
+    background-color:white;
+}
+.klasa{
+    font-family: sans-serif;
+}
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="css5" role="tabpanel" aria-labelledby="css-comments-tab">
+                    <div class="card card-css">
+                        <div class="card-body">
+                            <h4 class="card-title">Komentarze</h4>
+                            <p class="card-text">Poznaliśmy w jaki sposób zakomentować zawartość w HTMl, w CSS równiez jest taka możliwość. Aby zakomentować treść w CSS musimy umieścić ją między znakami /* a */:</p>
+                            <pre>
+                                <code>
+p{
+    background-color: red; /*czerwony kolor tła*/
+}
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="css6" role="tabpanel" aria-labelledby="css-features-tab">
+                    <div class="card card-css">
+                        <div class="card-body">
+                            <h4 class="card-title">Podstawowe i najczęściej używane właściwości CSS</h4>
+                            <p class="card-text">Poniżej przedstawione zostały niektóre z podstawowych właściwości CSS.</p>
+                        </div>
+                    </div>
+                    <div class="card card-css">
+                        <div class="card-body">
+                            <h5 class="subtitle">Właściwości czcionki - font</h5>
+                            <ul>
+                                <li>font-family: określa rodzina czcionki;</li>
+                                <li>font-size: rozmiar czcionki (np.45px, 50%);</li>
+                                <li>font-style: styl czcionki (normal, italic, oblique);</li>
+                                <li>font-weight: (normal, bold, bolder, lighter, 100, 200, 300, 400, 500, 600, 700, 800, 900);</li>
+                                <li>font-variant: przekształcanie tekstu na kapitalki(normal, small-caps);</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card card-css">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Właściwości tła - background</h5>
+                            <ul>
+                                <li>background-color: kolor tła;</li>
+                                <li>background-image: zdjęcie jako tło;</li>
+                                <li>background-repeat: powtarzanie tła (repeat, repeat-x, repeat-y, no-repeat);</li>
+                                <li>background-size; długość, procent, cover, contain;</li>
+                                <li>background-position: [ procent | długość | left | center | right  ], inherit</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card card-css">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Właściwości obramowania - border</h5>
+                            <ul>
+                                <li>border-color: kolor obramowania;</li>
+                                <li>border-collapse: kondensowanie obramowań komórek;</li>
+                                <li>border-radius: zaokrąglenie obramowania;</li>
+                                <li>border-spacing: odstępy między komórkami tabeli;</li>
+                                <li>border-style: styl obramowania (solid,dotted);</li>
+                                <li>border-width: grubość obramowania;</li>
+                                <li>border: kolor styl grubość;</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card card-css">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Właściwości tekstu - text</h5>
+                            <ul>
+                                <li>text-align: wyrównanie tekstu ( left, right, center, justify);</li>
+                                <li>text-decoration: dekoracja tekstu ( none, underline, overline, line-through, blink);</li>
+                                <li>text-indent: wcięcie tekstu (długość w jednostkach lub procentach);</li>
+                                <li>text-transform: transformacja tekstu;</li>
+                                <li>text-shadow: cieniowanie tekstu;</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card card-css">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Pozostałe właściwości</h5>
+                            <ul>
+                                <li>float: oblewanie (left,right,none)</li>
+                                <li>word-spacing: odstęp między wyrazami;</li>
+                                <li>vertical-align: pionowe wyrównanie (baseline, middle, top, bottom, text-top, text-bottom, super, sub, długość w jednostkach, procent);</li>
+                                <li>visibility: widzialnośc elementów (visible, hidden, collapse);</li>
+                                <li>right: odległość od prawej krawędzi;</li>
+                                <li>left: odległość od lewej krawędzi;</li>
+                                <li>position: pozycja elementu (static, relative, absolute, fixed);</li>
+                                <li>overflow: wypływanie zawartości (visible, hidden, scroll, auto);</li>
+                                <li>height: wysokość;</li>
+                                <li>width: szerokość;</li>
+                                <li>max-height,min-height: maksymalna, minimalna wysokość;</li>
+                                <li>max-width,min-width: maksymalna, minimalna szerokość;</li>
+                                <li>box-sizing: (content-box, border-box, padding-box);</li>
+                                <li>clear: usuwa oblewanie(both, none, left, right);</li>
+                                <li>display: okresla typ elementu(inline, block, none, inline-block, table, inline-table, list-item, flex, inline-flex, grid, inline-grid);</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="css7" role="tabpanel" aria-labelledby="css-padding-margin-tab">
+                    <div class="card card-css">
+                        <div class="card-body">
+                            <h4 class="card-title">Margin a padding</h4>
+                            <p class="card-text">Właściwość padding to odstęp nadawany wewnątrz elementu, zaś margin to jest odstęp nadawany na zewnątrz niego:</p>
+                            <img src="../assets/img/margin-padding.png" alt="margin-padding" class="card-img-bottom">
+                        </div>
+                    </div>
+                    <div class="card card-css">
+                        <div class="card-body">
+                            <p class="card-text">Istnieje wiele możliwości zapisu marginesu zewnętrznego jak i wewnętrznego, co bardzo nam upraszcza pisanie kodu:</p>
+                            <ul>
+                                <li>Margines określony ze wszystkich stron taki sam.</li>
+                                <pre>
+                                    <code>
+margin: 20px;
+                                    </code>
+                                </pre>
+                                <li>Zapis podwójny: najpierw margines górny i dolny, potem lewy i prawy.</li>
+                                <pre>
+                                    <code>
+margin: 20px 10px;
+                                    </code>
+                                </pre>
+                                <li>Zapis potrójny: najpierw margines górny, potem lewy i prawy (ten sam), a na końcu podajemy wartość marginesu dolnego.</li>
+                                <pre>
+                                    <code>
+margin: 30px 20px 20%;
+                                    </code>
+                                </pre>
+                                <li>Zapis poczwórny: margines górny, prawy, dolny, lewy (zgodnie z ruchem wskazówek zegara).</li>
+                                <pre>
+                                    <code>
+margin: 20px 5% 20px 5%;
+                                    </code>
+                                </pre>
+                                <li>Margines z jednej, wybranej strony (subatrybuty left, right, top, bottom).</li>
+                                <pre>
+                                    <code>
+margin-top:5px; /*górny margines*/
+margin-right: 10%; /*prawy margines*/
+margin-bottom: 3em; /*dolny margines*/
+margin-left; 20px; /*lewy margines*/
+                                    </code>
+                                </pre>
+                            </ul>
+                            <p class="card-text">Sytuacja ma się dokładnie tak samo z paddingiem.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="css8" role="tabpanel" aria-labelledby="css-units-tab">
+                    <div class="card card-css">
+                        <div class="card-body">
+                            <h4 class="card-title">Jednostki w CSS</h4>
+                            <p class="card-text">CSS ma kilka różnych jednostek do wyrażania długości.</p>
+                        </div>
+                    </div>
+                    <div class="card card-css">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Jednostki względne (relatywne)</h5>
+                            <p class="card-text">Względne jednostki długości stosujemy, gdy chcemy się odwołać do rozmiaru innego elementu (np. wysokości aktualnie używanej czcionki).</p>
+                            <p class="card-text">Jednostki względne czcionki:</p>
+                            <ul>
+                                <li>em - wysokość aktualnej czcionki</li>
+                                <li>ex - wysokośc litery 'x', czyli małej litery w aktualnej czcionce</li>
+                                <li>ch - wysokość cyfry '0' w aktualnej czcionce</li>
+                                <li>rem - wysokość czcionki elementu korzenia w drzewie dokumentu (CSS 3 - interpretuje Internet Explorer 9, Firefox, Opera, Chrome); w języku HTML korzeniem jest zawsze element &lt;html&gt;&lt;/html&gt;</li>
+                            </ul>
+                            <p class="card-text">Jednostki procentowe obszaru wyświetlania:</p>
+                            <ul>
+                                <li>vw - procentowa szerokość obszaru wyświetlania (interpretuje Internet Explorer 9, Chrome)</li>
+                                <li>vh - procentowa wysokość obszaru wyświetlania (interpretuje Internet Explorer 9, Chrome)</li>
+                                <li>vmin - mniejsza z wartości vw lub vh (interpretuje Internet Explorer 10, Chrome)</li>
+                                <li>vmax - większa z wartości vw lub vh</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card card-css">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Jednostki bezwzględne (absolutne)</h5>
+                            <ul>
+                                <li>in - cale (1in = 2.54cm)</li>
+                                <li>cm - centymetry</li>
+                                <li>mm - milimetry</li>
+                                <li>pt - punkty (1pt = 1/72in) - często używane przy definiowaniu rozmiaru czcionki w edytorach tekstu</li>
+                                <li>pc - pika (1pc = 12pt)</li>
+                                <li>px - piksele (1px = 1/96in)</li>
+                            </ul>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">Jednostki względne</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>5 em</td>
+                                        <td>wysokość czcionki</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5ex</td>
+                                        <td>wysokość małej litery</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5ch</td>
+                                        <td>szerokość cyfry '0'</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5rem</td>
+                                        <td>wysokość czcionki korzenia</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5vw</td>
+                                        <td>5% szerokośći okna</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5vh</td>
+                                        <td>5% wysokości okna</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5vmin</td>
+                                        <td>5% minimalnej szer/wys okna</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5vamx</td>
+                                        <td>5% maksymalner szer/wys okna</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">Jednostki bezwzględne</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>5in</td>
+                                        <td>cale</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5cm</td>
+                                        <td>centymetry</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10mm</td>
+                                        <td>milimetry</td>
+                                    </tr>
+                                    <tr>
+                                        <td>30pt</td>
+                                        <td>punkty</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3pc</td>
+                                        <td>pika</td>
+                                    </tr>
+                                    <tr>
+                                        <td>50px</td>
+                                        <td>piksele</td>
+                                    </tr><tr>
+                                        <td>5in</td>
+                                        <td>cale</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5cm</td>
+                                        <td>centymetry</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10mm</td>
+                                        <td>milimetry</td>
+                                    </tr>
+                                    <tr>
+                                        <td>30pt</td>
+                                        <td>punkty</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3pc</td>
+                                        <td>pika</td>
+                                    </tr>
+                                    <tr>
+                                        <td>50px</td>
+                                        <td>piksele</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card card-css">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Wartości procentowe</h5>
+                            <p class="card-text">Format wartości procentowej składa się z opcjonalnego znaku liczby ("+" - domyślny lub "-"), liczby całkowitej lub rzeczywistej oraz znaku procentu ("%"). Należy pamiętać, że nie każdy parametr może przyjąć wartość ujemną! Wartość procentowa jest zawsze określana względem innej wartości np. długości. Każda właściwość która pozwala podać wartość procentową, definiuje także do czego się ona odnosi. Może ona dotyczyć innej właściwości tego samego elementu, przodka (wyżej w hierarchii drzewa dokumentu) lub wartości kontekstu formatowania (np. szerokość obejmującego bloku).</p>
+                        </div>
+                    </div>
+                </div>
                 <a href="#main" class="card back-to-top">
                     <div class="card-body">
                         <h5 class="card-title">Powrót na górę strony</h4>
@@ -82,7 +460,7 @@
             </div>
         </main>
         <footer class="footer bg-secondary">
-            &COPY; 2021 | Developed by: <b>Weronika Sagan</b> & <b>Aleksandra Nicpoń</b> & <b>Izabela Piorun</b> & <b>Filip Kula</b>
+            &COPY; 2022 | Developed by: <b>Weronika Sagan</b> & <b>Aleksandra Nicpoń</b> & <b>Izabela Piorun</b> & <b>Filip Kula</b>
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

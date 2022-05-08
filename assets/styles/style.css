@@ -16,7 +16,7 @@ html {
 }
 .header {
   width: 100%;
-  background: url("../img/header-background.jpg");
+  background: url("../img/header-background.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -122,7 +122,6 @@ pre {
   background-color: #eee;
   border: 1px solid #999;
   display: flex;
-  justify-content: center;
   align-items: center;
   padding: 10px;
   overflow: auto;
@@ -173,6 +172,7 @@ code {
 /* PHP subpage */
 .php-subpage thead{
   background-color: #8993be;
+  color: #fff;
 }
 .php-subpage .back-to-top{
   text-decoration: none;
@@ -212,6 +212,10 @@ code {
 /* CSS subpage */
 .card-css{
   border-left: 10px solid #2965f1;
+}
+.css-subpage thead{
+  background-color: #2965f1;
+  color: #fff;
 }
 .css-subpage .back-to-top{
   text-decoration: none;

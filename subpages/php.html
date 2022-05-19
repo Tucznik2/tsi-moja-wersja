@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tworzenie stron internetowych</title>
-    <link rel="icon" href="../assets/img/favicon.ico">
+    <link rel="icon" type="image/png" href="../assets/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../assets/img/favicon-16x16.png" sizes="16x16">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/styles/style.css">
 </head>
@@ -22,15 +23,15 @@
         <nav class="navbar navbar-light bg-light sticky-top">
             <div class="container-fluid">
               <a href="../index.html" class="navbar-brand">PHP</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#zseOffcanvas" aria-controls="zseOffcanvas">
                 <span class="navbar-toggler-icon"></span>
               </button>
             </div>
           </nav>
-        <main class="main php-subpage" id="main">
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <main class="main php-subpage p-1" id="main">
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="zseOffcanvas" aria-labelledby="zseOffcanvasLabel">
                 <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">PHP</h5>
+                  <h5 class="offcanvas-title" id="zseOffcanvasLabel">PHP</h5>
                   <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <aside id="side-nav-canvas offcanvas-body" class="list-group sticky-top">
@@ -38,39 +39,39 @@
                     <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php2" id="tab-2" role="tab" aria-controls="tab2" aria-selected="false">Podstawy PHP</a>
                     <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php3" id="tab-3" role="tab" aria-controls="tab3" aria-selected="false">Składnia języka</a>
                     <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php4" id="tab-4" role="tab" aria-controls="tab4" aria-selected="false">Operatory</a>
-                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php5" id="tab-5" role="tab" aria-controls="tab5" aria-selected="false">Zmienne - zadania</a>
-                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php6" id="tab-6" role="tab" aria-controls="tab6" aria-selected="false">Instrukcje warunkowe</a>
-                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php7" id="tab-7" role="tab" aria-controls="tab7" aria-selected="false">Instrukcje warunkowe - zadania</a>
-                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php8" id="tab-8" role="tab" aria-controls="tab8" aria-selected="false">Pętle</a>
-                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php9" id="tab-9" role="tab" aria-controls="tab9" aria-selected="false">Pętle - zadania</a>
-                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php10" id="tab-10" role="tab" aria-controls="tab10" aria-selected="false">Tablice</a>
-                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php11" id="tab-11" role="tab" aria-controls="tab11" aria-selected="false">Tablice - zadania</a>
-                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php12" id="tab-12" role="tab" aria-controls="tab12" aria-selected="false">Funkcje</a>
-                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php13" id="tab-13" role="tab" aria-controls="tab12" aria-selected="false">Funkcje - zadania</a>
-                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php14" id="tab-14" role="tab" aria-controls="tab12" aria-selected="false">Formularze</a>
-                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php15" id="tab-15" role="tab" aria-controls="tab16" aria-selected="false">Formularze - zadania</a>
-                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php16" id="tab-16" role="tab" aria-controls="tab16" aria-selected="false">Połączenie z bazą</a>
-                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php17" id="tab-17" role="tab" aria-controls="tab17" aria-selected="false">Operacje na danych</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php5" id="tab-5" role="tab" aria-controls="tab5" aria-selected="false">Instrukcje warunkowe</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php6" id="tab-6" role="tab" aria-controls="tab6" aria-selected="false">Pętle</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php7" id="tab-7" role="tab" aria-controls="tab7" aria-selected="false">Tablice</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php8" id="tab-8" role="tab" aria-controls="tab8" aria-selected="false">Funkcje</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php9" id="tab-9" role="tab" aria-controls="tab9" aria-selected="false">Formularze</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php10" id="tab-10" role="tab" aria-controls="tab10" aria-selected="false">Połączenie z bazą</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php11" id="tab-11" role="tab" aria-controls="tab11" aria-selected="false">Operacje na danych</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php12" id="tab-12" role="tab" aria-controls="tab12" aria-selected="false">Zmienne - zadania</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php13" id="tab-13" role="tab" aria-controls="tab12" aria-selected="false">Instrukcje warunkowe - zadania</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php14" id="tab-14" role="tab" aria-controls="tab12" aria-selected="false">Pętle - zadania</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php15" id="tab-15" role="tab" aria-controls="tab16" aria-selected="false">Tablice - zadania</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php16" id="tab-16" role="tab" aria-controls="tab16" aria-selected="false">Funkcje - zadania</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php17" id="tab-17" role="tab" aria-controls="tab17" aria-selected="false">Formularze - zadania</a>
                 </aside>
             </div>
             <aside id="side-nav" class="list-group sticky-top">
                 <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php1" id="tab-1" role="tab" aria-controls="tab1" aria-selected="true">Instalowanie pakietu XAMPP</a>
-                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php2" id="tab-2" role="tab" aria-controls="tab2" aria-selected="false">Podstawy PHP</a>
-                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php3" id="tab-3" role="tab" aria-controls="tab3" aria-selected="false">Składnia języka</a>
-                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php4" id="tab-4" role="tab" aria-controls="tab4" aria-selected="false">Operatory</a>
-                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php5" id="tab-5" role="tab" aria-controls="tab5" aria-selected="false">Zmienne - zadania</a>
-                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php6" id="tab-6" role="tab" aria-controls="tab6" aria-selected="false">Instrukcje warunkowe</a>
-                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php7" id="tab-7" role="tab" aria-controls="tab7" aria-selected="false">Instrukcje warunkowe - zadania</a>
-                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php8" id="tab-8" role="tab" aria-controls="tab8" aria-selected="false">Pętle</a>
-                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php9" id="tab-9" role="tab" aria-controls="tab9" aria-selected="false">Pętle - zadania</a>
-                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php10" id="tab-10" role="tab" aria-controls="tab10" aria-selected="false">Tablice</a>
-                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php11" id="tab-11" role="tab" aria-controls="tab11" aria-selected="false">Tablice - zadania</a>
-                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php12" id="tab-12" role="tab" aria-controls="tab12" aria-selected="false">Funkcje</a>
-                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php13" id="tab-13" role="tab" aria-controls="tab12" aria-selected="false">Funkcje - zadania</a>
-                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php14" id="tab-14" role="tab" aria-controls="tab12" aria-selected="false">Formularze</a>
-                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php15" id="tab-15" role="tab" aria-controls="tab16" aria-selected="false">Formularze - zadania</a>
-                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php16" id="tab-16" role="tab" aria-controls="tab16" aria-selected="false">Połączenie z bazą</a>
-                <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php17" id="tab-17" role="tab" aria-controls="tab17" aria-selected="false">Operacje na danych</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php2" id="tab-2" role="tab" aria-controls="tab2" aria-selected="false">Podstawy PHP</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php3" id="tab-3" role="tab" aria-controls="tab3" aria-selected="false">Składnia języka</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php4" id="tab-4" role="tab" aria-controls="tab4" aria-selected="false">Operatory</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php5" id="tab-5" role="tab" aria-controls="tab5" aria-selected="false">Instrukcje warunkowe</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php6" id="tab-6" role="tab" aria-controls="tab6" aria-selected="false">Pętle</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php7" id="tab-7" role="tab" aria-controls="tab7" aria-selected="false">Tablice</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php8" id="tab-8" role="tab" aria-controls="tab8" aria-selected="false">Funkcje</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php9" id="tab-9" role="tab" aria-controls="tab9" aria-selected="false">Formularze</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php10" id="tab-10" role="tab" aria-controls="tab10" aria-selected="false">Połączenie z bazą</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php11" id="tab-11" role="tab" aria-controls="tab11" aria-selected="false">Operacje na danych</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php12" id="tab-12" role="tab" aria-controls="tab12" aria-selected="false">Zmienne - zadania</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php13" id="tab-13" role="tab" aria-controls="tab12" aria-selected="false">Instrukcje warunkowe - zadania</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php14" id="tab-14" role="tab" aria-controls="tab12" aria-selected="false">Pętle - zadania</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php15" id="tab-15" role="tab" aria-controls="tab16" aria-selected="false">Tablice - zadania</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php16" id="tab-16" role="tab" aria-controls="tab16" aria-selected="false">Funkcje - zadania</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#php17" id="tab-17" role="tab" aria-controls="tab17" aria-selected="false">Formularze - zadania</a>
             </aside>
             <div class="tab-content content">
                 <div class="tab-pane fade show active" id="php1" role="tabpanel" aria-labelledby="installation-tab">
@@ -90,7 +91,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade show" id="php2" role="tabpanel" aria-labelledby="basics-tab">
+                <div class="tab-pane fade" id="php2" role="tabpanel" aria-labelledby="basics-tab">
                     <div class="card card-php">
                         <div class="card-body">
                             <h4 class="card-title">Podstawy PHP</h4>
@@ -122,7 +123,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade show" id="php3" role="tabpanel" aria-labelledby="syntax-tab">
+                <div class="tab-pane fade" id="php3" role="tabpanel" aria-labelledby="syntax-tab">
                     <div class="card card-php">
                         <div class="card-body">
                             <h4 class="card-title">Komentarze w PHP</h4>
@@ -172,7 +173,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade show" id="php4" role="tabpanel" aria-labelledby="operators-tab">
+                <div class="tab-pane fade" id="php4" role="tabpanel" aria-labelledby="operators-tab">
                     <div class="card card-php">
                         <div class="card-body">
                             <h4 class="card-title">Operatory arytmetyczne</h4>
@@ -374,20 +375,993 @@
                             </table>
                         </div>
                     </div>
+                </div>              
+                <div class="tab-pane fade" id="php5" role="tabpanel" aria-labelledby="conditions-tab">
+                    <div class="card card-php">
+                        <div class="card-body">
+                            <h4 class="card-title">Instrukcje warunkowe</h4>
+                            <p class="card-text">Instrukcje warunkowe są wykorzystywany aby nasz kod dokonywał różnych operacji w zależności od określonych warunków. W PHP mamy do dyspozycji kilka typów takich instrukcji.</p>
+                        </div>
+                    </div>
+                    <div class="card card-php">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Instrukcja warunkowa if</h5>
+                            <p class="card-text">Podstawowa budowa instrukcji warunkowej wygląda następująco:</p>
+                            <pre>
+                                <code>
+&lt;?php
+	if(warunek) instrukcja;
+		
+	if(warunek){
+		instrukcje;
+	}
+?&gt;
+                                </code>
+                            </pre>
+                            <p class="card-text">Jeżeli warunek zostanie spełniony, wykonaj instrukcję. Warunek spełniony to taki, dla którego wartość logiczna jest równa true (liczbowo = 1), czyli jest prawdziwa. Przykładowo jeśli wartość zmiennej $a w poniższym przykładzie będzie liczbą większą niż 0 na ekran wypisze się stosowny komunikat:</p>
+                            <pre>
+                                <code>
+&lt;?php
+	if($a>0) echo "A jest większe od 0";
+?&gt;
+                                </code>
+                            </pre>
+                            <p class="card-text">Po spełnieniu warunku można wykonać więcej niż jedną instrukcję. Wówczas wszystkie elementy, które mają się wykonać w przypadku prawdziwości warunku zamykamy w blok instrukcji pomiędzy klamrami {}.</p>
+                            <pre>
+                                <code>
+&lt;?php
+    if($a>0){
+        echo "a dodatnie";
+        $b++;
+        $c--;
+    }
+?&gt;
+                                </code>
+                            </pre>
+                            <p class="card-text">Możemy też za pomocą instrukcji warunkowej if wyświetlić co się stanie w innym przypadku, gdy pierwszy warunek nie zostanie spełniony. Robimy to za pomocą <strong>else</strong> lub <strong>elseif</strong> jeśli chcemy sprawdzić więcej niż dwa warunki.</p>
+                            <pre>
+                                <code>
+&lt;?php
+	//przyklad z else
+
+	if($a>0){
+		echo "a większe od 0";
+	}else{
+		echo "a nie jest większe od 0";
+	}
+?&gt;
+                                </code>
+                            </pre>
+                            <pre>
+                                <code>
+&lt;?php
+	//przyklad z elseif
+
+	if($a&gt;0){
+		echo "a większe od 0";
+	}elseif($a&lt;0){
+		echo "a nie jest większe od 0";
+	}else{
+		echo "a jest równe 0";
+	}
+?&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="card card-php">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Instrukcja warunkowa switch</h5>
+                            <p class="card-text">Składnia switch jest instrukcją warunkową, ale jedną zmienną można porównać nie z jedną wartością, ale z kilkoma. Niestety nie można konstruować złożonych warunków – możliwe jest tylko proste porównywanie (równoważne instrukcji: if($zmienna=="wartość") instrukcja).</p>
+                            <pre>
+                                <code>
+&lt;?php
+    switch(liczba_całkowita){
+        case wartość1:
+            instrukcje;
+            break;
+                                      
+        case wartość2:
+            instrukcje;
+            break;
+                                      
+        ...
+                                     
+        case default;
+            instrukcje;
+            break;
+    }
+?>
+                                </code>
+                            </pre>
+                            <p class="card-text">Przy instrukcji <strong>default</strong> nie musimy podawać słowa <strong>case</strong>. Instrukcje zawarte w tej częsci switcha wykonywane są gdy nasza liczba_całkowita nie będzie miała żadnych z wcześniejszych wartości zawartych w kolejnych opcjach case. Przykład użycia switcha:</p>
+                            <pre>
+                                <code>
+&lt;?php
+	$a = 3;
+
+	switch($a){
+        case 1:
+	        echo 'Jeden';
+	        break;
+
+        case 2:
+	        echo 'Dwa';
+	        break;
+
+        default:
+	        echo 'Inna liczba';
+	        break;
+	}
+	//wyświetli się "Inna liczba" ponieważ żadna wartość case nie pasuje do wartości $a.
+?&gt;
+
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
                 </div>
-                <div class="tab-pane fade show active" id="php5" role="tabpanel" aria-labelledby="variables-tab"></div>
-                <div class="tab-pane fade show active" id="php6" role="tabpanel" aria-labelledby="conditions-tab"></div>
-                <div class="tab-pane fade show active" id="php7" role="tabpanel" aria-labelledby="conditions-excercises-tab"></div>
-                <div class="tab-pane fade show active" id="php8" role="tabpanel" aria-labelledby="loop-tab"></div>
-                <div class="tab-pane fade show active" id="php9" role="tabpanel" aria-labelledby="loop-exercises-tab"></div>
-                <div class="tab-pane fade show active" id="php10" role="tabpanel" aria-labelledby="array-tab"></div>
-                <div class="tab-pane fade show active" id="php11" role="tabpanel" aria-labelledby="array-exercises-tab"></div>
-                <div class="tab-pane fade show active" id="php12" role="tabpanel" aria-labelledby="functions-tab"></div>
-                <div class="tab-pane fade show active" id="php13" role="tabpanel" aria-labelledby="functions-exercises-tab"></div>
-                <div class="tab-pane fade show active" id="php14" role="tabpanel" aria-labelledby="forms-tab"></div>
-                <div class="tab-pane fade show active" id="php15" role="tabpanel" aria-labelledby="forms-exercises-tab"></div>
-                <div class="tab-pane fade show active" id="php16" role="tabpanel" aria-labelledby="db-conn-tab"></div>
-                <div class="tab-pane fade show active" id="php17" role="tabpanel" aria-labelledby="db-operations-tab"></div>
+                <div class="tab-pane fade" id="php6" role="tabpanel" aria-labelledby="loop-tab">
+                    <div class="card card-php">
+                        <div class="card-body">
+                            <h4 class="card-title">Pętle</h4>
+                            <p class="card-text">Pęlte są używane aby uniknąć niepotrzebnego powtarzania tych samów bloków kodu. Wykonuje ona zadane instrukcje daną ilość razy.</p>
+                        </div>
+                    </div>
+                    <div class="card card-php">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Pętla for</h5>
+                            <p class="card-text">Pętla składa się z 3 elementów zamkniętych pomiędzy nawiasami okrągłymi, oddzielonymi od siebie średnikami: pierwszy to wartości początkowe zmiennych – blok ten wykonuje się raz, na początku działania pętli, drugi to warunek lub warunki zakończenia pętli – sprawdzane na początku każdego obiegu pętli i trzeci to blok instrukcji wykonywanych na koniec każdego obiegu pętli, najczęściej inkrementacja zmiennej.</p>
+                            <pre>
+                                <code>
+&lt;?php
+	for(wartości_początkowe;warunek;zmiana){
+	  instrukcje;
+	}
+?&gt;
+                                </code>
+                            </pre>
+                            <p class="card-text">Przykład użycia pętli for:</p>
+                            <pre>
+                                <code>
+&lt;?php
+	for($x = 1; $x &lt;= 10; $x++){
+	    echo $x."&lt;br&gt;";
+	    //wypisanie wszystkich całkowitych wartości x (od 1 do 10)
+	}
+?&gt;
+                                </code>
+                            </pre>
+                            <p class="card-text">Brak warunku zakończenia powoduje nieskończone działanie pętli. Istnieją jednak specjalne instrukcje przerywające działanie pętli:</p>
+                            <ul>
+                                <li>continue – przerywa obecny obieg pętli, pomija kolejne instrukcje, przechodzi do kolejnego obiegu</li>
+                                <li>break – przerywa działanie pętli, program przechodzi za klamrę zamykającą pętlę }</li>
+                            </ul>
+                            <p class="card-text">Na przykład:</p>
+                            <pre>
+                                <code>
+&lt;?php
+	for($x = 1; $x &lt;= 10; $x++){
+	    if($x % 2 != 0) continue;
+	    echo $x.", ";
+	    //wypisanie wszystkich całkowitych wartości x podzielnych przez 2 (2, 4, 6, 8, 10)
+	}
+?&gt;
+                                </code>
+                            </pre>
+                            <pre>
+                                <code>
+&lt;?php
+	for($p=1;;$p++){ //pętla nie ma warunku zakończenia.
+	    echo $p;
+	    if($p == 7) break;
+	    //W przypadku gdy zmienna $p osiągnie wartość 7 przerwane zostaje działanie pętli. 
+	}
+?&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="card card-php">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Pętla while</h5>
+                            <p class="card-text">Jest ona wykorzystywana w sytuacjach, kiedy niezbędne jest wykonywanie jakiejś operacji dopóki nie zostanie spełniony warunek. While zbudowany jest w podobny sposób jak instrukcja warunkowa if.</p>
+                            <pre>
+                                <code>
+&lt;?php
+    while(warunek){
+        instrukcje;
+        zmiana;
+    }
+?&gt;
+                                </code>
+                            </pre>
+                            <p class="card-text">Przykład użycia pętli while:</p>
+                            <pre>
+                                <code>
+&lt;?php
+	$i=0;
+	while($i&lt;10){ //działa tak długo jak spełniony jest warunek $i&lt;10
+	    echo $i." ";
+	    $i++;
+	} //wypisanie wszystkich całkowitych wartości x (od 0 do 9)
+?&gt;
+
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="card card-php">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Pętla do...while</h5>
+                            <p class="card-text">Odmianą pętli while jest pętla do…while. Pętla while różni się od tej pętli pod względem kolejności zapisu warunku i bloku instrukcji, a także tym, że pętla while w przypadku nie spełnienia warunku nie wykona się wcale, natomiast blok do{} wykona się jeden raz zawsze, dopiero później sprawdzi, czy warunek jest prawdziwy.</p>
+                            <pre>
+                                <code>
+&lt;?php
+    do{
+        instrukcje;
+    }while(warunek);
+?&gt; 
+                                </code>
+                            </pre>
+                            <p class="card-text">Przykład użycia pętli do...while:</p>
+                            <pre>
+                                <code>
+&lt;?php
+    $i=0;
+    do{
+        echo $i; //wypisanie wszystkich całkowitych wartości x (od 0 do 9)
+        $i++;
+    }
+    while($i&lt;10); //działa tak długo jak spełniony jest warunek $i&lt;10
+?&gt;	 
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="card card-php">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Pętla foreach</h5>
+                            <p class="card-text">Foreach działa na elementach tablicy. Pobiera kolejne elementy tablicy i pozwala wykonać na nich dalsze czynności.</p>
+                            <pre>
+                                <code>
+&lt;?php
+	$tablica;
+	foreach($tablica as $element){
+	    instrukcje;
+	}
+?&gt;
+                                </code>
+                            </pre>
+                            <p class="card-text">Przykład użycia pętli foreach:</p>
+                            <pre>
+                                <code>
+&lt;?php
+	$tablica = array(1, 2, 3, 4);
+	foreach ($tablica as $element){
+        echo $element." "; //wypisuje elementy tablicy (1, 2, 3, 4)
+	}
+?&gt;
+                                </code>
+                            </pre>
+                            <p class="card-text">Pobiera poszczególne elementy tablicy $tablica jako $element, następnie wypisuje je na ekran.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="php7" role="tabpanel" aria-labelledby="array-tab">
+                    <div class="card card-php">
+                        <div class="card-body">
+                            <h4 class="card-title">Tablice</h4>
+                            <p class="card-text">Tablica jest strukturą danych, która może przechowywać więcej niż jedną wartość w danym momęcie. Dostęp do danych uzyskujemy przez przypisane do nich indeksy.</p>
+                        </div>
+                    </div>
+                    <div class="card card-php">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Tablice jednowymiarowe</h5>
+                            <p class="card-text">Deklaracja tablicy przedstawia się następująco. Nie określamy typu przechowywanych danych.</p>
+                            <pre>
+                                <code>
+&lt;?php
+	$tablica = array(1,2,3,4,5); //pierwszy sposób
+	print_r($tablica); //wyświetlone zostanie Array ([0] => 1 [1] => 2 [2] => 3 [3] => 4 [4] => 5)
+
+	$tablica[0] = "Wpis numer 0"; //drugi sposób
+	$tablice[1] = "Wpis numer 1";
+	$tablica[2] = "Wpis numer 2";
+	echo $tablica[2]; //wyświetlony zostanie napis "Wpis numer 2";
+
+?&gt;
+                                </code>
+                            </pre>
+                            <p class="card-text">Indeksowanie w tablicach rozpoczynamy od cyfry 0. Dlatego na przykład dziesięcioelementowa tablica będzie indeksowana od 0 do 9. Elementem tablicy może być każdy typ zmiennej (z innymi tablicami i obiektami włącznie).</p>
+                        </div>
+                    </div>
+                    <div class="card card-php">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Tablice asocjacyjne</h5>
+                            <p class="card-text">W PHP występuje też inny rodzaj tablic, tak zwane tablice asocjacyjne. Są to tablice, w których zamiast indeksów liczbowych używa się identyfikatorów znakowych. Przykład:</p>
+                            <pre>
+                                <code>
+&lt;?php
+    $tablica["imie"] = "Jan";
+    $tablica["nazwisko"] = "Kowalski";
+    $tablica["adres"] = "Polna 1";
+                                    
+    echo $tablica["imie"]." ".$tablica["nazwisko"].", ".$tablica["adres"]; //wyświetli "Jan Kowalski, Polna 1"                                          
+?>  
+                                </code>
+                            </pre>
+                            <pre>
+                                <code>
+&lt;?php
+	$pracownicy = array(
+		"szef" => "Nowak",
+		"sekretariat" => "Kowalski",
+		"biuro" => "Barański" 
+		);
+
+	echo $pracownicy["szef"]."&lt;br&gt;"; //wypisze się "Nowak"			
+?&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="card card-php">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Przeglądanie tablic</h5>
+                            <p class="card-text">Bardzo często zachodzi potrzeba wykonania jakiejś operacji na wszystkich elementach tablicy. Sprawa jest prosta jeśli tablica jest zwykłą tablicą z indeksami liczbowymi i znamy ilość tych elementów:</p>
+                            <pre>
+                                <code>
+&lt;?php
+	$tab[] = 1;
+	$tab[] = 2;
+	$tab[] = 3;
+	$tab[] = 4;
+	$tab[] = 5;
+	
+	for( $x = 0; $x &lt; 5; $x++ ) { //pętla wykona się 5 razy
+	    echo $tab[$x]; //wyświetlą się wartości tabeli $tab (1,2,3,4,5)
+	}
+	
+?&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="card card-php">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Funkcje w tabelach</h5>
+                            <ul>
+                                <li>array_push – dodaje elementy na koniec</li>
+                                <li>array_pop – zabiera ostatni element</li>
+                                <li>array_shift – zabiera pierwszy element</li>
+                                <li>array_unshift – dodaje elementy na początek</li>
+                                <li>shuffle() – miesza elementy</li>
+                                <li>sort() – sortuje elementy alfabetycznie</li>
+                            </ul>
+                            <pre>
+                                <code>
+&lt;?php
+	$owoce = array("jabłko", "gruszka");
+
+	array_push($owoce, "banan", "malina");
+	print_r($owoce); //wyświetli Array ([0] => jabłko [1] => gruszka [2] => banan [3] => malina)
+
+	array_pop($owoce);
+	print_r($owoce); //wyświetli Array ([0] => jabłko [1] => gruszka [2] => banan) 
+
+	array_shift($owoce);
+	print_r($owoce); //wyświetli Array ([0] => gruszka [1] => banan)
+
+	array_unshift($owoce, "ananas", "cytryna");
+	print_r($owoce); //wyświetli Array ([0] => ananas [1] => cytryna [2] => gruszka [3] => banan)
+
+	shuffle($owoce);
+	print_r($owoce); //wyświetli Array ([0] => gruszka [1] => banan [2] => ananas [3] => cytryna)
+
+	sort($owoce);
+	print_r($owoce); //wyświetli Array ([0] => ananas [1] => banan [2] => cytryna [3] => gruszka)
+?&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="card card-php">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Tablice wielowymiarowe</h5>
+                            <p class="card-text">PHP umożliwia także deklaracje tzw. tablic wielowymiarowych. Polega to na tworzeniu kolejnych węzłów elementu dając przy tym wrażenie drzewa elementów. Tablice wielowymiarowe można deklarować podając kolejne indeksy w nawiasach kwadratowych:</p>
+                            <pre>
+                                <code>
+&lt;?php
+	$dane[0]['imię'] = 'Jan';
+	$dane[0]['nazwisko'] = 'Kowalski';
+	$dane[0]['ulica'] = 'Kowalowska';
+  
+	$dane[1]['imię'] = 'Maciej';
+	$dane[1]['nazwisko'] = 'Nowak';
+	$dane[1]['ulica'] = 'Nowakowska';
+?&gt;
+                                </code>
+                            </pre>
+                            <p class="card-text">Innym sposobem tworzenia tablic wielowymiarowych jest zastosowanie konstrukcji Array():</p>
+                            <pre>
+                                <code>
+&lt;?php
+    $kraje = Array(
+        'Europa' => array('Polska', 'Anglia', 'Litwa', 'Francja'),
+        'Afryka' => array('Tunezja', 'Egipt', 'RPA', 'Etiopia'),
+        'Azja' => array('Chiny', 'Mongolia', 'Japonia', 'Kazachstan')
+    );
+?&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="php8" role="tabpanel" aria-labelledby="functions-tab">
+                    <div class="card card-php">
+                        <div class="card-body">
+                            <h4 class="card-title">Funckje w PHP</h4>
+                            <p class="card-text">Funckja jest wyodrębnionym fragmentem kodu i pozwala w wygodny sposób wielokrotne wykorzystanie go w programie.</p>
+                        </div>
+                    </div>
+                    <div class="card card-php">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Deklaracja funckji</h5>
+                            <p class="card-text">Deklaracja funkcji wygląda następująco:</p>
+                            <pre>
+                                <code>
+&lt;?php
+    function nazwa(){
+        instrukcje;
+    }
+?&gt;  
+                                </code>
+                            </pre>
+                            <p class="card-text">Tak natomiast jej wywołanie:</p>
+                            <pre>
+                                <code>
+&lt;?php
+    nazwa();
+?&gt;                                
+                                </code>
+                            </pre>
+                            <p class="card-text">Wywołując funkcję w dowolnym miejscu strony spowodujemy jej wykonanie. Możemy to wykorzystać wywołując dany fragment kodu wielokrotnie na stronie, bądź dołączając plik z funkcjami wywoływać je na wielu stronach naszej witryny. Najprostszy przykład funkcji:</p>
+                            <pre>
+                                <code>
+&lt;?php
+    function witaj(){
+        echo "Witaj świecie!";
+    }
+    witaj(); //wypisze się "Witaj świecie!"
+?&gt;    
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="card card-php">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Funkcja parametryczna</h5>
+                            <p class="card-text">Funkcja może przyjmować parametry wejściowe. Są to przekazywane do wnętrza funkcji wartości, którymi możemy wewnątrz niej operować. Parametry wejściowe funkcji podajemy wewnątrz nawiasu okrągłego.</p>
+                            <pre>
+                                <code>
+&lt;?php
+    function witajimie($imie){
+        echo "Witaj $imie!&lt;br&gt;";
+    }
+    witajimie("Tomek"); //wypisze się "Witaj Tomek!" i przejdzie do następnej linii
+    witajimie("Franek"); //wypisze się "Witaj Franek!" i przejdzie do następnej linii
+?&gt;
+                                </code>
+                            </pre>
+                            <p class="card-text">Możemy podać więcej niż jeden parametr wejściowy do funkcji. Parametry wejściowe oddzielamy od siebie przecinkami.</p>
+                            <pre>
+                                <code>
+&lt;?php
+    function pies($imie, $rasa){
+        echo "Mój pies $imie to $rasa.&lt;br&gt;";
+    }
+    pies("Azor","owczarek"); //wypisze się "Mój pies Azor to owczarek." i przejdzie do następnej linii
+    pies("Kiler","jamnik"); //wypisze się "Mój pies Kiler to jamnik." i przejdzie do następnej linii
+?&gt; 
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="card card-php">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Słowo kluczowe return</h5>
+                            <p class="card-text">Funkcja może również zwracać wartość. Czynność tą wykonuje za pomocą return. Poniżej przedstawiam przykład wykorzystania zwracania przez funkcję wartości:</p>
+                            <pre>
+                                <code>
+&lt;?php
+    function suma($x,$y){
+        $suma = $x + $y;
+        return $suma;
+    }
+    echo "Suma 10 + 30 wynosi: ".suma(10,30)."&lt;br&gt;"; //wyświetli się "Suma 10 + 30 wynosi: 40"
+    echo "Suma 12.4 + 15.7 wynosi: ".suma(12.4,15.7)."&lt;br&gt;"; //wyświetli się "Suma 12.4 + 15.7 wynosi: 28.1"
+?&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="card card-php">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Domyślna wartość parametru</h5>
+                            <p class="card-text">Możemy również ustawić domyślną wartość parametru wejściowego. W przypadku, gdy podczas wywołania funkcji nie podamy jego wartości, zostanie wykorzystana wartość domyślna.</p>
+                            <pre>
+                                <code>
+&lt;?php
+    function ustawMin($min = 50){
+        echo "Min wynosi $min&lt;br&gt;";
+    }
+    ustawMin(100); //wyświetli się "Min wynosi 100"
+    ustawMin(); //wyświetli się "Min wynosi 50"
+    ustawMin(30); //wyświetli się "Min wynosi 30"
+?&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="php9" role="tabpanel" aria-labelledby="forms-tab">
+                    <div class="card card-php">
+                        <div class="card-body">
+                            <h4 class="card-title">Formularze</h4>
+                            <p class="card-text">Tutaj zajmiemy się częścią skryptową języka PHP, odebraniem danych z formularza, sprawdzeniem ich poprawności, podstawowymi formami zabezpieczenia danych czy wymuszenia ich konkretnego typu. Zacznijmy od formularza, z którego postaramy się odebrać przesłane przez niego informacje:</p>
+                            <pre>
+                                <code>
+&lt;form action="./" method="post"&gt;
+    &lt;label for="imie"&gt;Imię:&lt;/label&gt;&lt;input type="text" name="imie"&gt;
+    &lt;label for="wiek"&gt;Wiek:&lt;/label&gt;&lt;input type="number" name="wiek"&gt;
+    &lt;label for="plec"&gt;Płeć:&lt;/label&gt;
+    &lt;input type="radio" name="plec" id="m"&gt;M
+    &lt;input type="radio" name="plec" id="k"&gt;K
+    &lt;label for="kolo"&gt;Ulubiony kolor:&lt;/label&gt;
+    &lt;select name="kolor"&gt;
+        &lt;option value="czerwony"&gt;Czerwony&lt;/option&gt;
+        &lt;option value="zielony"&gt;Zielony&lt;/option&gt;
+        &lt;option value="niebieski"&gt;Niebieski&lt;/option&gt;
+    &lt;/select&gt;
+    Ulubiona seria gier:
+    &lt;label for="gra1"&gt;GTA&lt;/label&gt;&lt;input type="checkbox" name="gra1" value="gta"&gt;
+    &lt;label for="gra2"&gt;FIFA&lt;/label&gt;&lt;input type="checkbox" name="gra2" value="FIFA"&gt;
+    &lt;label for="gra3"&gt;Battlefield&lt;/label&gt;&lt;input type="checkbox" name="gra3" value="Battlefield"&gt;
+    &lt;label for="gra4"&gt;Call of Duty&lt;/label&gt;&lt;input type="checkbox" name="gra4" value="Call of Duty"&gt;
+    &lt;label for="gra5"&gt;Need for Speed&lt;/label&gt;&lt;input type="checkbox" name="gra5" value="Need for Speed"&gt;
+    &lt;label for="gra6"&gt;Tony Hawk&lt;/label&gt;&lt;input type="checkbox" name="gra6" value="Tony Hawk"&gt;
+    &lt;label for="gra7"&gt;Settlers&lt;/label&gt;&lt;input type="checkbox" name="gra7" value="Settlers"&gt;
+    &lt;label for="opis"&gt;Opis:&lt;/label&gt;
+    &lt;textarea name="opis" cols="30" rows="10" placeholder="Placeholder inputa"&gt;&lt;/textarea&gt;
+&lt;/form&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="card card-php">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Przesyłanie danych</h5>
+                            <p class="card-text">Formularz jak widzimy przesyła dane metodą <strong>POST</strong>, wszystkie poniższe przykłady będą oparte właśnie na tej metodzie. Jeśli chcemy zrobić to samo metodą <strong>GET</strong>, jedyne co musimy zrobić z poniższym kodem, to zamienić <strong>POST</strong> na <strong>GET</strong>. Dane przesyłane metodą <strong>POST</strong> przechowywane są w tablicy <strong>$_POST</strong>. Zapisane są tam w komórkach, których indeksem jest wartość atrybutu name pola przesyłanego przez formularz. I tak, jeśli przesyłamy pole formularza o atrybycie <strong>name=”reksio”</strong>, dostępne to będzie w tablicy <strong>POST</strong> pod adresem: <strong>$_POST[“reksio”]</strong>. Analogicznie, jeśli przesyłamy to samo pole metodą <strong>GET</strong>, wartość dostępna będzie w tablicy <strong>$_GET</strong> pod adresem <strong>$_GET[“reksio”]</strong>.</p>
+                            <p class="card-text">
+                                Na samym początku musimy określić właściwości naszego formularza, robimy to poprzez ustawienie właściwości action oraz method. Action pokazuje nam do jakiej strony będziemy przekazywać nasze dane (zmienne). Może to być dowolna strona ze skryptem. Method określa w jaki sposób będziemy przekazywać informacje:</p>
+                            <ul>
+                                <li><strong>POST</strong> – jest to metoda poufnego przekazywania danych. Informacje przekazywane są ze strony na stronę w ciele zapytania HTTP;</li>
+                                <li><strong>GET</strong> – dane, które przesyłamy za pomocą formularza będą widoczne URL naszego requesta;</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card card-php">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Odbieranie wartości z pół formularza</h5>
+                            <p class="card-text">W zależności od wybranego sposobu zmienia się tylko nazwa tablicy globalnej, w której znajdują się dane. Dostęp do nich uzyskujemy przed podanie nazwy naszego inputa, którą przypisaliśmy do jego atrybutu name w HTML:</p>
+                            <pre>
+                                <code>
+&lt;input type="text" name="imie" /&gt;
+&lt;input type="text" name="nazwisko" /&gt;
+&lt;?php
+	$imie = $_POST['imie'];
+	$nazwisko = $_GET['nazwisko'];
+?&gt;
+                                </code>
+                            </pre>
+                            <p class="card-text">Jak wiemy w HTML mamy kilka typów inputów i pobieranie danych z każdego z nich nieco się różni.</p>
+                        </div>
+                    </div>
+                    <div class="card card-php">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Radio (input type=”radio”)</h5>
+                            <p class="card-text">Inputy typu radio powinny mieć taką samą wartość atrybutu name w pliku html, jeśli dotyczą tego samego zagadanienia dzięki czemu odczytujemy wartość tylko zaznaczonego elementu. Wartość przypisujemy dzięki atrybutowi value również w pliku html.</p>
+                            <pre>
+                                <code>
+&lt;label for="plec"&gt;Płeć&lt;/label&gt;
+&lt;input type="radio" name="plec" value="m" /&gt;Mężczyzna
+&lt;input type="radio" name="plec" value="k" /&gt;Kobieta
+&lt;?php
+	$plec = $_POST['plec'];
+	echo $plec; //wyswietli nam value zaznaczonego radio z formularza
+?&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="card card-php">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Lista rozwijana (select)</h5>
+                            <p class="card-text">W przypadku listy rozwijanej odwołanie stosuje do głównego tagu &lt;select&gt;, który zawiera w sobie wszystkie opcje zdefiniowane za pomocą tagu &lt;option&gt;. Poszczególnym opcją nadajemy wartość za pomocą atrybutu value.</p>
+                            <pre>
+                                <code>
+&lt;select&gt; name="kolor"&lt;
+    &lt;option value="czerwony"&lt;Czerwony&lt;/option&lt;
+    &lt;option value="zielony"&lt;Zielony&lt;/option&lt;
+    &lt;option value="niebieski"&lt;Niebieski&lt;/option&lt;
+&lt;/select&gt;
+&lt;?php
+	$kolor = $_POST['kolor'];
+	echo $kolor; //wyswietli nam value zaznaczonego elementu listy z formularza
+?&gt; 
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="card card-php">
+                        <div class="card-body">
+                            <h5 class="card-title">Pole wybory (checkbox)</h5>
+                            <p class="card-text">Input typu checkbox pozwala na wybranie kiku opcji. Każdy checkbox powinien mieć przypisaną wartość za pomocą atrybutu value tak jak w w innych przypadkach. Odczytujemy ich wartości troche inaczej niż we wcześniej przedstawionych przykładach.</p>
+                            <p class="card-text">Jeśli przypiszemy każdemu checkboxowi inna wartość atrybutu name, to wypadało by sprawdzić czy został on zaznaczony, aby PHP nie zasypało nas komukatami, że nie posiada takiego klucza tablicy globalnej. Robimy to za pomocą funkcji <strong>isset()</strong>:</p>
+                            <pre>
+                                <code>
+&lt;label for="gra1"&gt;GTA&lt;/label&gt;&lt;input type="checkbox" name="gra1" value="GTA"&gt;
+&lt;label for="gra2"&gt;FIFA&lt;/label&gt;&lt;input type="checkbox" name="gra2" value="FIFA"&gt;
+&lt;label for="gra3"&gt;Battlefield&lt;/label&gt;&lt;input type="checkbox" name="gra3" value="Battlefield"&gt;
+&lt;label for="gra4"&gt;Call of Duty&lt;/label&gt;&lt;input type="checkbox" name="gra4" value="Call of Duty"&gt;
+&lt;label for="gra5"&gt;Need for Speed&lt;/label&gt;&lt;input type="checkbox" name="gra5" value="Need for Speed"&gt;
+&lt;?php
+    if(isset($_POST['gry1']) && $_POST['gry1'] == 'GTA') echo "Wybrano GTA";
+    if(isset($_POST['gry2']) && $_POST['gry2'] == 'FIFA') echo "Wybrano FIFA";
+    ...
+?&gt;
+                                </code>
+                            </pre>
+                            <p class="card-text">Możemy również wykorzystać tablice i zamiast sprawdzać po kolei każdy checkbox wyświetlić pętlą wszystkie wartości z zaznaczonych pól:</p>
+                            <pre>
+                                <code>
+&lt;label for="gra1"&gt;GTA&lt;/label&gt;&lt;input type="checkbox" name="check_list[]" value="GTA"&gt;
+&lt;label for="gra2"&gt;FIFA&lt;/label&gt;&lt;input type="checkbox" name="check_list[]" value="FIFA"&gt;
+&lt;label for="gra3"&gt;Battlefield&lt;/label&gt;&lt;input type="checkbox" name="check_list[]" value="Battlefield"&gt;
+&lt;label for="gra4"&gt;Call of Duty&lt;/label&gt;&lt;input type="checkbox" name="check_list[]" value="Call of Duty"&gt;
+&lt;label for="gra5"&gt;Need for Speed&lt;/label&gt;&lt;input type="checkbox" name="check_list[]" value="Need for Speed"&gt;
+&lt;?php
+    if(!empty($_POST['check_list'])) {
+        foreach($_POST['check_list'] as $check) {
+                echo $check;
+        }
+    }
+?&gt;   
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="php10" role="tabpanel" aria-labelledby="db-conn-tab">
+                    <div class="card card-php">
+                        <div class="card-body">
+                            <h4 class="card-title">Połączenie z bazą</h4>
+                            <p class="card-text">Aby połączyć się z bazą musimy najpierw uruchomić w XAMPPie serwer baz danych MySQL. Przykład połączenia się z bazą w PHP:</p>
+                            <pre>
+                                <code>
+&lt;?php
+	$serwer = "host"; // np. localhost
+	$baza = "nazwabazy"; //np. cwiczenia
+	$user = "uzytkownik"; // np. root
+	$haslo = "haslo"; // np. puste dla uzytkownika root
+
+	$conn = mysqli_connect("$serwer", "$user", "$haslo", "$baza");
+
+	if(!$conn){
+		echo "Nie ma połączenia!";
+	}else{
+        echo "Jest połączenie!";
+    }
+?&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="php11" role="tabpanel" aria-labelledby="data-operations-tab">
+                    <div class="card card-php">
+                        <div class="card-body">
+                            <h4 class="card-title">Operacje na danych</h4>
+                            <p class="card-text">Wypisanie na ekran imion i nazwisk 10 uczniów. Kod PHP z wykorzystaniem mysqli_query($połączenie, $zapytanie) – wykonanie zapytania, mysqli_num_rows($wynik) – liczba wynikowych wierszy, mysqli_fetch_assoc($wynik) – zapisanie wiersza wyniku w tablicy asocjacyjnej, $wiersz[“imie”] – pobranie elementu tablicy zapisanej w zmiennej wiersz, pod adresem imie.</p>
+                            <pre>
+                                <code>
+&lt;?php
+	$serwer = "host";
+	$baza = "nazwabazy";
+	$user = "uzytkownik";
+	$haslo = "haslo";
+
+	$conn = mysqli_connect("$serwer", "$user", "$haslo", "$baza");
+
+	$sql = "SELECT imie, nazwisko FROM uczen LIMIT 10";
+	$wynik = mysqli_query($baza, $sql);
+
+	if (mysqli_num_rows($wynik) &gt; 0) { //jeśli liczba wierszy jest większa od 0
+		while($wiersz = mysqli_fetch_assoc($wynik)) {
+		    echo "Imię: " . $wiersz["imie"]. ", Nazwisko: " . $wiersz["nazwisko"]. "&lt;br&gt;";
+		}
+	} else { //jeżeli jest równa 0
+	    echo "Brak wyników";
+	}
+	 
+	mysqli_close($baza); //zamknięcie połączenia z bazą
+?&gt; 
+                                </code>
+                            </pre>
+                            <p class="card-text">Pobranie pojedynczej wartości z tabeli:</p>
+                            <pre>
+                                <code>
+&lt;?php
+	$sql = "SELECT imie FROM uczen WHERE nazwisko LIKE 'Kowalski' LIMIT 1";
+	$dane = mysqli_fetch_assoc(mysqli_query($baza, $sql));
+	echo "Kowalski ma na imię ".$dane['imie'].".";
+?&gt;
+                                </code>
+                            </pre>
+                            <p class="card-text">Pobranie pojedynczego wiersza z tabeli</p>
+                            <pre>
+                                <code>
+&lt;?php
+	$sql = "SELECT imie, nazwisko FROM uczen LIMIT 1";
+	$wynik = mysqli_query($baza, $sql);
+	if (mysqli_num_rows($wynik) &gt; 0) {
+		$wiersz = mysqli_fetch_assoc($wynik);
+		echo "Imię: " . $wiersz["imie"]. ", Nazwisko: " . $wiersz["nazwisko"]. ";
+	} else {
+		echo "Brak wyników";
+	}
+?&gt;
+                                </code>
+                            </pre>
+                            <p class="card-text">Wprowadzenie rekordu do tabeli</p>
+                            <pre>
+                                <code>
+&lt;?php
+	$sql = "INSERT INTO uczen VALUES ('null', 'Jan', 'Kowalski', '1')";
+	mysqli_query($baza, $sql);
+?&gt;
+                                </code>
+                            </pre>
+                            <p class="card-text">Modyfikacja informacji w bazie</p>
+                            <pre>
+                                <code>
+&lt;?php
+	$sql = "UPDATE uczen SET imie = 'Barbara' WHERE id = 10";
+	if (mysqli_query($baza, $sql)
+?&gt;
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="php12" role="tabpanel" aria-labelledby="variables-exercises-tab">
+                    <div class="card card-php">
+                        <div class="card-body">
+                            <h4 class="card-title">Zmienne zadania</h4>
+                            <p class="card-text">Przypisz zmiennej $a wartość Twojego numeru z dziennika. Następnie wykonaj poniższe polecenia, wypisując rezultat każdego z nich w kolejnych liniach ekranu:</p>
+                            <ol>
+                                <li> Wartość zmiennej $a.</li>
+                                <li>Liczbę przeciwną do $a.</li>
+                                <li>Zmienną $a powiększoną o 3.</li>
+                                <li>Zmienną $a pomniejszoną o 5.</li>
+                                <li>Zmienną $a pomnożoną przez 2.</li>
+                                <li>Zmienną $a podzieloną przez 5.</li>
+                                <li>Wartość reszty z dzielenia zmiennej $a przez 2.</li>
+                                <li>Wypisz wartość zmiennej $a podniesioną do 3 potęgi.</li>
+                                <li>Wypisz tekst wraz z podstawieniem pod X wartości $a: “Wartość zmiennej $a wynosi: X i już się nie zmieni.” </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="php13" role="tabpanel" aria-labelledby="conditions-exercises-tab">
+                    <div class="card card-php">
+                        <div class="card-body">
+                            <h4 class="card-title">Instrukcje warunkowe - zadania</h4>
+                            <p class="card-text">Utwórz następujące skrypty:</p>
+                            <ol>
+                                <li>Obliczający wynik równania x = a/b. Wynik wypisuje na ekran. W przypadku, kiedy nie można obliczyć wyniku, wyświetli stosowny komunikat;</li>
+                                <li>Obliczający wynik równania x = a/b + c/d . Wynik wypisuje na ekran. W przypadku, kiedy nie można obliczyć wyniku, wyświetli stosowny komunikat;</li>
+                                <li>Obliczający wynik równania x = (a+6) / (b – 4). Wynik wypisuje na ekran. W przypadku, kiedy nie można obliczyć wyniku, wyświetli stosowny komunikat;</li>
+                                <li>Sprawdzający czy wprowadzona liczba jest parzysta. Na ekran wypisuje stosowny komunikat;</li>
+                                <li>Wczytujący dwie liczby. Sprawdza czy pierwsza jest podzielna przez drugą. Na ekran wypisuje stosowny komunikat;</li>
+                                <li>Sprawdzający czy wprowadzona liczba jest dodatnia, ujemna czy równa 0. Na ekran wypisuje stosowny komunikat;</li>
+                                <li>Wypisujący na ekran największą spośród trzech wprowadzonych liczb;</li>
+                                <li>Wypisujący trzy wprowadzone liczby w kolejności rosnącej;</li>
+                                <li>Sprawdzający na podstawie daty urodzenia i dzisiejszej daty czy osoba jest pełnoletnia;</li>
+                                <li>Sprawdzający czy dany znak jest dużą literą, małą literą, cyfrą, czy innym znakiem;</li>
+                                <li>Sprawdzający czy dana trzycyfrowa liczba jest palindromem;</li>
+                                <li> Sprawdzający czy poszczególne cyfry maksymalnie dwucyfrowej liczby są parzyste lub ich suma jest równa 4;</li>
+                                <li>
+                                    Wystawiający ocenę na podstawie podanej liczby punktów. Wykorzystaj następujące kryteria oceny:
+                                    <ul>
+                                        <li>0 – 29 pkt – ocena niedostateczna;</li>
+                                        <li>30 – 59 pkt – ocena dopuszczająca;</li>
+                                        <li>60 – 74 pkt – ocena dostateczna;</li>
+                                        <li>75 – 89 pkt – ocena dobra;</li>
+                                        <li>90 – 99 pkt – ocena bardzo dobra;</li>
+                                        <li>100 pkt – ocena celująca;</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="php14" role="tabpanel" aria-labelledby="loops-excercises-tab">
+                    <div class="card card-php">
+                        <div class="card-body">
+                            <h4 class="card-title">Pętle - zadania</h4>
+                            <p class="card-text">Napisz skrypty, które będą posiadały następującą funkcjonalność:</p>
+                            <ol>
+                                <li>Wyświetli na ekranie 10 kolejnych liczb całkowitych począwszy od 1;</li>
+                                <li>Wyświetli na ekranie 10 kolejnych liczb całkowitych począwszy od 10 w kolejności malejącej;</li>
+                                <li>Obliczy i wyświetli na ekranie sumę kolejnych 10 liczb całkowitych począwszy od 1;</li>
+                                <li>Wyświetli na ekranie 10 kolejnych parzystych liczb całkowitych począwszy od 2;</li>
+                                <li>Pracownik przez X miesięcy odkłada co miesiąc Y zł. W każdym miesiącu z całej odłożonej na tą chwilę kwoty uzyskuje 8% odsetek. Jaką kwotę zgromadzi pracownik ?;</li>
+                                <li>Obliczy sumę elementów ciągu arytmetycznego, składającego się ze 100 elementów, z których każdy kolejny jest większy od poprzedniego o 10. Pierwszy element wynosi 5;</li>
+                                <li>Obliczy ilość cegieł w piramidzie o podstawie 10 x 10 cegieł;</li>
+                                <li>Obliczy ilość cegieł w ścianie o podstawie X cegieł, wysokości Y rzędów cegieł, gdzie każdy kolejny stawiany rząd cegieł jest o Z cegieł krótszy od poprzedniego (niższego);</li>
+                                <li>Oblicza wagę ściany z 8. podpunktu, przy założeniu, że jedna cegła waży K kilogramów;</li>
+                                <li>Symulujący działanie prostego kalkulatora;</li>
+                                <li>Wyświetli na ekranie ciąg arytmetyczny składający się z N elementów, gdzie pierwszy element ma wartość X, a różnica pomiędzy kolejnymi elementami ciągu wynosi Y;</li>
+                                <li>Oblicza sumę dwóch liczb podanych przez użytkownika. Algorytm ma działać tak długo, aż suma podanych liczb będzie wynosiła 0;</li>
+                                <li>Algorytm oblicza silnię wprowadzonej przez użytkownika liczby;</li>
+                                <li>Wypisuje na ekran ciąg n liczb, z których każda kolejna jest kwadratem poprzedniej liczby z ciągu. Wartość pierwszej liczby podaje użytkownik;</li>
+                                <li>Oblicza sumę oraz średnią z 10 losowych liczb z przedziału &lt;50,100&gt;;</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane " id="php15" role="tabpanel" aria-labelledby="arrays-exercises-tab">
+                    <div class="card card-php">
+                        <div class="card-body">
+                            <h4 class="card-title">Tablice - zadania</h4>
+                            <ol>
+                                <li>
+                                    Utwórz tablicę o nazwie tab1, zawierającą następujące liczby całkowite: 7, 3, 1, 6, 9, 5, 4, 10, 2, 2, a następnie:
+                                    <ul>
+                                        <li>Wypisz zawartość 5 komórki tablicy na ekran. Zmień zawartość 7 komórki tablicy, wprowadzając do niej wartość 12;</li>
+                                        <li>Utwórz drugą tablicę o nazwie tab2, o tej samej wielkości co tab1. Przepisz zawartość tab1 do tab2;</li>
+                                        <li>Utwórz trzecią tablicę o nazwie tab3, o tej samej wielkości co dwie poprzednie. Zawartością komórek tablicy tab3 jest suma komórek o tych samych indeksach tablic tab1 i tab2;</li>
+                                        <li>Przepisz ponownie zawartość tablicy tab1 do tablicy tab2, jednak w odwrotnej kolejności;</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Utwórz tablicę, a następnie:
+                                    <ul>
+                                        <li>Wypełnij tablicę wartościami podanymi przez użytkownika;</li>
+                                        <li>Znajdź najmniejszy i największy element w tablicy;</li>
+                                        <li>Oblicz średnią wartość elementów tablicy;</li>
+                                        <li>Wylicz ilość wystąpień cyfry 3 w tablicy;</li>
+                                        <li>Dowolnym sposobem posortuj elementy tablicy w porządku rosnącym;</li>
+                                        <li>Znajdź medianę elementów tablicy;</li>
+                                        <li>Wypisz 3 najmniejsze i trzy największe elementy tablicy;</li>
+                                        <li>Zwiększ wartość każdego elementu tablicy podnosząc go do kwadratu;</li>
+                                        <li>Policz ilość liczb parzystych i nieparzystych w tablicy;</li>
+                                        <li>Podaj ile liczb zawartych w tablicy jest podzielna bez reszty przez 3;</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Utwórz tablicę, która zawierać będzie 10 elementów, a następnie:
+                                    <ul>
+                                        <li>Wypełnij ją literami wprowadzonymi przez użytkownika;</li>
+                                        <li>Wypełnij ją 10 literowym wyrazem podanym przez użytkownika;</li>
+                                        <li>Zamień wszystkie wielkie litery na małe i odwrotnie;</li>
+                                        <li>Wypisz zawartość tablicy w losowej kolejności;</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Utwórz 100-elementową tablicę liczb całkowitych i wypełnij ją losowymi liczbami, a następnie:
+                                    <ul>
+                                        <li>Znajdź największą spośród liczb oraz wyświetl na ekranie informację mówiącą o tym, ile razy ta liczba znalazła się w tablicy;</li>
+									    <li>Wyświetl na ekran liczby nieparzyste;</li>
+									    <li>Wyświetl na ekran liczby znajdujące się w komórkach o nieparzystych indeksach;</li>
+									    <li>Program policzy ile liczb zawiera się w przedziale &lt;5, 15) , po czym wypisze te liczby na ekran;</li>
+									    <li>Znajdź element najbliższy wartością wprowadzonej przez użytkownika liczbie „a”;</li>
+									    <li>Znajdź poprzednik i następnik najmniejszej wartości w tablicy (wartość komórki o numerze o jeden większym i o jeden mniejszym, niż indeks minimum tablicy);</li>
+									    <li>Przepisać do nowej tablicy te elementy, których wartość jest &gt;10. Nowa tablica ma mieć rozmiar równy ilości tych elementów;</li>
+									    <li>Utwórz nową tablicę 100 elementową. Wypełnij ją w taki sposób, aby B[i] = A[1] + A[2] + A[3] + … + A[i], gdzie B to nasza nowa, a A, stara tablica;</li>
+									    <li>Posortuj tablicę malejąco;</li>
+									    <li>Wypisz na ekran elementy, które występują w tablicy przynajmniej 3 razy;</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Utwórz pustą tablicę 100 elementów, a następnie:
+                                    <ol>
+                                        <li>Wypełnij tablicę kolejnymi liczbami ciągu Fibonacciego;</li>
+                                        <li>Wypełnij tablicę kolejnymi potęgami liczby 2;</li>
+                                        <li>Wypełni tablicę ciągiem liczb: 3, 6, 9, 12, …;</li>
+                                        <li>Wypełni tablicę ciągiem liczb: 2, 4, 8, 16, 32, …;</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="php16" role="tabpanel" aria-labelledby="functions-exercises-tab">
+                    <div class="card card-php">
+                        <div class="card-body">
+                            <h4 class="card-title">Funckje - zadania</h4>
+                            <p class="card-text">Napisz funkcję o podanej nazwie, które wykonują przedstawione funkcjonalności:</p>
+                            <ol>
+                                <li><strong>SUMA</strong>: obliczy i wyświetli na ekran sumę 2 liczb całkowitych podanych przez użytkownika;</li>
+                                <li><strong>PODSTAWY</strong>: obliczy różnicę, iloczyn i iloraz 2 liczb podanych przez użytkownika;</li>
+                                <li><strong>KALKULATOR</strong>: Obliczy wybrane przez użytkownika działanie (suma, różnica, iloczyn lub iloraz) z dwóch podanych przez użytkownika liczb. Wynik działania umieści w kontenerze o id wynik;</li>
+                                <li><strong>MAKS</strong>: wypisze na ekran wartość największej spośród 3 liczb podanych przez użytkownika;</li>
+                                <li><strong>WZROST</strong>: wczyta od użytkownika wzrost, następnie wypisze na ekran komunikat klasyfikujący wzrost do jednej z trzech kategorii: &lt; 150cm niski, &gt; 180cm wysoki lub w pozostałych przypadkach średni;</li>
+                                <li><strong>BMI</strong>: wczyta od użytkownika wartość wzrostu (cm) oraz wagi (kg), następnie obliczy wartość BMI (kg/m2). W kontenerze wynik program umieści wartość BMI wraz z komentarzem:
+                                    <ul>
+                                        <li>BMI &lt; 18,5: za mało!;</li>
+                                        <li>BMI &gt; 25: za dużo!;</li>
+                                        <li>pomiędzy: OK!;</li>
+                                    </ul>
+                                </li>
+                                <li><strong>STARSZY</strong>: wczyta z 2 pól tekstowych daty urodzenia dwóch osób, następnie wypisze komunikat z informacją, która z tych osób jest starsza;</li>
+                                <li><strong>PRZESTĘPNY</strong>: program wczyta jako parametr wejściowy funkcji rok. Wypisze informację, czy dany rok jest przestępny, czy nie;</li>
+                                <li><strong>SIŁA</strong>: wczyta, podane jako parametr wejściowy, hasło podane przez użytkownika, następnie wypisze informację o jego sile:
+                                    <ul>
+                                        <li>do 4 znaków - hasło słabe;</li>
+                                        <li>do 8 znaków - hasło średnie;</li>
+                                        <li>8 lub więcej znaków - hasło mocne;</li>
+                                        <li>brak cyfry hasło - słabe;</li>
+                                        <li>brak dużej litery - hasło słabe;</li>
+                                        <li>brak małej litery - hasło słabe;</li>
+                                        <li>brak znaku specjalnego - hasło słabe;</li>
+                                    </ul>
+                                </li>
+                                <li><strong>TROJKAT</strong>: wczyta od użytkownika 3 liczby całkowite, następnie wypisze, czy jeśli przyjąć, że są to długości boków, czy dałoby się utworzyć z nich trójkąt;</li>
+                                <li><strong>SZYFR</strong>: program wczytuje litery w momencie każdorazowego naciśnięcia klawisza tekst z pola tekstowego, następnie szyfruje je i wypisuje po prawej stronie pola tekstowego na ekran. Szyfrowanie ma się odbywać w taki sposób, aby litera zaszyfrowana była przesunięciem o 2 względem alfabetu (zapętlenie), np. a -&gt; c, k-&gt;m, z-&gt;b;</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="php17" role="tabpanel" aria-labelledby="form-exercises-tab">
+                    <div class="card card-php">
+                        <div class="card-body">
+                            <h4 class="card-title">Formularze - zadania</h4>
+                            <ol>
+                                <li>
+                                    Utwórz formularz logowania użytkownika w pliku index.html, ma zawierać pola: login (text), hasło (password), checkbox z etykietą zapamiętaj mnie, przycisk do przesłania formularza. Formularz ma zostać przesłany do pliku login.php, w którym:
+                                    <ul>
+                                        <li>wyświetlisz na ekran przesłany przez użytkownika login;</li>
+                                        <li>zakodujesz za pomocą funkcji sha1() hasło użytkownika i wypiszesz je w takiej formie na ekran;</li>
+                                        <li>wypiszesz na ekran zdanie informacyjne, czy pole checkbox zostało zaznaczone;</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Utwórz formularz, znajdujący się w pliku komentarz.html, służący do wpisania komentarza. Formularz ma zawierać pola:
+                                    <ul>
+                                        <li>Pseudonim (text);</li>
+                                        <li>Komentarz (textarea) – można używać znaczników html;</li>
+                                    </ul>
+                                    Formularz prześlij do pliku zapisz.php. Wyświetl w nim w kolejnych paragrafach pseudonim oraz dwa razy komentarz. Komentarz wyświetl kolejno w wersji z wykonanym kodem html (np. tekst w znacznikach  ma zostać pogrubiony), oraz w pełni tekstowo (ze znacznikami html w postaci tekstu);
+                                </li>
+                                <li>
+                                    Utwórz ankietę składającą się z 3 pytań. Pierwsze ma zawierać do wyboru listę rozwijaną zawierającą minimum 3 opcje, drugie zawierające minimum 3 pola typu radio oraz trzecie z minimum trzema polami checkbox. Formularz prześlij do pliku wynik.php, w którym wypiszesz wszystkie wybrane opcje;
+                                </li>
+                                <li>
+                                    Utwórz formularz, składający się z dwóch pytań, pierwszego o kolor tła, drugiego o kolor tekstu. Formularz prześlij do pliku kolory.php, w którym w paragrafie (wysokość 50%; szerokość 50%; marginesy lewy i prawy równe, margines górny 50px, ramka 2 px czerwona kreskowana) wypiszesz swoje imię i nazwisko czcionką o kolorze podanym w formularzu. Tło paragrafu również ustaw na to podane w formularzu. Kolory przesłane mają być w postaci szesnastkowej liczby 6 cyfrowej. Sprawdź poprawność przesłanych przez użytkownika liczb;
+                                </li>
+                                <li>
+                                    Utwórz formularz zawierający pola: koszt benzyny (text), ilość kilometrów (number), średnie spalanie (text). Formularz prześlij do pliku koszt.php, w którym wypiszesz na ekran wszystkie przesłane przez użytkownika informacje oraz obliczysz i wypiszesz na ekran koszt przejazdu. Zadbaj o poprawność przesłanych danych (koszt benzyny i średnie spalanie – liczby zmiennoprzecinkowe);
+                                </li>
+                                <li>
+                                    Utwórz formularz obliczający koszt dowozu pizzy, składający się z dwóch pól: pole number – odległość w km, checkbox – ciepła. Formularz prześlij do pliku pizza.php, w którym wypiszesz obliczony koszt dowozu. Koszt dowozu obliczamy następująco: liczbę km mnożymy przez 50 groszy, jeśli pizza ma dotrzeć ciepła trzeba będzie doliczyć jeszcze dodatkowo 15% kosztów dowozu;
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
                 <a href="#main" class="card back-to-top">
                     <div class="card-body">
                       <h4 class="card-title">Powrót na górę strony</h4>

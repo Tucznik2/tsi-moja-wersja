@@ -20,3 +20,9 @@ for (let i = 0; i < NAV_LINKS .length; i++) {
         window.scrollTo(0,0);
     });
 }
+
+let offcanvas_el = document.getElementById("zseOffcanvas");
+let offcanvas = new bootstrap.Offcanvas(offcanvas_el, {backdrop: false})
+offcanvas_el.addEventListener('click', ()=>{
+    offcanvas.hide();
+})

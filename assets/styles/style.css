@@ -96,14 +96,13 @@ html {
   text-align: center;
   color: #fff;
 }
-/* HTML subpage */
 .html-subpage, .php-subpage, .css-subpage, .js-subpage{
   flex-direction: row;
   justify-content: space-between;
   max-width: 1250px;
   margin-top: 50px;
 }
-#side-nav, #side-nav-canvsas{
+#side-nav, .side-nav-canvas{
   flex-basis: 20%;
   align-self: flex-start;
 }
@@ -138,6 +137,7 @@ code {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 1rem;
 }
 .result > *{
   text-align: center;
@@ -168,6 +168,12 @@ code {
 .html-subpage .list-group-item.active{
   background-color: #e34c26;
   border-color: #e34c26;
+}
+.html-subpage hr{
+  width: 100%;
+}
+.html-subpage table, .html-subpage th, .html-subpage td {
+  border: 1px solid;
 }
 /* PHP subpage */
 .php-subpage thead{
@@ -293,7 +299,7 @@ code {
   .html-subpage, .php-subpage, .css-subpage, .js-subpage{
     flex-direction: column;
   }
-  aside#side-nav-canvas\ offcanvas-body {
+  .side-nav-canvas {
     margin-left: 0.25em;
     margin-right: 0.25em;
   }
